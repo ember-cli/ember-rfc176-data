@@ -1,8 +1,16 @@
 {
   "name": "ember-rfc176-data",
   "version": "0.1.0",
-  "author": "Tom Dale <tom@tomdale.net>",
+  "description": "JSON data for Ember.js RFC #176",
+  "homepage": "https://github.com/ember-cli/ember-rfc176-data#readme",
+  "bugs": {
+    "url": "https://github.com/ember-cli/ember-rfc176-data/issues"
+  },
   "license": "MIT",
-  "repository": "https://github.com/ember-cli/ember-rfc176-data",
-  "main": "mapping.json"
+  "author": "Tom Dale <tom@tomdale.net>",
+  "main": "mapping.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ember-cli/ember-rfc176-data.git"
+  }
 }
