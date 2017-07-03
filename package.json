@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "author": "Tom Dale <tom@tomdale.net>",
-  "main": "mapping.json",
+  "main": "globals.json",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ember-cli/ember-rfc176-data.git"
