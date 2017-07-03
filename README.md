@@ -359,3 +359,56 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | Module                    | Global       |
 | ---                       | ---          |
 | `import RSVP from "rsvp"` | `Ember.RSVP` |
+
+
+### Scripts
+
+The tables above can be generated using the scripts in the `scripts` folder, e.g.:
+
+```
+scripts/generate-markdown-table
+```
+
+
+## Contributing
+
+### Module Changes
+
+If you want to change how globals are mapped into modules, you will find
+the data structure that controls that in `globals.json`. The structure
+is:
+
+```js
+{
+  "globalPath": ["moduleName", "namedExport"?, "localName"?]
+}
+```
+
+Only the first item in the array is mandatory. The second item is only needed
+for named exports. The third item is only necessary if the local identifier the
+import is bound to should be different than named export (or the previous global
+version, in the case of default exports).
+
+A few examples:
+
+1. `Ember.Application` ⟹ `"Application": ["@ember/application"]` ⟹ `import Application from "@ember/application"`
+1. `Ember.computed.or` ⟹ `"computed.or": ["@ember/object/computed", "or"]` ⟹ `import { or } from "@ember/object/computed"`
+1. `Ember.DefaultResolver` ⟹ `"DefaultResolver": ["@ember/application/globals-resolver", null, "GlobalsResolver"]` ⟹ `import GlobalsResolver from "@ember/application/globals-resolver"`
+
+### Reserved Words
+
+In some cases, Ember's names may conflict with names built in to the language.
+In those cases, we should not inadvertently shadow those identifiers.
+
+```js
+import Object from "@ember/object";
+
+// ...later
+Object.keys(obj);
+// oops! TypeError: Object.keys is not a function
+```
+
+A list of reserved identifiers (including `Object`) is included in
+`reserved.json`. Anything that appears in this list should be prefixed with
+`Ember`; so, for example, `import Object from "@ember/object"` should become
+`import EmberObject from "@ember/object"`.

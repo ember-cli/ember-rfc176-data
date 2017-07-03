@@ -12,5 +12,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ember-cli/ember-rfc176-data.git"
+  },
+  "devDependencies": {
+    "chalk": "^1.1.3"
   }
 }
