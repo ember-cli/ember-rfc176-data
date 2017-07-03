@@ -129,6 +129,7 @@
   "String.w": ["@ember/string", "w"],
   "isBlank": ["@ember/utils", "isBlank"],
   "isEmpty": ["@ember/utils", "isEmpty"],
+  "isEqual": ["@ember/utils", "isEqual"],
   "isNone": ["@ember/utils", "isNone"],
   "isPresent": ["@ember/utils", "isPresent"],
   "tryInvoke": ["@ember/utils", "tryInvoke"],
