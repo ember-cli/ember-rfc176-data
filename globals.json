@@ -96,6 +96,7 @@
   "MapWithDefault": ["@ember/map/with-default"],
   "Enumerable": ["@ember/enumerable"],
   "assign": ["@ember/polyfills", "assign"],
+  "merge": ["@ember/polyfills", "merge"],
   "create": ["@ember/polyfills", "create"],
   "keys": ["@ember/polyfills", "keys"],
   "platform.defineProperty": ["@ember/polyfills", "defineProperty"],
