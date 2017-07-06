@@ -1,6 +1,15 @@
 # Changelog
 
-## Unreleased (2017-07-04)
+## v0.2.2 (2017-07-06)
+
+#### :bug: Bug Fix
+* [#15](https://github.com/ember-cli/ember-rfc176-data/pull/15) Remove `defineProperty` references.. ([@rwjblue](https://github.com/rwjblue))
+
+
+## v0.2.1 (2017-07-06)
+
+#### :rocket: Enhancement
+* [#11](https://github.com/ember-cli/ember-rfc176-data/pull/11) Add "generate-missing-apis-list" script. ([@Turbo87](https://github.com/Turbo87))
 
 #### :bug: Bug Fix
 * [#7](https://github.com/ember-cli/ember-rfc176-data/pull/7) globals: Add missing isEqual() function. ([@Turbo87](https://github.com/Turbo87))
