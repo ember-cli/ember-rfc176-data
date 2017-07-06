@@ -99,6 +99,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.computed.sum`                  | `import { sum } from "@ember/object/computed"`                             |
 | `Ember.computed.union`                | `import { union } from "@ember/object/computed"`                           |
 | `Ember.computed.uniq`                 | `import { uniq } from "@ember/object/computed"`                            |
+| `Ember.computed.uniqBy`               | `import { uniqBy } from "@ember/object/computed"`                          |
 | `Ember.copy`                          | `import { copy } from "@ember/object/internals"`                           |
 | `Ember.create`                        | `import { create } from "@ember/polyfills"`                                |
 | `Ember.debug`                         | `import { debug } from "@ember/debug"`                                     |
@@ -270,6 +271,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { sum } from "@ember/object/computed"`              | `Ember.computed.sum`              |
 | `import { union } from "@ember/object/computed"`            | `Ember.computed.union`            |
 | `import { uniq } from "@ember/object/computed"`             | `Ember.computed.uniq`             |
+| `import { uniqBy } from "@ember/object/computed"`           | `Ember.computed.uniqBy`           |
 | `import Evented from "@ember/object/evented"`               | `Ember.Evented`                   |
 | `import { on } from "@ember/object/evented"`                | `Ember.on`                        |
 | `import { addListener } from "@ember/object/events"`        | `Ember.addListener`               |

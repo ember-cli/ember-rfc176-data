@@ -54,6 +54,7 @@
   "computed.filterBy": ["@ember/object/computed", "filterBy"],
   "computed.filterProperty": ["@ember/object/computed", "filterProperty"],
   "computed.uniq": ["@ember/object/computed", "uniq"],
+  "computed.uniqBy": ["@ember/object/computed", "uniqBy"],
   "computed.union": ["@ember/object/computed", "union"],
   "computed.intersect": ["@ember/object/computed", "intersect"],
   "Evented": ["@ember/object/evented"],
