@@ -136,7 +136,6 @@
   "ember-platform": {
     "assign":         ["@ember/polyfills", "assign"],
     "create":         ["@ember/polyfills", "create"],
-    "defineProperty": ["@ember/polyfills", "defineProperty"],
     "hasAccessors":   ["@ember/polyfills", "hasPropertyAccessors"],
     "keys":           ["@ember/polyfills", "keys"]
   },

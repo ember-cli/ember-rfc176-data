@@ -99,7 +99,6 @@
   "merge": ["@ember/polyfills", "merge"],
   "create": ["@ember/polyfills", "create"],
   "keys": ["@ember/polyfills", "keys"],
-  "platform.defineProperty": ["@ember/polyfills", "defineProperty"],
   "platform.hasPropertyAccessors": ["@ember/polyfills", "hasPropertyAccessors"],
   "Route": ["@ember/routing/route"],
   "Router": ["@ember/routing/router"],

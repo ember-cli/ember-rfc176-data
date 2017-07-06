@@ -124,7 +124,6 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.observer`                      | `import { observer } from "@ember/object"`                                 |
 | `Ember.on`                            | `import { on } from "@ember/object/evented"`                               |
 | `Ember.onLoad`                        | `import { onLoad } from "@ember/application"`                              |
-| `Ember.platform.defineProperty`       | `import { defineProperty } from "@ember/polyfills"`                        |
 | `Ember.platform.hasPropertyAccessors` | `import { hasPropertyAccessors } from "@ember/polyfills"`                  |
 | `Ember.removeListener`                | `import { removeListener } from "@ember/object/events"`                    |
 | `Ember.removeObserver`                | `import { removeObserver } from "@ember/object/observers"`                 |
@@ -288,7 +287,6 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | ---                                                       | ---                                   |
 | `import { assign } from "@ember/polyfills"`               | `Ember.assign`                        |
 | `import { create } from "@ember/polyfills"`               | `Ember.create`                        |
-| `import { defineProperty } from "@ember/polyfills"`       | `Ember.platform.defineProperty`       |
 | `import { hasPropertyAccessors } from "@ember/polyfills"` | `Ember.platform.hasPropertyAccessors` |
 | `import { keys } from "@ember/polyfills"`                 | `Ember.keys`                          |
 | `import { merge } from "@ember/polyfills"`                | `Ember.merge`                         |
