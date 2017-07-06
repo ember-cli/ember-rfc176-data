@@ -115,10 +115,12 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.isArray`                       | `import { isArray } from "@ember/array"`                                   |
 | `Ember.isBlank`                       | `import { isBlank } from "@ember/utils"`                                   |
 | `Ember.isEmpty`                       | `import { isEmpty } from "@ember/utils"`                                   |
+| `Ember.isEqual`                       | `import { isEqual } from "@ember/utils"`                                   |
 | `Ember.isNone`                        | `import { isNone } from "@ember/utils"`                                    |
 | `Ember.isPresent`                     | `import { isPresent } from "@ember/utils"`                                 |
 | `Ember.keys`                          | `import { keys } from "@ember/polyfills"`                                  |
 | `Ember.makeArray`                     | `import { makeArray } from "@ember/array"`                                 |
+| `Ember.merge`                         | `import { merge } from "@ember/polyfills"`                                 |
 | `Ember.observer`                      | `import { observer } from "@ember/object"`                                 |
 | `Ember.on`                            | `import { on } from "@ember/object/evented"`                               |
 | `Ember.onLoad`                        | `import { onLoad } from "@ember/application"`                              |
@@ -289,6 +291,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { defineProperty } from "@ember/polyfills"`       | `Ember.platform.defineProperty`       |
 | `import { hasPropertyAccessors } from "@ember/polyfills"` | `Ember.platform.hasPropertyAccessors` |
 | `import { keys } from "@ember/polyfills"`                 | `Ember.keys`                          |
+| `import { merge } from "@ember/polyfills"`                | `Ember.merge`                         |
 
 #### `@ember/routing`
 | Module                                                          | Global                  |
@@ -345,6 +348,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { compare } from "@ember/utils"`   | `Ember.compare`   |
 | `import { isBlank } from "@ember/utils"`   | `Ember.isBlank`   |
 | `import { isEmpty } from "@ember/utils"`   | `Ember.isEmpty`   |
+| `import { isEqual } from "@ember/utils"`   | `Ember.isEqual`   |
 | `import { isNone } from "@ember/utils"`    | `Ember.isNone`    |
 | `import { isPresent } from "@ember/utils"` | `Ember.isPresent` |
 | `import { tryInvoke } from "@ember/utils"` | `Ember.tryInvoke` |
