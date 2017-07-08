@@ -76,6 +76,7 @@
   "PromiseProxyMixin": ["@ember/object/promise-proxy-mixin"],
   "addObserver": ["@ember/object/observers", "addObserver"],
   "removeObserver": ["@ember/object/observers", "removeObserver"],
+  "Observable": ["@ember/object/observable"],
   "copy": ["@ember/object/internals", "copy"],
   "guidFor": ["@ember/object/internals", "guidFor"],
   "cacheFor": ["@ember/object/internals", "cacheFor"],

@@ -50,6 +50,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.NoneLocation`                     | `import NoneLocation from "@ember/routing/none-location"`                  |
 | `Ember.Object`                           | `import EmberObject from "@ember/object"`                                  |
 | `Ember.ObjectProxy`                      | `import ObjectProxy from "@ember/object/proxy"`                            |
+| `Ember.Observable`                       | `import Observable from "@ember/object/observable"`                        |
 | `Ember.PromiseProxyMixin`                | `import PromiseProxyMixin from "@ember/object/promise-proxy-mixin"`        |
 | `Ember.RSVP`                             | `import RSVP from "rsvp"`                                                  |
 | `Ember.Resolver`                         | `import Resolver from "@ember/application/resolver"`                       |
@@ -314,6 +315,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { copy } from "@ember/object/internals"`                    | `Ember.copy`                      |
 | `import { guidFor } from "@ember/object/internals"`                 | `Ember.guidFor`                   |
 | `import Mixin from "@ember/object/mixin"`                           | `Ember.Mixin`                     |
+| `import Observable from "@ember/object/observable"`                 | `Ember.Observable`                |
 | `import { addObserver } from "@ember/object/observers"`             | `Ember.addObserver`               |
 | `import { removeObserver } from "@ember/object/observers"`          | `Ember.removeObserver`            |
 | `import PromiseProxyMixin from "@ember/object/promise-proxy-mixin"` | `Ember.PromiseProxyMixin`         |
