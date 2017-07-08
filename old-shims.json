@@ -229,7 +229,7 @@
     "default": null
   },
   "ember-test/adapter": {
-    "default": null
+    "default": ["@ember/test/adapter"]
   },
   "ember-test/qunit-adapter": {
     "default": null
