@@ -110,6 +110,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.get`                           | `import { get } from "@ember/object"`                                      |
 | `Ember.getOwner`                      | `import { getOwner } from "@ember/application"`                            |
 | `Ember.getProperties`                 | `import { getProperties } from "@ember/object"`                            |
+| `Ember.getWithDefault`                | `import { getWithDefault } from "@ember/object"`                           |
 | `Ember.guidFor`                       | `import { guidFor } from "@ember/object/internals"`                        |
 | `Ember.inject.controller`             | `import { inject } from "@ember/controller"`                               |
 | `Ember.inject.service`                | `import { inject } from "@ember/service"`                                  |
@@ -237,6 +238,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { defineProperty } from "@ember/object"`            | `Ember.defineProperty`            |
 | `import { get } from "@ember/object"`                       | `Ember.get`                       |
 | `import { getProperties } from "@ember/object"`             | `Ember.getProperties`             |
+| `import { getWithDefault } from "@ember/object"`            | `Ember.getWithDefault`            |
 | `import { observer } from "@ember/object"`                  | `Ember.observer`                  |
 | `import { set } from "@ember/object"`                       | `Ember.set`                       |
 | `import { setProperties } from "@ember/object"`             | `Ember.setProperties`             |

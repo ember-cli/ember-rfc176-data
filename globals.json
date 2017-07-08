@@ -20,6 +20,7 @@
   "set": ["@ember/object", "set"],
   "getProperties": ["@ember/object", "getProperties"],
   "setProperties": ["@ember/object", "setProperties"],
+  "getWithDefault": ["@ember/object", "getWithDefault"],
   "observer": ["@ember/object", "observer"],
   "computed": ["@ember/object", "computed"],
   "trySet": ["@ember/object", "trySet"],
