@@ -35,7 +35,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.Engine`                           | `import Engine from "@ember/engine"`                                       |
 | `Ember.EngineInstance`                   | `import EngineInstance from "@ember/engine/instance"`                      |
 | `Ember.Enumerable`                       | `import Enumerable from "@ember/enumerable"`                               |
-| `Ember.Error`                            | `import Error from "@ember/error"`                                         |
+| `Ember.Error`                            | `import EmberError from "@ember/error"`                                    |
 | `Ember.Evented`                          | `import Evented from "@ember/object/evented"`                              |
 | `Ember.HashLocation`                     | `import HashLocation from "@ember/routing/hash-location"`                  |
 | `Ember.Helper`                           | `import Helper from "@ember/component/helper"`                             |
@@ -70,6 +70,11 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.String.underscore`                | `import { underscore } from "@ember/string"`                               |
 | `Ember.String.w`                         | `import { w } from "@ember/string"`                                        |
 | `Ember.Test.Adapter`                     | `import Test.Adapter from "@ember/test/adapter"`                           |
+| `Ember.Test.registerAsyncHelper`         | `import { registerAsyncHelper } from "@ember/test"`                        |
+| `Ember.Test.registerHelper`              | `import { registerHelper } from "@ember/test"`                             |
+| `Ember.Test.registerWaiter`              | `import { registerWaiter } from "@ember/test"`                             |
+| `Ember.Test.unregisterHelper`            | `import { unregisterHelper } from "@ember/test"`                           |
+| `Ember.Test.unregisterWaiter`            | `import { unregisterWaiter } from "@ember/test"`                           |
 | `Ember.TextArea`                         | `import TextArea from "@ember/component/text-area"`                        |
 | `Ember.TextField`                        | `import TextField from "@ember/component/text-field"`                      |
 | `Ember.addListener`                      | `import { addListener } from "@ember/object/events"`                       |
@@ -383,9 +388,14 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { w } from "@ember/string"`          | `Ember.String.w`          |
 
 #### `@ember/test`
-| Module                                           | Global               |
-| ---                                              | ---                  |
-| `import Test.Adapter from "@ember/test/adapter"` | `Ember.Test.Adapter` |
+| Module                                              | Global                           |
+| ---                                                 | ---                              |
+| `import { registerAsyncHelper } from "@ember/test"` | `Ember.Test.registerAsyncHelper` |
+| `import { registerHelper } from "@ember/test"`      | `Ember.Test.registerHelper`      |
+| `import { registerWaiter } from "@ember/test"`      | `Ember.Test.registerWaiter`      |
+| `import { unregisterHelper } from "@ember/test"`    | `Ember.Test.unregisterHelper`    |
+| `import { unregisterWaiter } from "@ember/test"`    | `Ember.Test.unregisterWaiter`    |
+| `import Test.Adapter from "@ember/test/adapter"`    | `Ember.Test.Adapter`             |
 
 #### `@ember/utils`
 | Module                                     | Global            |
@@ -409,7 +419,6 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | ---                              | ---                  |
 | `import RSVP from "rsvp"`        | `Ember.RSVP`         |
 | `import { Promise } from "rsvp"` | `Ember.RSVP.Promise` |
-
 
 ### Scripts
 
