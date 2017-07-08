@@ -104,6 +104,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.copy`                          | `import { copy } from "@ember/object/internals"`                           |
 | `Ember.create`                        | `import { create } from "@ember/polyfills"`                                |
 | `Ember.debug`                         | `import { debug } from "@ember/debug"`                                     |
+| `Ember.defineProperty`                | `import { defineProperty } from "@ember/object"`                           |
 | `Ember.deprecate`                     | `import { deprecate } from "@ember/application/deprecations"`              |
 | `Ember.deprecateFunc`                 | `import { deprecateFunc } from "@ember/application/deprecations"`          |
 | `Ember.get`                           | `import { get } from "@ember/object"`                                      |
@@ -233,6 +234,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import EmberObject from "@ember/object"`                   | `Ember.Object`                    |
 | `import { aliasMethod } from "@ember/object"`               | `Ember.aliasMethod`               |
 | `import { computed } from "@ember/object"`                  | `Ember.computed`                  |
+| `import { defineProperty } from "@ember/object"`            | `Ember.defineProperty`            |
 | `import { get } from "@ember/object"`                       | `Ember.get`                       |
 | `import { getProperties } from "@ember/object"`             | `Ember.getProperties`             |
 | `import { observer } from "@ember/object"`                  | `Ember.observer`                  |

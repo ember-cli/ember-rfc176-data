@@ -15,6 +15,7 @@
   "MutableArray": ["@ember/array/mutable"],
   "ArrayProxy": ["@ember/array/proxy"],
   "Object": ["@ember/object"],
+  "defineProperty": ["@ember/object", "defineProperty"],
   "get": ["@ember/object", "get"],
   "set": ["@ember/object", "set"],
   "getProperties": ["@ember/object", "getProperties"],
