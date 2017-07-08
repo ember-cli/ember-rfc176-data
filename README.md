@@ -42,6 +42,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.MutableArray`                  | `import MutableArray from "@ember/array/mutable"`                          |
 | `Ember.NoneLocation`                  | `import NoneLocation from "@ember/routing/none-location"`                  |
 | `Ember.Object`                        | `import EmberObject from "@ember/object"`                                  |
+| `Ember.ObjectProxy`                   | `import ObjectProxy from "@ember/object/proxy"`                            |
 | `Ember.RSVP`                          | `import RSVP from "rsvp"`                                                  |
 | `Ember.Resolver`                      | `import Resolver from "@ember/application/resolver"`                       |
 | `Ember.Route`                         | `import Route from "@ember/routing/route"`                                 |
@@ -290,6 +291,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import Mixin from "@ember/object/mixin"`                   | `Ember.Mixin`                     |
 | `import { addObserver } from "@ember/object/observers"`     | `Ember.addObserver`               |
 | `import { removeObserver } from "@ember/object/observers"`  | `Ember.removeObserver`            |
+| `import ObjectProxy from "@ember/object/proxy"`             | `Ember.ObjectProxy`               |
 
 #### `@ember/polyfills`
 | Module                                                    | Global                                |

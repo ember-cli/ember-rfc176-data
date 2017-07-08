@@ -66,6 +66,7 @@
   "removeListener": ["@ember/object/events", "removeListener"],
   "sendEvent": ["@ember/object/events", "sendEvent"],
   "Mixin": ["@ember/object/mixin"],
+  "ObjectProxy": ["@ember/object/proxy"],
   "addObserver": ["@ember/object/observers", "addObserver"],
   "removeObserver": ["@ember/object/observers", "removeObserver"],
   "copy": ["@ember/object/internals", "copy"],
