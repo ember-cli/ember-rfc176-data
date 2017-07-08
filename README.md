@@ -29,6 +29,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.CoreObject`                    | `import CoreObject from "@ember/object/core"`                              |
 | `Ember.DataAdapter`                   | `import DataAdapter from "@ember/debug/data-adapter"`                      |
 | `Ember.DefaultResolver`               | `import GlobalsResolver from "@ember/application/globals-resolver"`        |
+| `Ember.EngineInstance`                | `import EngineInstance from "@ember/engine/instance"`                      |
 | `Ember.Enumerable`                    | `import Enumerable from "@ember/enumerable"`                               |
 | `Ember.Evented`                       | `import Evented from "@ember/object/evented"`                              |
 | `Ember.HashLocation`                  | `import HashLocation from "@ember/routing/hash-location"`                  |
@@ -214,6 +215,11 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { warn } from "@ember/debug"`                                      | `Ember.warn`                  |
 | `import ContainerDebugAdapter from "@ember/debug/container-debug-adapter"` | `Ember.ContainerDebugAdapter` |
 | `import DataAdapter from "@ember/debug/data-adapter"`                      | `Ember.DataAdapter`           |
+
+#### `@ember/engine`
+| Module                                                | Global                 |
+| ---                                                   | ---                    |
+| `import EngineInstance from "@ember/engine/instance"` | `Ember.EngineInstance` |
 
 #### `@ember/enumerable`
 | Module                                       | Global             |

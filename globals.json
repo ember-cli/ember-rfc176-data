@@ -1,6 +1,7 @@
 {
   "Application": ["@ember/application"],
   "ApplicationInstance": ["@ember/application/instance"],
+  "EngineInstance": ["@ember/engine/instance"],
   "onLoad": ["@ember/application", "onLoad"],
   "runLoadHooks": ["@ember/application", "runLoadHooks"],
   "deprecate": ["@ember/application/deprecations", "deprecate"],
