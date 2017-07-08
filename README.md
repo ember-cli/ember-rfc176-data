@@ -25,6 +25,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.Component`                     | `import Component from "@ember/component"`                                 |
 | `Ember.ContainerDebugAdapter`         | `import ContainerDebugAdapter from "@ember/debug/container-debug-adapter"` |
 | `Ember.Controller`                    | `import Controller from "@ember/controller"`                               |
+| `Ember.CoreObject`                    | `import CoreObject from "@ember/object/core"`                              |
 | `Ember.DataAdapter`                   | `import DataAdapter from "@ember/debug/data-adapter"`                      |
 | `Ember.DefaultResolver`               | `import GlobalsResolver from "@ember/application/globals-resolver"`        |
 | `Ember.Enumerable`                    | `import Enumerable from "@ember/enumerable"`                               |
@@ -277,6 +278,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { union } from "@ember/object/computed"`            | `Ember.computed.union`            |
 | `import { uniq } from "@ember/object/computed"`             | `Ember.computed.uniq`             |
 | `import { uniqBy } from "@ember/object/computed"`           | `Ember.computed.uniqBy`           |
+| `import CoreObject from "@ember/object/core"`               | `Ember.CoreObject`                |
 | `import Evented from "@ember/object/evented"`               | `Ember.Evented`                   |
 | `import { on } from "@ember/object/evented"`                | `Ember.on`                        |
 | `import { addListener } from "@ember/object/events"`        | `Ember.addListener`               |

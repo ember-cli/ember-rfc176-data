@@ -14,6 +14,7 @@
   "makeArray": ["@ember/array", "makeArray"],
   "MutableArray": ["@ember/array/mutable"],
   "ArrayProxy": ["@ember/array/proxy"],
+  "CoreObject": ["@ember/object/core"],
   "Object": ["@ember/object"],
   "defineProperty": ["@ember/object", "defineProperty"],
   "get": ["@ember/object", "get"],
