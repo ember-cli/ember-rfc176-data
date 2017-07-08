@@ -118,6 +118,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.deprecate`                        | `import { deprecate } from "@ember/application/deprecations"`              |
 | `Ember.deprecateFunc`                    | `import { deprecateFunc } from "@ember/application/deprecations"`          |
 | `Ember.get`                              | `import { get } from "@ember/object"`                                      |
+| `Ember.getEngineParent`                  | `import { getEngineParent } from "@ember/engine"`                          |
 | `Ember.getOwner`                         | `import { getOwner } from "@ember/application"`                            |
 | `Ember.getProperties`                    | `import { getProperties } from "@ember/object"`                            |
 | `Ember.getWithDefault`                   | `import { getWithDefault } from "@ember/object"`                           |
@@ -224,10 +225,11 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import DataAdapter from "@ember/debug/data-adapter"`                      | `Ember.DataAdapter`                      |
 
 #### `@ember/engine`
-| Module                                                | Global                 |
-| ---                                                   | ---                    |
-| `import Engine from "@ember/engine"`                  | `Ember.Engine`         |
-| `import EngineInstance from "@ember/engine/instance"` | `Ember.EngineInstance` |
+| Module                                                | Global                  |
+| ---                                                   | ---                     |
+| `import Engine from "@ember/engine"`                  | `Ember.Engine`          |
+| `import { getEngineParent } from "@ember/engine"`     | `Ember.getEngineParent` |
+| `import EngineInstance from "@ember/engine/instance"` | `Ember.EngineInstance`  |
 
 #### `@ember/enumerable`
 | Module                                       | Global             |
