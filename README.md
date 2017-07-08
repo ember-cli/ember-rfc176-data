@@ -18,6 +18,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.$`                             | `import $ from "jquery"`                                                   |
 | `Ember.A`                             | `import { A } from "@ember/array"`                                         |
 | `Ember.Application`                   | `import Application from "@ember/application"`                             |
+| `Ember.ApplicationInstance`           | `import ApplicationInstance from "@ember/application/instance"`            |
 | `Ember.Array`                         | `import EmberArray from "@ember/array"`                                    |
 | `Ember.ArrayProxy`                    | `import ArrayProxy from "@ember/array/proxy"`                              |
 | `Ember.AutoLocation`                  | `import AutoLocation from "@ember/routing/auto-location"`                  |
@@ -164,17 +165,18 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 ### New Modules to Globals
 
 #### `@ember/application`
-| Module                                                              | Global                  |
-| ---                                                                 | ---                     |
-| `import Application from "@ember/application"`                      | `Ember.Application`     |
-| `import { getOwner } from "@ember/application"`                     | `Ember.getOwner`        |
-| `import { onLoad } from "@ember/application"`                       | `Ember.onLoad`          |
-| `import { runLoadHooks } from "@ember/application"`                 | `Ember.runLoadHooks`    |
-| `import { setOwner } from "@ember/application"`                     | `Ember.setOwner`        |
-| `import { deprecate } from "@ember/application/deprecations"`       | `Ember.deprecate`       |
-| `import { deprecateFunc } from "@ember/application/deprecations"`   | `Ember.deprecateFunc`   |
-| `import GlobalsResolver from "@ember/application/globals-resolver"` | `Ember.DefaultResolver` |
-| `import Resolver from "@ember/application/resolver"`                | `Ember.Resolver`        |
+| Module                                                              | Global                      |
+| ---                                                                 | ---                         |
+| `import Application from "@ember/application"`                      | `Ember.Application`         |
+| `import { getOwner } from "@ember/application"`                     | `Ember.getOwner`            |
+| `import { onLoad } from "@ember/application"`                       | `Ember.onLoad`              |
+| `import { runLoadHooks } from "@ember/application"`                 | `Ember.runLoadHooks`        |
+| `import { setOwner } from "@ember/application"`                     | `Ember.setOwner`            |
+| `import { deprecate } from "@ember/application/deprecations"`       | `Ember.deprecate`           |
+| `import { deprecateFunc } from "@ember/application/deprecations"`   | `Ember.deprecateFunc`       |
+| `import GlobalsResolver from "@ember/application/globals-resolver"` | `Ember.DefaultResolver`     |
+| `import ApplicationInstance from "@ember/application/instance"`     | `Ember.ApplicationInstance` |
+| `import Resolver from "@ember/application/resolver"`                | `Ember.Resolver`            |
 
 #### `@ember/array`
 | Module                                            | Global               |
