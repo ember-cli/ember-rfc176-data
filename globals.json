@@ -67,6 +67,7 @@
   "sendEvent": ["@ember/object/events", "sendEvent"],
   "Mixin": ["@ember/object/mixin"],
   "ObjectProxy": ["@ember/object/proxy"],
+  "PromiseProxyMixin": ["@ember/object/promise-proxy-mixin"],
   "addObserver": ["@ember/object/observers", "addObserver"],
   "removeObserver": ["@ember/object/observers", "removeObserver"],
   "copy": ["@ember/object/internals", "copy"],

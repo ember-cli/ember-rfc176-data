@@ -43,6 +43,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.NoneLocation`                  | `import NoneLocation from "@ember/routing/none-location"`                  |
 | `Ember.Object`                        | `import EmberObject from "@ember/object"`                                  |
 | `Ember.ObjectProxy`                   | `import ObjectProxy from "@ember/object/proxy"`                            |
+| `Ember.PromiseProxyMixin`             | `import PromiseProxyMixin from "@ember/object/promise-proxy-mixin"`        |
 | `Ember.RSVP`                          | `import RSVP from "rsvp"`                                                  |
 | `Ember.Resolver`                      | `import Resolver from "@ember/application/resolver"`                       |
 | `Ember.Route`                         | `import Route from "@ember/routing/route"`                                 |
@@ -232,66 +233,67 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import MapWithDefault from "@ember/map/with-default"` | `Ember.MapWithDefault` |
 
 #### `@ember/object`
-| Module                                                      | Global                            |
-| ---                                                         | ---                               |
-| `import EmberObject from "@ember/object"`                   | `Ember.Object`                    |
-| `import { aliasMethod } from "@ember/object"`               | `Ember.aliasMethod`               |
-| `import { computed } from "@ember/object"`                  | `Ember.computed`                  |
-| `import { defineProperty } from "@ember/object"`            | `Ember.defineProperty`            |
-| `import { get } from "@ember/object"`                       | `Ember.get`                       |
-| `import { getProperties } from "@ember/object"`             | `Ember.getProperties`             |
-| `import { getWithDefault } from "@ember/object"`            | `Ember.getWithDefault`            |
-| `import { observer } from "@ember/object"`                  | `Ember.observer`                  |
-| `import { set } from "@ember/object"`                       | `Ember.set`                       |
-| `import { setProperties } from "@ember/object"`             | `Ember.setProperties`             |
-| `import { trySet } from "@ember/object"`                    | `Ember.trySet`                    |
-| `import { alias } from "@ember/object/computed"`            | `Ember.computed.alias`            |
-| `import { and } from "@ember/object/computed"`              | `Ember.computed.and`              |
-| `import { bool } from "@ember/object/computed"`             | `Ember.computed.bool`             |
-| `import { collect } from "@ember/object/computed"`          | `Ember.computed.collect`          |
-| `import { deprecatingAlias } from "@ember/object/computed"` | `Ember.computed.deprecatingAlias` |
-| `import { empty } from "@ember/object/computed"`            | `Ember.computed.empty`            |
-| `import { equal } from "@ember/object/computed"`            | `Ember.computed.equal`            |
-| `import { filter } from "@ember/object/computed"`           | `Ember.computed.filter`           |
-| `import { filterBy } from "@ember/object/computed"`         | `Ember.computed.filterBy`         |
-| `import { filterProperty } from "@ember/object/computed"`   | `Ember.computed.filterProperty`   |
-| `import { gt } from "@ember/object/computed"`               | `Ember.computed.gt`               |
-| `import { gte } from "@ember/object/computed"`              | `Ember.computed.gte`              |
-| `import { intersect } from "@ember/object/computed"`        | `Ember.computed.intersect`        |
-| `import { lt } from "@ember/object/computed"`               | `Ember.computed.lt`               |
-| `import { lte } from "@ember/object/computed"`              | `Ember.computed.lte`              |
-| `import { map } from "@ember/object/computed"`              | `Ember.computed.map`              |
-| `import { mapBy } from "@ember/object/computed"`            | `Ember.computed.mapBy`            |
-| `import { mapProperty } from "@ember/object/computed"`      | `Ember.computed.mapProperty`      |
-| `import { match } from "@ember/object/computed"`            | `Ember.computed.match`            |
-| `import { max } from "@ember/object/computed"`              | `Ember.computed.max`              |
-| `import { min } from "@ember/object/computed"`              | `Ember.computed.min`              |
-| `import { none } from "@ember/object/computed"`             | `Ember.computed.none`             |
-| `import { not } from "@ember/object/computed"`              | `Ember.computed.not`              |
-| `import { notEmpty } from "@ember/object/computed"`         | `Ember.computed.notEmpty`         |
-| `import { oneWay } from "@ember/object/computed"`           | `Ember.computed.oneWay`           |
-| `import { or } from "@ember/object/computed"`               | `Ember.computed.or`               |
-| `import { readOnly } from "@ember/object/computed"`         | `Ember.computed.readOnly`         |
-| `import { reads } from "@ember/object/computed"`            | `Ember.computed.reads`            |
-| `import { setDiff } from "@ember/object/computed"`          | `Ember.computed.setDiff`          |
-| `import { sort } from "@ember/object/computed"`             | `Ember.computed.sort`             |
-| `import { sum } from "@ember/object/computed"`              | `Ember.computed.sum`              |
-| `import { union } from "@ember/object/computed"`            | `Ember.computed.union`            |
-| `import { uniq } from "@ember/object/computed"`             | `Ember.computed.uniq`             |
-| `import { uniqBy } from "@ember/object/computed"`           | `Ember.computed.uniqBy`           |
-| `import CoreObject from "@ember/object/core"`               | `Ember.CoreObject`                |
-| `import Evented from "@ember/object/evented"`               | `Ember.Evented`                   |
-| `import { on } from "@ember/object/evented"`                | `Ember.on`                        |
-| `import { addListener } from "@ember/object/events"`        | `Ember.addListener`               |
-| `import { removeListener } from "@ember/object/events"`     | `Ember.removeListener`            |
-| `import { sendEvent } from "@ember/object/events"`          | `Ember.sendEvent`                 |
-| `import { cacheFor } from "@ember/object/internals"`        | `Ember.cacheFor`                  |
-| `import { copy } from "@ember/object/internals"`            | `Ember.copy`                      |
-| `import { guidFor } from "@ember/object/internals"`         | `Ember.guidFor`                   |
-| `import Mixin from "@ember/object/mixin"`                   | `Ember.Mixin`                     |
-| `import { addObserver } from "@ember/object/observers"`     | `Ember.addObserver`               |
-| `import { removeObserver } from "@ember/object/observers"`  | `Ember.removeObserver`            |
-| `import ObjectProxy from "@ember/object/proxy"`             | `Ember.ObjectProxy`               |
+| Module                                                              | Global                            |
+| ---                                                                 | ---                               |
+| `import EmberObject from "@ember/object"`                           | `Ember.Object`                    |
+| `import { aliasMethod } from "@ember/object"`                       | `Ember.aliasMethod`               |
+| `import { computed } from "@ember/object"`                          | `Ember.computed`                  |
+| `import { defineProperty } from "@ember/object"`                    | `Ember.defineProperty`            |
+| `import { get } from "@ember/object"`                               | `Ember.get`                       |
+| `import { getProperties } from "@ember/object"`                     | `Ember.getProperties`             |
+| `import { getWithDefault } from "@ember/object"`                    | `Ember.getWithDefault`            |
+| `import { observer } from "@ember/object"`                          | `Ember.observer`                  |
+| `import { set } from "@ember/object"`                               | `Ember.set`                       |
+| `import { setProperties } from "@ember/object"`                     | `Ember.setProperties`             |
+| `import { trySet } from "@ember/object"`                            | `Ember.trySet`                    |
+| `import { alias } from "@ember/object/computed"`                    | `Ember.computed.alias`            |
+| `import { and } from "@ember/object/computed"`                      | `Ember.computed.and`              |
+| `import { bool } from "@ember/object/computed"`                     | `Ember.computed.bool`             |
+| `import { collect } from "@ember/object/computed"`                  | `Ember.computed.collect`          |
+| `import { deprecatingAlias } from "@ember/object/computed"`         | `Ember.computed.deprecatingAlias` |
+| `import { empty } from "@ember/object/computed"`                    | `Ember.computed.empty`            |
+| `import { equal } from "@ember/object/computed"`                    | `Ember.computed.equal`            |
+| `import { filter } from "@ember/object/computed"`                   | `Ember.computed.filter`           |
+| `import { filterBy } from "@ember/object/computed"`                 | `Ember.computed.filterBy`         |
+| `import { filterProperty } from "@ember/object/computed"`           | `Ember.computed.filterProperty`   |
+| `import { gt } from "@ember/object/computed"`                       | `Ember.computed.gt`               |
+| `import { gte } from "@ember/object/computed"`                      | `Ember.computed.gte`              |
+| `import { intersect } from "@ember/object/computed"`                | `Ember.computed.intersect`        |
+| `import { lt } from "@ember/object/computed"`                       | `Ember.computed.lt`               |
+| `import { lte } from "@ember/object/computed"`                      | `Ember.computed.lte`              |
+| `import { map } from "@ember/object/computed"`                      | `Ember.computed.map`              |
+| `import { mapBy } from "@ember/object/computed"`                    | `Ember.computed.mapBy`            |
+| `import { mapProperty } from "@ember/object/computed"`              | `Ember.computed.mapProperty`      |
+| `import { match } from "@ember/object/computed"`                    | `Ember.computed.match`            |
+| `import { max } from "@ember/object/computed"`                      | `Ember.computed.max`              |
+| `import { min } from "@ember/object/computed"`                      | `Ember.computed.min`              |
+| `import { none } from "@ember/object/computed"`                     | `Ember.computed.none`             |
+| `import { not } from "@ember/object/computed"`                      | `Ember.computed.not`              |
+| `import { notEmpty } from "@ember/object/computed"`                 | `Ember.computed.notEmpty`         |
+| `import { oneWay } from "@ember/object/computed"`                   | `Ember.computed.oneWay`           |
+| `import { or } from "@ember/object/computed"`                       | `Ember.computed.or`               |
+| `import { readOnly } from "@ember/object/computed"`                 | `Ember.computed.readOnly`         |
+| `import { reads } from "@ember/object/computed"`                    | `Ember.computed.reads`            |
+| `import { setDiff } from "@ember/object/computed"`                  | `Ember.computed.setDiff`          |
+| `import { sort } from "@ember/object/computed"`                     | `Ember.computed.sort`             |
+| `import { sum } from "@ember/object/computed"`                      | `Ember.computed.sum`              |
+| `import { union } from "@ember/object/computed"`                    | `Ember.computed.union`            |
+| `import { uniq } from "@ember/object/computed"`                     | `Ember.computed.uniq`             |
+| `import { uniqBy } from "@ember/object/computed"`                   | `Ember.computed.uniqBy`           |
+| `import CoreObject from "@ember/object/core"`                       | `Ember.CoreObject`                |
+| `import Evented from "@ember/object/evented"`                       | `Ember.Evented`                   |
+| `import { on } from "@ember/object/evented"`                        | `Ember.on`                        |
+| `import { addListener } from "@ember/object/events"`                | `Ember.addListener`               |
+| `import { removeListener } from "@ember/object/events"`             | `Ember.removeListener`            |
+| `import { sendEvent } from "@ember/object/events"`                  | `Ember.sendEvent`                 |
+| `import { cacheFor } from "@ember/object/internals"`                | `Ember.cacheFor`                  |
+| `import { copy } from "@ember/object/internals"`                    | `Ember.copy`                      |
+| `import { guidFor } from "@ember/object/internals"`                 | `Ember.guidFor`                   |
+| `import Mixin from "@ember/object/mixin"`                           | `Ember.Mixin`                     |
+| `import { addObserver } from "@ember/object/observers"`             | `Ember.addObserver`               |
+| `import { removeObserver } from "@ember/object/observers"`          | `Ember.removeObserver`            |
+| `import PromiseProxyMixin from "@ember/object/promise-proxy-mixin"` | `Ember.PromiseProxyMixin`         |
+| `import ObjectProxy from "@ember/object/proxy"`                     | `Ember.ObjectProxy`               |
 
 #### `@ember/polyfills`
 | Module                                                    | Global                                |
