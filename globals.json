@@ -85,6 +85,7 @@
   "runInDebug": ["@ember/debug", "runInDebug"],
   "warn": ["@ember/debug", "warn"],
   "assert": ["@ember/debug", "assert"],
+  "Debug.registerDeprecationHandler": ["@ember/debug", "registerDeprecationHandler"],
   "ContainerDebugAdapter": ["@ember/debug/container-debug-adapter"],
   "DataAdapter": ["@ember/debug/data-adapter"],
   "Resolver": ["@ember/application/resolver"],
