@@ -42,6 +42,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.NoneLocation`                  | `import NoneLocation from "@ember/routing/none-location"`                  |
 | `Ember.Object`                        | `import EmberObject from "@ember/object"`                                  |
 | `Ember.RSVP`                          | `import RSVP from "rsvp"`                                                  |
+| `Ember.RSVP.Promise`                  | `import { Promise } from "rsvp"`                                           |
 | `Ember.Resolver`                      | `import Resolver from "@ember/application/resolver"`                       |
 | `Ember.Route`                         | `import Route from "@ember/routing/route"`                                 |
 | `Ember.Router`                        | `import Router from "@ember/routing/router"`                               |
@@ -362,9 +363,10 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import $ from "jquery"` | `Ember.$` |
 
 #### `rsvp`
-| Module                    | Global       |
-| ---                       | ---          |
-| `import RSVP from "rsvp"` | `Ember.RSVP` |
+| Module                           | Global               |
+| ---                              | ---                  |
+| `import RSVP from "rsvp"`        | `Ember.RSVP`         |
+| `import { Promise } from "rsvp"` | `Ember.RSVP.Promise` |
 
 
 ### Scripts
