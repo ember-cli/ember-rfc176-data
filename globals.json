@@ -26,6 +26,7 @@
   "getWithDefault": ["@ember/object", "getWithDefault"],
   "observer": ["@ember/object", "observer"],
   "computed": ["@ember/object", "computed"],
+  "ComputedProperty": ["@ember/object/computed"],
   "trySet": ["@ember/object", "trySet"],
   "aliasMethod": ["@ember/object", "aliasMethod"],
   "computed.empty": ["@ember/object/computed", "empty"],

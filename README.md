@@ -24,6 +24,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.AutoLocation`                  | `import AutoLocation from "@ember/routing/auto-location"`                  |
 | `Ember.Checkbox`                      | `import Checkbox from "@ember/component/checkbox"`                         |
 | `Ember.Component`                     | `import Component from "@ember/component"`                                 |
+| `Ember.ComputedProperty`              | `import ComputedProperty from "@ember/object/computed"`                    |
 | `Ember.ContainerDebugAdapter`         | `import ContainerDebugAdapter from "@ember/debug/container-debug-adapter"` |
 | `Ember.Controller`                    | `import Controller from "@ember/controller"`                               |
 | `Ember.CoreObject`                    | `import CoreObject from "@ember/object/core"`                              |
@@ -254,6 +255,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { set } from "@ember/object"`                               | `Ember.set`                       |
 | `import { setProperties } from "@ember/object"`                     | `Ember.setProperties`             |
 | `import { trySet } from "@ember/object"`                            | `Ember.trySet`                    |
+| `import ComputedProperty from "@ember/object/computed"`             | `Ember.ComputedProperty`          |
 | `import { alias } from "@ember/object/computed"`                    | `Ember.computed.alias`            |
 | `import { and } from "@ember/object/computed"`                      | `Ember.computed.and`              |
 | `import { bool } from "@ember/object/computed"`                     | `Ember.computed.bool`             |
