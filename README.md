@@ -30,6 +30,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.CoreObject`                       | `import CoreObject from "@ember/object/core"`                              |
 | `Ember.DataAdapter`                      | `import DataAdapter from "@ember/debug/data-adapter"`                      |
 | `Ember.Debug.registerDeprecationHandler` | `import { registerDeprecationHandler } from "@ember/debug"`                |
+| `Ember.Debug.registerWarnHandler`        | `import { registerWarnHandler } from "@ember/debug"`                       |
 | `Ember.DefaultResolver`                  | `import GlobalsResolver from "@ember/application/globals-resolver"`        |
 | `Ember.EngineInstance`                   | `import EngineInstance from "@ember/engine/instance"`                      |
 | `Ember.Enumerable`                       | `import Enumerable from "@ember/enumerable"`                               |
@@ -214,6 +215,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { debug } from "@ember/debug"`                                     | `Ember.debug`                            |
 | `import { inspect } from "@ember/debug"`                                   | `Ember.inspect`                          |
 | `import { registerDeprecationHandler } from "@ember/debug"`                | `Ember.Debug.registerDeprecationHandler` |
+| `import { registerWarnHandler } from "@ember/debug"`                       | `Ember.Debug.registerWarnHandler`        |
 | `import { runInDebug } from "@ember/debug"`                                | `Ember.runInDebug`                       |
 | `import { warn } from "@ember/debug"`                                      | `Ember.warn`                             |
 | `import ContainerDebugAdapter from "@ember/debug/container-debug-adapter"` | `Ember.ContainerDebugAdapter`            |
