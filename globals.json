@@ -153,5 +153,6 @@
   "typeOf": ["@ember/utils", "typeOf"],
   "compare": ["@ember/utils", "compare"],
   "$": ["jquery"],
-  "RSVP": ["rsvp"]
+  "RSVP": ["rsvp"],
+  "RSVP.Promise": ["rsvp", "Promise"]
 }
