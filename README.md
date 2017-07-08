@@ -68,6 +68,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.String.loc`                       | `import { loc } from "@ember/string"`                                      |
 | `Ember.String.underscore`                | `import { underscore } from "@ember/string"`                               |
 | `Ember.String.w`                         | `import { w } from "@ember/string"`                                        |
+| `Ember.Test.Adapter`                     | `import Test.Adapter from "@ember/test/adapter"`                           |
 | `Ember.TextArea`                         | `import TextArea from "@ember/component/text-area"`                        |
 | `Ember.TextField`                        | `import TextField from "@ember/component/text-field"`                      |
 | `Ember.addListener`                      | `import { addListener } from "@ember/object/events"`                       |
@@ -379,6 +380,11 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { loc } from "@ember/string"`        | `Ember.String.loc`        |
 | `import { underscore } from "@ember/string"` | `Ember.String.underscore` |
 | `import { w } from "@ember/string"`          | `Ember.String.w`          |
+
+#### `@ember/test`
+| Module                                           | Global               |
+| ---                                              | ---                  |
+| `import Test.Adapter from "@ember/test/adapter"` | `Ember.Test.Adapter` |
 
 #### `@ember/utils`
 | Module                                     | Global            |

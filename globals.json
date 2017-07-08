@@ -143,6 +143,7 @@
   "String.loc": ["@ember/string", "loc"],
   "String.underscore": ["@ember/string", "underscore"],
   "String.w": ["@ember/string", "w"],
+  "Test.Adapter": ["@ember/test/adapter"],
   "isBlank": ["@ember/utils", "isBlank"],
   "isEmpty": ["@ember/utils", "isEmpty"],
   "isEqual": ["@ember/utils", "isEqual"],
