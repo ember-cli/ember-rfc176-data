@@ -32,6 +32,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.Debug.registerDeprecationHandler` | `import { registerDeprecationHandler } from "@ember/debug"`                |
 | `Ember.Debug.registerWarnHandler`        | `import { registerWarnHandler } from "@ember/debug"`                       |
 | `Ember.DefaultResolver`                  | `import GlobalsResolver from "@ember/application/globals-resolver"`        |
+| `Ember.Engine`                           | `import Engine from "@ember/engine"`                                       |
 | `Ember.EngineInstance`                   | `import EngineInstance from "@ember/engine/instance"`                      |
 | `Ember.Enumerable`                       | `import Enumerable from "@ember/enumerable"`                               |
 | `Ember.Evented`                          | `import Evented from "@ember/object/evented"`                              |
@@ -224,6 +225,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 #### `@ember/engine`
 | Module                                                | Global                 |
 | ---                                                   | ---                    |
+| `import Engine from "@ember/engine"`                  | `Ember.Engine`         |
 | `import EngineInstance from "@ember/engine/instance"` | `Ember.EngineInstance` |
 
 #### `@ember/enumerable`
