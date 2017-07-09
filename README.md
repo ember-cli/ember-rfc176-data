@@ -54,6 +54,19 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.PromiseProxyMixin`                | `import PromiseProxyMixin from "@ember/object/promise-proxy-mixin"`        |
 | `Ember.RSVP`                             | `import RSVP from "rsvp"`                                                  |
 | `Ember.RSVP.Promise`                     | `import { Promise } from "rsvp"`                                           |
+| `Ember.RSVP.all`                         | `import { all } from "rsvp"`                                               |
+| `Ember.RSVP.allSettled`                  | `import { allSettled } from "rsvp"`                                        |
+| `Ember.RSVP.defer`                       | `import { defer } from "rsvp"`                                             |
+| `Ember.RSVP.denodeify`                   | `import { denodeify } from "rsvp"`                                         |
+| `Ember.RSVP.filter`                      | `import { filter } from "rsvp"`                                            |
+| `Ember.RSVP.hash`                        | `import { hash } from "rsvp"`                                              |
+| `Ember.RSVP.hashSettled`                 | `import { hashSettled } from "rsvp"`                                       |
+| `Ember.RSVP.map`                         | `import { map } from "rsvp"`                                               |
+| `Ember.RSVP.off`                         | `import { off } from "rsvp"`                                               |
+| `Ember.RSVP.on`                          | `import { on } from "rsvp"`                                                |
+| `Ember.RSVP.race`                        | `import { race } from "rsvp"`                                              |
+| `Ember.RSVP.reject`                      | `import { reject } from "rsvp"`                                            |
+| `Ember.RSVP.resolve`                     | `import { resolve } from "rsvp"`                                           |
 | `Ember.Resolver`                         | `import Resolver from "@ember/application/resolver"`                       |
 | `Ember.Route`                            | `import Route from "@ember/routing/route"`                                 |
 | `Ember.Router`                           | `import Router from "@ember/routing/router"`                               |
@@ -415,10 +428,23 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import $ from "jquery"` | `Ember.$` |
 
 #### `rsvp`
-| Module                           | Global               |
-| ---                              | ---                  |
-| `import RSVP from "rsvp"`        | `Ember.RSVP`         |
-| `import { Promise } from "rsvp"` | `Ember.RSVP.Promise` |
+| Module                               | Global                   |
+| ---                                  | ---                      |
+| `import RSVP from "rsvp"`            | `Ember.RSVP`             |
+| `import { Promise } from "rsvp"`     | `Ember.RSVP.Promise`     |
+| `import { all } from "rsvp"`         | `Ember.RSVP.all`         |
+| `import { allSettled } from "rsvp"`  | `Ember.RSVP.allSettled`  |
+| `import { defer } from "rsvp"`       | `Ember.RSVP.defer`       |
+| `import { denodeify } from "rsvp"`   | `Ember.RSVP.denodeify`   |
+| `import { filter } from "rsvp"`      | `Ember.RSVP.filter`      |
+| `import { hash } from "rsvp"`        | `Ember.RSVP.hash`        |
+| `import { hashSettled } from "rsvp"` | `Ember.RSVP.hashSettled` |
+| `import { map } from "rsvp"`         | `Ember.RSVP.map`         |
+| `import { off } from "rsvp"`         | `Ember.RSVP.off`         |
+| `import { on } from "rsvp"`          | `Ember.RSVP.on`          |
+| `import { race } from "rsvp"`        | `Ember.RSVP.race`        |
+| `import { reject } from "rsvp"`      | `Ember.RSVP.reject`      |
+| `import { resolve } from "rsvp"`     | `Ember.RSVP.resolve`     |
 
 ### Scripts
 
