@@ -159,5 +159,18 @@
   "compare": ["@ember/utils", "compare"],
   "$": ["jquery"],
   "RSVP": ["rsvp"],
+  "RSVP.all": ["rsvp", "all"],
+  "RSVP.allSettled": ["rsvp", "allSettled"],
+  "RSVP.race": ["rsvp", "race"],
+  "RSVP.hash": ["rsvp", "hash"],
+  "RSVP.hashSettled": ["rsvp", "hashSettled"],
+  "RSVP.defer": ["rsvp", "defer"],
+  "RSVP.denodeify": ["rsvp", "denodeify"],
+  "RSVP.on": ["rsvp", "on"],
+  "RSVP.off": ["rsvp", "off"],
+  "RSVP.resolve": ["rsvp", "resolve"],
+  "RSVP.reject": ["rsvp", "reject"],
+  "RSVP.map": ["rsvp", "map"],
+  "RSVP.filter": ["rsvp", "filter"],
   "RSVP.Promise": ["rsvp", "Promise"]
 }
