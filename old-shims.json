@@ -17,13 +17,13 @@
     "default": ["@ember/component"]
   },
   "ember-components/checkbox": {
-    "default": ["@ember/checkbox"]
+    "default": ["@ember/component/checkbox"]
   },
   "ember-components/text-area": {
-    "default": ["@ember/text-area"]
+    "default": ["@ember/component/text-area"]
   },
   "ember-components/text-field": {
-    "default": ["@ember/text-field"]
+    "default": ["@ember/component/text-field"]
   },
   "ember-controller": {
     "default": ["@ember/controller"]
