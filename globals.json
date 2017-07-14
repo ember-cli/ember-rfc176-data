@@ -139,7 +139,7 @@
   "String.decamelize": ["@ember/string", "decamelize"],
   "String.fmt": ["@ember/string", "fmt"],
   "String.htmlSafe": ["@ember/string", "htmlSafe"],
-  "String.isHtmlSafe": ["@ember/string", "isHtmlSafe"],
+  "String.isHTMLSafe": ["@ember/string", "isHTMLSafe"],
   "String.loc": ["@ember/string", "loc"],
   "String.underscore": ["@ember/string", "underscore"],
   "String.w": ["@ember/string", "w"],
