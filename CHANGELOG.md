@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.6 (2017-07-24)
+
+#### :bug: Bug Fix
+* [#23](https://github.com/ember-cli/ember-rfc176-data/pull/23) Fix for Ember.String.isHTMLSafe. ([@pgrippi](https://github.com/pgrippi))
+
+
 ## v0.2.5 (2017-07-11)
 
 #### :rocket: Enhancement
