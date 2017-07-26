@@ -143,7 +143,7 @@
   "String.loc": ["@ember/string", "loc"],
   "String.underscore": ["@ember/string", "underscore"],
   "String.w": ["@ember/string", "w"],
-  "Test.Adapter": ["@ember/test/adapter"],
+  "TestAdapter": ["@ember/test/adapter"],
   "Test.registerAsyncHelper": ["@ember/test", "registerAsyncHelper"],
   "Test.registerHelper": ["@ember/test", "registerHelper"],
   "Test.registerWaiter": ["@ember/test", "registerWaiter"],
