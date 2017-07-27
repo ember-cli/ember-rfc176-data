@@ -37,9 +37,9 @@ function tableRow(before, row) {
   }
 
   if (afterExportName) {
-    after = `import { ${afterExportName} } from "${afterPackage}"`;
+    after = `import { ${afterExportName} } from '${afterPackage}';`;
   } else {
-    after = `import ${afterIdentifier} from "${afterPackage}"`;
+    after = `import ${afterIdentifier} from '${afterPackage}';`;
   }
 
   before = code("Ember." + before);
