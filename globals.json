@@ -116,7 +116,7 @@
   "keys": ["@ember/polyfills", "keys"],
   "platform.hasPropertyAccessors": ["@ember/polyfills", "hasPropertyAccessors"],
   "Route": ["@ember/routing/route"],
-  "Router": ["@ember/routing/router"],
+  "Router": ["@ember/routing/router", null, "EmberRouter"],
   "run": ["@ember/runloop", "run"],
   "run.begin": ["@ember/runloop", "begin"],
   "run.bind": ["@ember/runloop", "bind"],
