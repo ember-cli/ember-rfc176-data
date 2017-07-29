@@ -32,6 +32,7 @@
   "ComputedProperty": ["@ember/object/computed"],
   "trySet": ["@ember/object", "trySet"],
   "aliasMethod": ["@ember/object", "aliasMethod"],
+  "expandProperties": ["@ember/object/computed", "expandProperties"],
   "computed.empty": ["@ember/object/computed", "empty"],
   "computed.notEmpty": ["@ember/object/computed", "notEmpty"],
   "computed.none": ["@ember/object/computed", "none"],
