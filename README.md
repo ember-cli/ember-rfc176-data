@@ -11,7 +11,8 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 
 ## Contents
 
-### Globals to New Modules
+### New Modules to Globals
+
 | Before                                   | After                                                                       |
 | ---                                      | ---                                                                         |
 | `Ember.$`                                | `import $ from 'jquery';`                                                   |
@@ -68,7 +69,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.RSVP.resolve`                     | `import { resolve } from 'rsvp';`                                           |
 | `Ember.Resolver`                         | `import Resolver from '@ember/application/resolver';`                       |
 | `Ember.Route`                            | `import Route from '@ember/routing/route';`                                 |
-| `Ember.Router`                           | `import Router from '@ember/routing/router';`                               |
+| `Ember.Router`                           | `import EmberRouter from '@ember/routing/router';`                          |
 | `Ember.Service`                          | `import Service from '@ember/service';`                                     |
 | `Ember.String.camelize`                  | `import { camelize } from '@ember/string';`                                 |
 | `Ember.String.capitalize`                | `import { capitalize } from '@ember/string';`                               |
@@ -81,7 +82,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.String.loc`                       | `import { loc } from '@ember/string';`                                      |
 | `Ember.String.underscore`                | `import { underscore } from '@ember/string';`                               |
 | `Ember.String.w`                         | `import { w } from '@ember/string';`                                        |
-| `Ember.Test.Adapter`                     | `import Test.Adapter from '@ember/test/adapter';`                           |
+| `Ember.Test.Adapter`                     | `import TestAdapter from '@ember/test/adapter';`                            |
 | `Ember.Test.registerAsyncHelper`         | `import { registerAsyncHelper } from '@ember/test';`                        |
 | `Ember.Test.registerHelper`              | `import { registerHelper } from '@ember/test';`                             |
 | `Ember.Test.registerWaiter`              | `import { registerWaiter } from '@ember/test';`                             |
@@ -137,6 +138,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.defineProperty`                   | `import { defineProperty } from '@ember/object';`                           |
 | `Ember.deprecate`                        | `import { deprecate } from '@ember/application/deprecations';`              |
 | `Ember.deprecateFunc`                    | `import { deprecateFunc } from '@ember/application/deprecations';`          |
+| `Ember.expandProperties`                 | `import { expandProperties } from '@ember/object/computed';`                |
 | `Ember.get`                              | `import { get } from '@ember/object';`                                      |
 | `Ember.getEngineParent`                  | `import { getEngineParent } from '@ember/engine';`                          |
 | `Ember.getOwner`                         | `import { getOwner } from '@ember/application';`                            |
@@ -188,6 +190,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.typeOf`                           | `import { typeOf } from '@ember/utils';`                                    |
 | `Ember.unsubscribe`                      | `import { unsubscribe } from '@ember/instrumentation';`                     |
 | `Ember.warn`                             | `import { warn } from '@ember/debug';`                                      |
+
 ### New Modules to Globals
 
 #### `@ember/application`
@@ -296,6 +299,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { deprecatingAlias } from '@ember/object/computed';`         | `Ember.computed.deprecatingAlias` |
 | `import { empty } from '@ember/object/computed';`                    | `Ember.computed.empty`            |
 | `import { equal } from '@ember/object/computed';`                    | `Ember.computed.equal`            |
+| `import { expandProperties } from '@ember/object/computed';`         | `Ember.expandProperties`          |
 | `import { filter } from '@ember/object/computed';`                   | `Ember.computed.filter`           |
 | `import { filterBy } from '@ember/object/computed';`                 | `Ember.computed.filterBy`         |
 | `import { filterProperty } from '@ember/object/computed';`           | `Ember.computed.filterProperty`   |
@@ -358,7 +362,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import Location from '@ember/routing/location';`                | `Ember.Location`        |
 | `import NoneLocation from '@ember/routing/none-location';`       | `Ember.NoneLocation`    |
 | `import Route from '@ember/routing/route';`                      | `Ember.Route`           |
-| `import Router from '@ember/routing/router';`                    | `Ember.Router`          |
+| `import EmberRouter from '@ember/routing/router';`               | `Ember.Router`          |
 
 #### `@ember/runloop`
 | Module                                           | Global                   |
@@ -406,7 +410,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { registerWaiter } from '@ember/test';`      | `Ember.Test.registerWaiter`      |
 | `import { unregisterHelper } from '@ember/test';`    | `Ember.Test.unregisterHelper`    |
 | `import { unregisterWaiter } from '@ember/test';`    | `Ember.Test.unregisterWaiter`    |
-| `import Test.Adapter from '@ember/test/adapter';`    | `Ember.Test.Adapter`             |
+| `import TestAdapter from '@ember/test/adapter';`     | `Ember.Test.Adapter`             |
 
 #### `@ember/utils`
 | Module                                      | Global            |
