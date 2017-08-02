@@ -1,3 +1,19 @@
 language: node_js
 node_js:
   - '8'
+
+script:
+  - yarn test
+
+before_deploy:
+  - yarn global add auto-dist-tag
+  - auto-dist-tag --write
+
+deploy:
+  provider: npm
+  email: stefan.penner+ember-cli@gmail.com
+  api_key:
+    secure: geY7OzskSHuT9GEmUNJEkXSprJl5plV8D9gICiSuy9Ul190J+p2lEUT303eSYj6D2tde4uNCbRbgedxjOAC22sJDY/nnGgPahjp3nh66zwae5ZApYP6DWzjkNpxzm1uFTxW/d7wYwirgRg/zIY8zYbhrZSUvUAm5Nj5l1mjCSUY2e7/H97ICB43tSwgHRj1J0Mj/UbpaND14gZC1D/clhIEsaqn3IhbKz42pMgxSn8w1vhmKchCB34Qf+wHg9QDwQoeLnzlS9geWtF082j5qhqCA2dtvIAuzURAkr9rYzvCrkVvMnGIRkJg5dALNNXJ/VbF1rDqUjVpYSn6LKXeEysdHUKF76o4PpS7MMimgmMbIVB+jul89F0qRKjo6OiFQOzRp4RzAGWunwrL+1kD7p1/572gLEuEzrDHG4G+Vqj1xQIq0ogEwVz1MQ96zzO1fsrsZtj3NTBYekjxLEcfbM9rl5YBsa97hpxYl7IqmZubx5AhBJhmeNMXqR6zTjCjpKm3k4T8gqM6RJaCihlsH3zu7p8/oKCm/51oAhewkvt4rjoeY2uWTiD4X6yKAAGUr2OinousOTtPeXUcnvv+GTQzX4I5PSkpPybnptGT2/tlcUT9DwK521yu+zPVPpfQ6VLmaDOCe5DdfiqoiIMm76bPSR65vYzq7J5Q67nwXuNY=
+  on:
+    tags: true
+    repo: ember-cli/ember-rfc176-data
