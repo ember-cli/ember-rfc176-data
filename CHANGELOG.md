@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.2.7 (2017-08-02)
+
+#### :rocket: Enhancement
+* [#32](https://github.com/ember-cli/ember-rfc176-data/pull/32) Expose `expandProperties`. ([@locks](https://github.com/locks))
+* [#29](https://github.com/ember-cli/ember-rfc176-data/pull/29) Change "Router" default export name to "EmberRouter". ([@Turbo87](https://github.com/Turbo87))
+* [#27](https://github.com/ember-cli/ember-rfc176-data/pull/27) imports should use single quotes and semicolon. ([@locks](https://github.com/locks))
+
+#### :bug: Bug Fix
+* [#28](https://github.com/ember-cli/ember-rfc176-data/pull/28) Change "Test.Adapter" default export name to "TestAdapter". ([@Turbo87](https://github.com/Turbo87))
+
+
 ## v0.2.6 (2017-07-24)
 
 #### :bug: Bug Fix
