@@ -1,33 +1,30 @@
 #!/usr/bin/env node
 
-let mapping = require("../globals");
+let mappings = require("../mappings");
 let reserved = require("../reserved");
 
 let maxBefore = 0;
 let maxAfter = 0;
 
-let rows = Object.keys(mapping).sort().map(before => {
-  let after;
-  let [afterPackage, afterExportName, afterIdentifier] = mapping[before];
-
-  // For default exports, assume the identifier remains the same as the global
-  // version if an explicit name isn't provided.
-  if (!afterIdentifier) {
-    afterIdentifier = before;
-  }
+let rows = mappings.filter(it => !it.deprecated).sort(byGlobal).map(mapping => {
+  let before = mapping.global;
+  let afterPackage = mapping.module;
+  let afterExportName = mapping.export;
+  let afterIdentifier = mapping.localName;
 
   // Object, Array, etc.
   if (reserved.includes(afterIdentifier)) {
     afterIdentifier = "Ember" + afterIdentifier;
   }
 
+  let after;
   if (afterExportName) {
     after = `import { ${afterExportName} } from '${afterPackage}';`;
   } else {
     after = `import ${afterIdentifier} from '${afterPackage}';`;
   }
 
-  before = code("Ember." + before);
+  before = code(before);
   after = code(after);
 
   maxBefore = Math.max(maxBefore, before.length);
@@ -51,4 +48,8 @@ function code(str) {
 function pad(str, max) {
   let extra = " ".repeat(max - str.length);
   return ` ${str}${extra} `;
+}
+
+function byGlobal(a, b) {
+  return a.global.localeCompare(b.global);
 }
