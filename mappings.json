@@ -1221,6 +1221,12 @@
     }
   },
   {
+    "global": "Ember.SortableMixin",
+    "module": "ember-controllers/sortable",
+    "export": "default",
+    "deprecated": true
+  },
+  {
     "global": "Ember.debug",
     "module": "ember-debug",
     "export": "log",
@@ -1449,6 +1455,12 @@
       "module": "@ember/map/with-default",
       "export": "default"
     }
+  },
+  {
+    "global": "Ember.destroy",
+    "module": "ember-metal/destroy",
+    "export": "default",
+    "deprecated": true
   },
   {
     "global": "Ember.addListener",
@@ -1879,6 +1891,12 @@
       "module": "@ember/service",
       "export": "inject"
     }
+  },
+  {
+    "global": "Ember.OrderedSet/",
+    "module": "ember-set/ordered",
+    "export": "default",
+    "deprecated": true
   },
   {
     "global": "Ember.String.camelize",
@@ -2381,6 +2399,12 @@
     }
   },
   {
+    "global": "Ember.Test",
+    "module": "ember-test",
+    "export": "default",
+    "deprecated": true
+  },
+  {
     "global": "Ember.Test.Adapter",
     "module": "ember-test/adapter",
     "export": "default",
@@ -2389,5 +2413,11 @@
       "module": "@ember/test/adapter",
       "export": "default"
     }
+  },
+  {
+    "global": "Ember.Test.QUnitAdapter",
+    "module": "ember-test/qunit-adapter",
+    "export": "default",
+    "deprecated": true
   }
 ]
