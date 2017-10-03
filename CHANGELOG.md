@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.3.0 (2017-10-03)
+
+#### :rocket: Enhancement
+* [#37](https://github.com/ember-cli/ember-rfc176-data/pull/37) New mappings structure. ([@Turbo87](https://github.com/Turbo87))
+
+#### Committers: 2
+- Tobias Bieniek ([Turbo87](https://github.com/Turbo87))
+- [greenkeeper[bot]](https://github.com/apps/greenkeeper)
+
 ## v0.2.7 (2017-08-02)
 
 #### :rocket: Enhancement
