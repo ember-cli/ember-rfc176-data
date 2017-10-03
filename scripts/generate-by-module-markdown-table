@@ -1,18 +1,12 @@
 #!/usr/bin/env node
 
-const chalk = require("chalk");
-const green = chalk.green;
-const blue = chalk.blue;
-const mapping = require("../globals");
+const mappings = require("../mappings");
 const reserved = require("../reserved");
 
-function normalize(key) {
-  let row = mapping[key];
-
+function normalize(mapping) {
   return {
-    before: key,
-    row: row,
-    group: row[0].split("/", 2).join("/")
+    mapping,
+    group: mapping.module.split("/", 2).join("/")
   }
 }
 
@@ -22,27 +16,25 @@ function sortByGroup(a, b) {
          0);
 }
 
-function tableRow(before, row) {
-  let [afterPackage, afterExportName, afterIdentifier] = row;
-
-  // For default exports, assume the identifier remains the same as the global
-  // version if an explicit name isn't provided.
-  if (!afterIdentifier) {
-    afterIdentifier = before;
-  }
+function tableRow(mapping) {
+  let before = mapping.global;
+  let afterPackage = mapping.module;
+  let afterExportName = mapping.export;
+  let afterIdentifier = mapping.localName;
 
   // Object, Array, etc.
   if (reserved.includes(afterIdentifier)) {
     afterIdentifier = "Ember" + afterIdentifier;
   }
 
+  let after;
   if (afterExportName) {
     after = `import { ${afterExportName} } from '${afterPackage}';`;
   } else {
     after = `import ${afterIdentifier} from '${afterPackage}';`;
   }
 
-  before = code("Ember." + before);
+  before = code(before);
   after = code(after);
 
   return [before, after];
@@ -55,12 +47,14 @@ function buildTable(result, row) {
     rows: []
   };
 
-  let [before, after] = tableRow(row.before, row.row);
+  let [before, after] = tableRow(row.mapping);
 
   group.maxBefore = Math.max(group.maxBefore, before.length);
   group.maxAfter = Math.max(group.maxAfter, after.length);
 
-  return group.rows.push([before, after, row.row]), result;
+  group.rows.push([before, after, row.mapping]);
+
+  return result;
 }
 
 function cmp(a, b) {
@@ -107,7 +101,8 @@ function print() {
   console.log.apply(console, arguments);
 }
 
-let table = Object.keys(mapping)
+let table = mappings
+  .filter(mapping => !mapping.deprecated)
   .map(normalize)
   .sort(sortByGroup)
   .reduce(buildTable, {});

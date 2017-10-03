@@ -3,7 +3,7 @@
 const got = require('got');
 const chalk = require("chalk");
 
-const globals = require("../globals.json");
+const mappings = require("../mappings.json");
 
 got('http://builds.emberjs.com/canary/ember-docs.json').then(response => {
   let json = JSON.parse(response.body);
@@ -26,14 +26,9 @@ function processJSON(json) {
       if (!it.name) { return; }
 
       let globalName = `${it.class}.${it.name}`;
-      let globalsKey = globalName.replace(/^Ember\./, '');
-      let newImport = globals[globalsKey];
+      let newImport = mappings.find(it => !it.deprecated && it.global === globalName);
 
-      if (newImport) {
-        console.log(chalk.green(`${globalName} -> ${newImport}`));
-      } else {
-        console.log(chalk.red(`${globalName} -> ?`));
-      }
+      report(globalName, newImport);
     });
 
   Object.keys(json.classes)
@@ -42,13 +37,16 @@ function processJSON(json) {
     .filter(it => it.access === 'public')
     .forEach(it => {
       let globalName = it.name;
-      let globalsKey = globalName.replace(/^Ember\./, '');
-      let newImport = globals[globalsKey];
+      let newImport = mappings.find(it => !it.deprecated && it.global === globalName);
 
-      if (newImport) {
-        console.log(chalk.green(`${globalName} -> ${newImport}`));
-      } else {
-        console.log(chalk.red(`${globalName} -> ?`));
-      }
+      report(globalName, newImport);
     })
+}
+
+function report(globalName, newImport) {
+  if (newImport) {
+    console.log(chalk.green(`${globalName} -> ${newImport.module} ${newImport.export === 'default' ? '' : `(${newImport.export})`}`));
+  } else {
+    console.log(chalk.red(`${globalName} -> ?`));
+  }
 }
