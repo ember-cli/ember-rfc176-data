@@ -881,11 +881,31 @@
     "global": "Ember.String.htmlSafe",
     "module": "@ember/string",
     "export": "htmlSafe",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember/template",
+      "export": "htmlSafe"
+    }
+  },
+  {
+    "global": "Ember._Template.htmlSafe",
+    "module": "@ember/template",
+    "export": "htmlSafe",
     "deprecated": false
   },
   {
     "global": "Ember.String.isHTMLSafe",
     "module": "@ember/string",
+    "export": "isHTMLSafe",
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember/template",
+      "export": "isHTMLSafe"
+    }
+  },
+  {
+    "global": "Ember._Template.isHTMLSafe",
+    "module": "@ember/template",
     "export": "isHTMLSafe",
     "deprecated": false
   },
