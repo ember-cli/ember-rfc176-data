@@ -622,25 +622,25 @@
   {
     "global": "Ember.instrument",
     "module": "@ember/instrumentation",
-    "export": "instrument",
+    "export": "Instrumentation.instrument",
     "deprecated": false
   },
   {
     "global": "Ember.reset",
     "module": "@ember/instrumentation",
-    "export": "reset",
+    "export": "Instrumentation.reset",
     "deprecated": false
   },
   {
     "global": "Ember.subscribe",
     "module": "@ember/instrumentation",
-    "export": "subscribe",
+    "export": "Instrumentation.subscribe",
     "deprecated": false
   },
   {
     "global": "Ember.unsubscribe",
     "module": "@ember/instrumentation",
-    "export": "unsubscribe",
+    "export": "Instrumentation.unsubscribe",
     "deprecated": false
   },
   {
