@@ -620,25 +620,25 @@
     "deprecated": false
   },
   {
-    "global": "Ember.instrument",
+    "global": "Ember.Instrumentation.instrument",
     "module": "@ember/instrumentation",
     "export": "instrument",
     "deprecated": false
   },
   {
-    "global": "Ember.reset",
+    "global": "Ember.Instrumentation.reset",
     "module": "@ember/instrumentation",
     "export": "reset",
     "deprecated": false
   },
   {
-    "global": "Ember.subscribe",
+    "global": "Ember.Instrumentation.subscribe",
     "module": "@ember/instrumentation",
     "export": "subscribe",
     "deprecated": false
   },
   {
-    "global": "Ember.unsubscribe",
+    "global": "Ember.Instrumentation.unsubscribe",
     "module": "@ember/instrumentation",
     "export": "unsubscribe",
     "deprecated": false

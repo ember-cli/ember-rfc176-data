@@ -148,7 +148,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.inject.controller`                | `import { inject } from '@ember/controller';`                               |
 | `Ember.inject.service`                   | `import { inject } from '@ember/service';`                                  |
 | `Ember.inspect`                          | `import { inspect } from '@ember/debug';`                                   |
-| `Ember.instrument`                       | `import { instrument } from '@ember/instrumentation';`                      |
+| `Ember.Instrumentation.instrument`       | `import { instrument } from '@ember/instrumentation';`                      |
 | `Ember.isArray`                          | `import { isArray } from '@ember/array';`                                   |
 | `Ember.isBlank`                          | `import { isBlank } from '@ember/utils';`                                   |
 | `Ember.isEmpty`                          | `import { isEmpty } from '@ember/utils';`                                   |
@@ -164,7 +164,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.platform.hasPropertyAccessors`    | `import { hasPropertyAccessors } from '@ember/polyfills';`                  |
 | `Ember.removeListener`                   | `import { removeListener } from '@ember/object/events';`                    |
 | `Ember.removeObserver`                   | `import { removeObserver } from '@ember/object/observers';`                 |
-| `Ember.reset`                            | `import { reset } from '@ember/instrumentation';`                           |
+| `Ember.Instrumentation.reset`            | `import { reset } from '@ember/instrumentation';`                           |
 | `Ember.run`                              | `import { run } from '@ember/runloop';`                                     |
 | `Ember.run.begin`                        | `import { begin } from '@ember/runloop';`                                   |
 | `Ember.run.bind`                         | `import { bind } from '@ember/runloop';`                                    |
@@ -184,11 +184,11 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.set`                              | `import { set } from '@ember/object';`                                      |
 | `Ember.setOwner`                         | `import { setOwner } from '@ember/application';`                            |
 | `Ember.setProperties`                    | `import { setProperties } from '@ember/object';`                            |
-| `Ember.subscribe`                        | `import { subscribe } from '@ember/instrumentation';`                       |
+| `Ember.Instrumentation.subscribe`        | `import { subscribe } from '@ember/instrumentation';`                       |
 | `Ember.tryInvoke`                        | `import { tryInvoke } from '@ember/utils';`                                 |
 | `Ember.trySet`                           | `import { trySet } from '@ember/object';`                                   |
 | `Ember.typeOf`                           | `import { typeOf } from '@ember/utils';`                                    |
-| `Ember.unsubscribe`                      | `import { unsubscribe } from '@ember/instrumentation';`                     |
+| `Ember.Instrumentation.unsubscribe`      | `import { unsubscribe } from '@ember/instrumentation';`                     |
 | `Ember.warn`                             | `import { warn } from '@ember/debug';`                                      |
 
 ### New Modules to Globals
@@ -264,12 +264,12 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import EmberError from '@ember/error';` | `Ember.Error` |
 
 #### `@ember/instrumentation`
-| Module                                                  | Global              |
-| ---                                                     | ---                 |
-| `import { instrument } from '@ember/instrumentation';`  | `Ember.instrument`  |
-| `import { reset } from '@ember/instrumentation';`       | `Ember.reset`       |
-| `import { subscribe } from '@ember/instrumentation';`   | `Ember.subscribe`   |
-| `import { unsubscribe } from '@ember/instrumentation';` | `Ember.unsubscribe` |
+| Module                                                  | Global                              |
+| ---                                                     | ---                                 |
+| `import { instrument } from '@ember/instrumentation';`  | `Ember.Instrumentation.instrument`  |
+| `import { reset } from '@ember/instrumentation';`       | `Ember.Instrumentation.reset`       |
+| `import { subscribe } from '@ember/instrumentation';`   | `Ember.Instrumentation.subscribe`   |
+| `import { unsubscribe } from '@ember/instrumentation';` | `Ember.Instrumentation.unsubscribe` |
 
 #### `@ember/map`
 | Module                                                  | Global                 |
