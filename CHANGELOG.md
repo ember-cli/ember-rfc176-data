@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.3.1 (2017-10-27)
+
+#### :bug: Bug Fix
+* [#40](https://github.com/ember-cli/ember-rfc176-data/pull/40) Update mappings for instrumentation. ([@sarupbanskota](https://github.com/sarupbanskota))
+
+#### Committers: 1
+- Sarup Banskota ([sarupbanskota](https://github.com/sarupbanskota))
+
 ## v0.3.0 (2017-10-03)
 
 #### :rocket: Enhancement
