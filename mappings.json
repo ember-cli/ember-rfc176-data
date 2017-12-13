@@ -888,7 +888,7 @@
     }
   },
   {
-    "global": "Ember._Template.htmlSafe",
+    "global": "Ember.String.htmlSafe",
     "module": "@ember/template",
     "export": "htmlSafe",
     "deprecated": false
@@ -904,7 +904,7 @@
     }
   },
   {
-    "global": "Ember._Template.isHTMLSafe",
+    "global": "Ember.String.isHTMLSafe",
     "module": "@ember/template",
     "export": "isHTMLSafe",
     "deprecated": false
