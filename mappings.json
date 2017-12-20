@@ -879,6 +879,9 @@
   },
   {
     "global": "Ember.String.htmlSafe",
+    "versions": {
+      "ember-source": "< 2.18"
+    },
     "module": "@ember/string",
     "export": "htmlSafe",
     "deprecated": true,
@@ -889,12 +892,18 @@
   },
   {
     "global": "Ember.String.htmlSafe",
+    "versions": {
+      "ember-source": ">= 2.18"
+    },
     "module": "@ember/template",
     "export": "htmlSafe",
     "deprecated": false
   },
   {
-    "global": "Ember.String.isHTMLSafe",
+    "global": "Ember._Template.isHTMLSafe",
+    "versions": {
+      "ember-source": "< 2.18"
+    },
     "module": "@ember/string",
     "export": "isHTMLSafe",
     "deprecated": true,
@@ -904,7 +913,10 @@
     }
   },
   {
-    "global": "Ember.String.isHTMLSafe",
+    "global": "Ember._Template.isHTMLSafe",
+    "versions": {
+      "ember-source": ">= 2.18"
+    },
     "module": "@ember/template",
     "export": "isHTMLSafe",
     "deprecated": false
