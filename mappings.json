@@ -620,6 +620,12 @@
     "deprecated": false
   },
   {
+    "global": "Ember._componentManager",
+    "module": "@ember/custom-component-manager",
+    "export": "componentManager",
+    "deprecated": false
+  },
+  {
     "global": "Ember.Instrumentation.instrument",
     "module": "@ember/instrumentation",
     "export": "instrument",
