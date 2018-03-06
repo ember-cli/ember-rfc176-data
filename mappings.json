@@ -620,7 +620,7 @@
     "deprecated": false
   },
   {
-    "global": "Ember._componentManager",
+    "global": "Ember._setComponentManager",
     "module": "@ember/custom-component-manager",
     "export": "componentManager",
     "deprecated": false
