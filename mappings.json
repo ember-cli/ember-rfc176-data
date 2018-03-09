@@ -621,8 +621,8 @@
   },
   {
     "global": "Ember._setComponentManager",
-    "module": "@ember/custom-component-manager",
-    "export": "componentManager",
+    "module": "@ember/component",
+    "export": "setComponentManager",
     "deprecated": false
   },
   {
