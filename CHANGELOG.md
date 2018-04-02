@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.3.2 (2018-04-02)
+
+#### :rocket: Enhancement
+* [#38](https://github.com/ember-cli/ember-rfc176-data/pull/38) Change htmlSafe and isHTMLSafe import path. ([@Serabe](https://github.com/Serabe))
+
+#### :bug: Bug Fix
+* [#45](https://github.com/ember-cli/ember-rfc176-data/pull/45) Use buildHelper as localName for Ember.Helper.helper. ([@bantic](https://github.com/bantic))
+
+#### Committers: 2
+- Cory Forsyth ([bantic](https://github.com/bantic))
+- Sergio Arbeo ([Serabe](https://github.com/Serabe))
+
 ## v0.3.1 (2017-10-27)
 
 #### :bug: Bug Fix
