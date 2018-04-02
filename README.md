@@ -39,7 +39,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.Evented`                          | `import Evented from '@ember/object/evented';`                              |
 | `Ember.HashLocation`                     | `import HashLocation from '@ember/routing/hash-location';`                  |
 | `Ember.Helper`                           | `import Helper from '@ember/component/helper';`                             |
-| `Ember.Helper.helper`                    | `import { helper } from '@ember/component/helper';`                         |
+| `Ember.Helper.helper`                    | `import { helper as buildHelper } from '@ember/component/helper';`          |
 | `Ember.HistoryLocation`                  | `import HistoryLocation from '@ember/routing/history-location';`            |
 | `Ember.LinkComponent`                    | `import LinkComponent from '@ember/routing/link-component';`                |
 | `Ember.Location`                         | `import Location from '@ember/routing/location';`                           |
