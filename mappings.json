@@ -617,6 +617,7 @@
     "global": "Ember.Helper.helper",
     "module": "@ember/component/helper",
     "export": "helper",
+    "localName": "buildHelper",
     "deprecated": false
   },
   {
