@@ -155,7 +155,6 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.isEqual`                          | `import { isEqual } from '@ember/utils';`                                   |
 | `Ember.isNone`                           | `import { isNone } from '@ember/utils';`                                    |
 | `Ember.isPresent`                        | `import { isPresent } from '@ember/utils';`                                 |
-| `Ember.keys`                             | `import { keys } from '@ember/polyfills';`                                  |
 | `Ember.makeArray`                        | `import { makeArray } from '@ember/array';`                                 |
 | `Ember.merge`                            | `import { merge } from '@ember/polyfills';`                                 |
 | `Ember.observer`                         | `import { observer } from '@ember/object';`                                 |
