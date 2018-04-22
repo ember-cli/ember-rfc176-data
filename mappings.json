@@ -2440,5 +2440,48 @@
     "module": "ember-test/qunit-adapter",
     "export": "default",
     "deprecated": true
+  },
+  {
+    "global": "Ember.HTMLBars.template",
+    "module": "@ember/template-compilation",
+    "export": "wrapTemplate",
+    "deprecated": false
+  },
+  {
+    "global": "Ember.HTMLBars.compile",
+    "module": "@ember/template-compilation",
+    "export": "compileTemplate",
+    "deprecated": false
+  },
+  {
+    "global": "Ember.HTMLBars.precompile",
+    "module": "@ember/template-compilation",
+    "export": "precompileTemplate",
+    "deprecated": false
+  },
+  {
+    "global": "Ember.VERSION",
+    "module": "@ember/version",
+    "export": "VERSION",
+    "deprecated": false
+  },
+  {
+    "global": "Ember.FEATURES",
+    "module": "@ember/canary-features",
+    "export": "FEATURES",
+    "deprecated": false
+  },
+  {
+    "global": "Ember.FEATURES.isEnabled",
+    "module": "@ember/canary-features",
+    "export": "isEnabled",
+    "deprecated": false
+  },
+  {
+    "global": "Ember.Namespace",
+    "module": "@ember/application/namespace",
+    "export": "default",
+    "localName": "Namespace",
+    "deprecated": false
   }
 ]
