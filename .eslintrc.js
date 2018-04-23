@@ -10,5 +10,9 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': ['error', { singleQuote: true, trailingComma: 'es5' }],
+
+    // prevent fallback to node 4 only support, this package only distributes *.json
+    // node version isn't super important...
+    'node/no-unsupported-features': 'off',
   },
 };
