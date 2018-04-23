@@ -18,10 +18,10 @@ let rows = mappings.filter(it => !it.deprecated).sort(byGlobal).map(mapping => {
   }
 
   let after;
-  if (afterExportName) {
-    after = `import { ${afterExportName} } from '${afterPackage}';`;
-  } else {
+  if (afterExportName === 'default') {
     after = `import ${afterIdentifier} from '${afterPackage}';`;
+  } else {
+    after = `import { ${afterExportName} } from '${afterPackage}';`;
   }
 
   before = code(before);
