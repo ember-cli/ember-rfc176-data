@@ -19,7 +19,7 @@ function indent(value) {
   return '  '.repeat(level) + color(value);
 }
 
-let table = mappings
+mappings
   .filter(mapping => !mapping.deprecated)
   .map(mapping => mapping.module)
   .filter(unique)
