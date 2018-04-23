@@ -65,7 +65,10 @@ function cmp(a, b) {
 
 function sortByPackageAndExport([,,mappingA], [,,mappingB]) {
   if (mappingA.module === mappingB.module) {
-    return cmp(mappingA.export || "", mappingB.export || "");
+    // ensure default exports sort higher within a package
+    let aExport = mappingA.export === 'default' ? '' : mappingA.export;
+    let bExport = mappingB.export === 'default' ? '' : mappingB.export;
+    return cmp(aExport || "", bExport || "");
   }
 
   return cmp(mappingA.module, mappingB.module);
