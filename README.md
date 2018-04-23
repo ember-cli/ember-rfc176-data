@@ -483,7 +483,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 The tables above can be generated using the scripts in the `scripts` folder, e.g.:
 
 ```
-scripts/generate-markdown-table
+node scripts/generate-markdown-table.js
 ```
 
 
