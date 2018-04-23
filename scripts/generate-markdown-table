@@ -10,7 +10,7 @@ let rows = mappings.filter(it => !it.deprecated).sort(byGlobal).map(mapping => {
   let before = mapping.global;
   let afterPackage = mapping.module;
   let afterExportName = mapping.export;
-  let afterIdentifier = mapping.localName;
+  let afterIdentifier = mapping.localName || mapping.export;
 
   // Object, Array, etc.
   if (reserved.includes(afterIdentifier)) {
@@ -20,6 +20,8 @@ let rows = mappings.filter(it => !it.deprecated).sort(byGlobal).map(mapping => {
   let after;
   if (afterExportName === 'default') {
     after = `import ${afterIdentifier} from '${afterPackage}';`;
+  } else if (afterExportName !== afterIdentifier) {
+    after = `import { ${afterExportName} as ${afterIdentifier} } from '${afterPackage}';`;
   } else {
     after = `import { ${afterExportName} } from '${afterPackage}';`;
   }
