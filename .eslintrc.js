@@ -16,10 +16,6 @@ module.exports = {
       files: ['scripts/*.js'],
       rules: {
         'no-console': 'off',
-
-        // prevent fallback to node 4 only support, this package only distributes *.json
-        // node version isn't super important...
-        'node/no-unsupported-features': 'off',
       }
     },
     {
@@ -33,5 +29,13 @@ module.exports = {
         'jest/globals': true
       }
     },
+    {
+      files: ['scripts/**/*.js', 'tests/**/*.js'],
+      rules: {
+        // prevent fallback to node 4 only support, this package only distributes *.json
+        // node version isn't super important...
+        'node/no-unsupported-features': 'off',
+      }
+    }
   ]
 };
