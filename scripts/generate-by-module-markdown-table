@@ -63,12 +63,12 @@ function cmp(a, b) {
   return (a > b) ? 1 : (a < b) ? -1 : 0;
 }
 
-function sortByPackageAndExport([,,a], [,,b]) {
-  if (a[0] === b[0]) {
-    return cmp(a[1] || "", b[1] || "");
+function sortByPackageAndExport([,,mappingA], [,,mappingB]) {
+  if (mappingA.module === mappingB.module) {
+    return cmp(mappingA.export || "", mappingB.export || "");
   }
 
-  return cmp(a[0], b[0]);
+  return cmp(mappingA.module, mappingB.module);
 }
 
 function printTable(table) {
