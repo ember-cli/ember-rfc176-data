@@ -22,5 +22,16 @@ module.exports = {
         'node/no-unsupported-features': 'off',
       }
     },
+    {
+      files: ['tests/*.test.js'],
+      plugins: ['jest'],
+
+      // can't use `extends` in nested config :sob:
+      rules: require('eslint-plugin-jest').configs.recommended.rules,
+
+      env: {
+        'jest/globals': true
+      }
+    },
   ]
 };
