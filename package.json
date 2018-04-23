@@ -14,7 +14,7 @@
     "url": "git+https://github.com/ember-cli/ember-rfc176-data.git"
   },
   "scripts": {
-    "lint": "eslint . scripts/*",
+    "lint": "eslint .",
     "changelog": "lerna-changelog",
     "test": "jest"
   },

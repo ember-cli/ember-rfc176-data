@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+'use strict';
 
 const mappings = require("../mappings");
 const { compare, generateImportForMapping } = require('./shared');
