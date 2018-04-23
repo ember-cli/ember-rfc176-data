@@ -1,14 +1,13 @@
-#!/usr/bin/env node
 'use strict';
 
-const mappings = require("../mappings");
+const mappings = require('../mappings');
 const { compare, generateImportForMapping } = require('./shared');
 
 function normalize(mapping) {
   return {
     mapping,
-    group: mapping.module.split("/", 2).join("/")
-  }
+    group: mapping.module.split('/', 2).join('/'),
+  };
 }
 
 function sortByGroup(a, b) {
@@ -26,11 +25,11 @@ function tableRow(mapping) {
 }
 
 function buildTable(result, row) {
-  let group = result[row.group] = result[row.group] || {
+  let group = (result[row.group] = result[row.group] || {
     maxBefore: 0,
     maxAfter: 0,
-    rows: []
-  };
+    rows: [],
+  });
 
   let [before, after] = tableRow(row.mapping);
 
@@ -42,12 +41,12 @@ function buildTable(result, row) {
   return result;
 }
 
-function sortByPackageAndExport([,,mappingA], [,,mappingB]) {
+function sortByPackageAndExport([, , mappingA], [, , mappingB]) {
   if (mappingA.module === mappingB.module) {
     // ensure default exports sort higher within a package
     let aExport = mappingA.export === 'default' ? '' : mappingA.export;
     let bExport = mappingB.export === 'default' ? '' : mappingB.export;
-    return compare(aExport || "", bExport || "");
+    return compare(aExport || '', bExport || '');
   }
 
   return compare(mappingA.module, mappingB.module);
@@ -55,15 +54,15 @@ function sortByPackageAndExport([,,mappingA], [,,mappingB]) {
 
 function printTable(table) {
   Object.keys(table).map(name => {
-    print("#### " + code(name));
+    print('#### ' + code(name));
 
     let group = table[name];
     let rows = group.rows;
 
     rows = rows.sort(sortByPackageAndExport);
 
-    rows.unshift(["---", "---"]);
-    rows.unshift(["Global", "Module"]);
+    rows.unshift(['---', '---']);
+    rows.unshift(['Global', 'Module']);
     rows.map(([before, after]) => {
       print(`|${pad(after, group.maxAfter)}|${pad(before, group.maxBefore)}|`);
     });
@@ -73,11 +72,11 @@ function printTable(table) {
 }
 
 function code(str) {
-  return "`" + str + "`";
+  return '`' + str + '`';
 }
 
 function pad(str, max) {
-  let extra = " ".repeat(max - str.length);
+  let extra = ' '.repeat(max - str.length);
   return ` ${str}${extra} `;
 }
 

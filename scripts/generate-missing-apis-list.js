@@ -1,17 +1,18 @@
-#!/usr/bin/env node
+'use strict';
 
 const got = require('got');
-const chalk = require("chalk");
+const chalk = require('chalk');
 
-const mappings = require("../mappings.json");
+const mappings = require('../mappings.json');
 
-got('http://builds.emberjs.com/canary/ember-docs.json').then(response => {
-  let json = JSON.parse(response.body);
-  processJSON(json);
-
-}).catch(error => {
-  console.error(chalk.red(error));
-});
+got('http://builds.emberjs.com/canary/ember-docs.json')
+  .then(response => {
+    let json = JSON.parse(response.body);
+    processJSON(json);
+  })
+  .catch(error => {
+    console.error(chalk.red(error));
+  });
 
 function processJSON(json) {
   let staticClasses = Object.keys(json.classes)
@@ -23,10 +24,14 @@ function processJSON(json) {
     .filter(it => it.access === 'public')
     .filter(it => staticClasses.indexOf(it.class) !== -1)
     .forEach(it => {
-      if (!it.name) { return; }
+      if (!it.name) {
+        return;
+      }
 
       let globalName = `${it.class}.${it.name}`;
-      let newImport = mappings.find(it => !it.deprecated && it.global === globalName);
+      let newImport = mappings.find(
+        it => !it.deprecated && it.global === globalName
+      );
 
       report(globalName, newImport);
     });
@@ -37,15 +42,23 @@ function processJSON(json) {
     .filter(it => it.access === 'public')
     .forEach(it => {
       let globalName = it.name;
-      let newImport = mappings.find(it => !it.deprecated && it.global === globalName);
+      let newImport = mappings.find(
+        it => !it.deprecated && it.global === globalName
+      );
 
       report(globalName, newImport);
-    })
+    });
 }
 
 function report(globalName, newImport) {
   if (newImport) {
-    console.log(chalk.green(`${globalName} -> ${newImport.module} ${newImport.export === 'default' ? '' : `(${newImport.export})`}`));
+    console.log(
+      chalk.green(
+        `${globalName} -> ${newImport.module} ${
+          newImport.export === 'default' ? '' : `(${newImport.export})`
+        }`
+      )
+    );
   } else {
     console.log(chalk.red(`${globalName} -> ?`));
   }
