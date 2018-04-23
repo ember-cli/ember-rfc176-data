@@ -1,28 +1,14 @@
 #!/usr/bin/env node
 
 let mappings = require("../mappings");
-let reserved = require("../reserved");
+let helpers = require('./shared');
 
 let maxBefore = 0;
 let maxAfter = 0;
 
 let rows = mappings.filter(it => !it.deprecated).sort(byGlobal).map(mapping => {
   let before = mapping.global;
-  let afterPackage = mapping.module;
-  let afterExportName = mapping.export;
-  let afterIdentifier = mapping.localName;
-
-  // Object, Array, etc.
-  if (reserved.includes(afterIdentifier)) {
-    afterIdentifier = "Ember" + afterIdentifier;
-  }
-
-  let after;
-  if (afterExportName) {
-    after = `import { ${afterExportName} } from '${afterPackage}';`;
-  } else {
-    after = `import ${afterIdentifier} from '${afterPackage}';`;
-  }
+  let after = helpers.generateImportForMapping(mapping);
 
   before = code(before);
   after = code(after);

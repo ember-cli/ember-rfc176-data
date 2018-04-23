@@ -17,86 +17,20 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | ---                                      | ---                                                                         |
 | `Ember.$`                                | `import $ from 'jquery';`                                                   |
 | `Ember.A`                                | `import { A } from '@ember/array';`                                         |
+| `Ember.addListener`                      | `import { addListener } from '@ember/object/events';`                       |
+| `Ember.addObserver`                      | `import { addObserver } from '@ember/object/observers';`                    |
+| `Ember.aliasMethod`                      | `import { aliasMethod } from '@ember/object';`                              |
 | `Ember.Application`                      | `import Application from '@ember/application';`                             |
 | `Ember.ApplicationInstance`              | `import ApplicationInstance from '@ember/application/instance';`            |
 | `Ember.Array`                            | `import EmberArray from '@ember/array';`                                    |
 | `Ember.ArrayProxy`                       | `import ArrayProxy from '@ember/array/proxy';`                              |
-| `Ember.AutoLocation`                     | `import AutoLocation from '@ember/routing/auto-location';`                  |
-| `Ember.Checkbox`                         | `import Checkbox from '@ember/component/checkbox';`                         |
-| `Ember.Component`                        | `import Component from '@ember/component';`                                 |
-| `Ember.ComputedProperty`                 | `import ComputedProperty from '@ember/object/computed';`                    |
-| `Ember.ContainerDebugAdapter`            | `import ContainerDebugAdapter from '@ember/debug/container-debug-adapter';` |
-| `Ember.Controller`                       | `import Controller from '@ember/controller';`                               |
-| `Ember.CoreObject`                       | `import CoreObject from '@ember/object/core';`                              |
-| `Ember.DataAdapter`                      | `import DataAdapter from '@ember/debug/data-adapter';`                      |
-| `Ember.Debug.registerDeprecationHandler` | `import { registerDeprecationHandler } from '@ember/debug';`                |
-| `Ember.Debug.registerWarnHandler`        | `import { registerWarnHandler } from '@ember/debug';`                       |
-| `Ember.DefaultResolver`                  | `import GlobalsResolver from '@ember/application/globals-resolver';`        |
-| `Ember.Engine`                           | `import Engine from '@ember/engine';`                                       |
-| `Ember.EngineInstance`                   | `import EngineInstance from '@ember/engine/instance';`                      |
-| `Ember.Enumerable`                       | `import Enumerable from '@ember/enumerable';`                               |
-| `Ember.Error`                            | `import EmberError from '@ember/error';`                                    |
-| `Ember.Evented`                          | `import Evented from '@ember/object/evented';`                              |
-| `Ember.HashLocation`                     | `import HashLocation from '@ember/routing/hash-location';`                  |
-| `Ember.Helper`                           | `import Helper from '@ember/component/helper';`                             |
-| `Ember.Helper.helper`                    | `import { helper as buildHelper } from '@ember/component/helper';`          |
-| `Ember.HistoryLocation`                  | `import HistoryLocation from '@ember/routing/history-location';`            |
-| `Ember.LinkComponent`                    | `import LinkComponent from '@ember/routing/link-component';`                |
-| `Ember.Location`                         | `import Location from '@ember/routing/location';`                           |
-| `Ember.Map`                              | `import EmberMap from '@ember/map';`                                        |
-| `Ember.MapWithDefault`                   | `import MapWithDefault from '@ember/map/with-default';`                     |
-| `Ember.Mixin`                            | `import Mixin from '@ember/object/mixin';`                                  |
-| `Ember.MutableArray`                     | `import MutableArray from '@ember/array/mutable';`                          |
-| `Ember.NoneLocation`                     | `import NoneLocation from '@ember/routing/none-location';`                  |
-| `Ember.Object`                           | `import EmberObject from '@ember/object';`                                  |
-| `Ember.ObjectProxy`                      | `import ObjectProxy from '@ember/object/proxy';`                            |
-| `Ember.Observable`                       | `import Observable from '@ember/object/observable';`                        |
-| `Ember.PromiseProxyMixin`                | `import PromiseProxyMixin from '@ember/object/promise-proxy-mixin';`        |
-| `Ember.RSVP`                             | `import RSVP from 'rsvp';`                                                  |
-| `Ember.RSVP.Promise`                     | `import { Promise } from 'rsvp';`                                           |
-| `Ember.RSVP.all`                         | `import { all } from 'rsvp';`                                               |
-| `Ember.RSVP.allSettled`                  | `import { allSettled } from 'rsvp';`                                        |
-| `Ember.RSVP.defer`                       | `import { defer } from 'rsvp';`                                             |
-| `Ember.RSVP.denodeify`                   | `import { denodeify } from 'rsvp';`                                         |
-| `Ember.RSVP.filter`                      | `import { filter } from 'rsvp';`                                            |
-| `Ember.RSVP.hash`                        | `import { hash } from 'rsvp';`                                              |
-| `Ember.RSVP.hashSettled`                 | `import { hashSettled } from 'rsvp';`                                       |
-| `Ember.RSVP.map`                         | `import { map } from 'rsvp';`                                               |
-| `Ember.RSVP.off`                         | `import { off } from 'rsvp';`                                               |
-| `Ember.RSVP.on`                          | `import { on } from 'rsvp';`                                                |
-| `Ember.RSVP.race`                        | `import { race } from 'rsvp';`                                              |
-| `Ember.RSVP.reject`                      | `import { reject } from 'rsvp';`                                            |
-| `Ember.RSVP.resolve`                     | `import { resolve } from 'rsvp';`                                           |
-| `Ember.Resolver`                         | `import Resolver from '@ember/application/resolver';`                       |
-| `Ember.Route`                            | `import Route from '@ember/routing/route';`                                 |
-| `Ember.Router`                           | `import EmberRouter from '@ember/routing/router';`                          |
-| `Ember.Service`                          | `import Service from '@ember/service';`                                     |
-| `Ember.String.camelize`                  | `import { camelize } from '@ember/string';`                                 |
-| `Ember.String.capitalize`                | `import { capitalize } from '@ember/string';`                               |
-| `Ember.String.classify`                  | `import { classify } from '@ember/string';`                                 |
-| `Ember.String.dasherize`                 | `import { dasherize } from '@ember/string';`                                |
-| `Ember.String.decamelize`                | `import { decamelize } from '@ember/string';`                               |
-| `Ember.String.fmt`                       | `import { fmt } from '@ember/string';`                                      |
-| `Ember.String.htmlSafe`                  | `import { htmlSafe } from '@ember/string';`                                 |
-| `Ember.String.isHTMLSafe`                | `import { isHTMLSafe } from '@ember/string';`                               |
-| `Ember.String.loc`                       | `import { loc } from '@ember/string';`                                      |
-| `Ember.String.underscore`                | `import { underscore } from '@ember/string';`                               |
-| `Ember.String.w`                         | `import { w } from '@ember/string';`                                        |
-| `Ember.Test.Adapter`                     | `import TestAdapter from '@ember/test/adapter';`                            |
-| `Ember.Test.registerAsyncHelper`         | `import { registerAsyncHelper } from '@ember/test';`                        |
-| `Ember.Test.registerHelper`              | `import { registerHelper } from '@ember/test';`                             |
-| `Ember.Test.registerWaiter`              | `import { registerWaiter } from '@ember/test';`                             |
-| `Ember.Test.unregisterHelper`            | `import { unregisterHelper } from '@ember/test';`                           |
-| `Ember.Test.unregisterWaiter`            | `import { unregisterWaiter } from '@ember/test';`                           |
-| `Ember.TextArea`                         | `import TextArea from '@ember/component/text-area';`                        |
-| `Ember.TextField`                        | `import TextField from '@ember/component/text-field';`                      |
-| `Ember.addListener`                      | `import { addListener } from '@ember/object/events';`                       |
-| `Ember.addObserver`                      | `import { addObserver } from '@ember/object/observers';`                    |
-| `Ember.aliasMethod`                      | `import { aliasMethod } from '@ember/object';`                              |
 | `Ember.assert`                           | `import { assert } from '@ember/debug';`                                    |
 | `Ember.assign`                           | `import { assign } from '@ember/polyfills';`                                |
+| `Ember.AutoLocation`                     | `import AutoLocation from '@ember/routing/auto-location';`                  |
 | `Ember.cacheFor`                         | `import { cacheFor } from '@ember/object/internals';`                       |
+| `Ember.Checkbox`                         | `import Checkbox from '@ember/component/checkbox';`                         |
 | `Ember.compare`                          | `import { compare } from '@ember/utils';`                                   |
+| `Ember.Component`                        | `import Component from '@ember/component';`                                 |
 | `Ember.computed`                         | `import { computed } from '@ember/object';`                                 |
 | `Ember.computed.alias`                   | `import { alias } from '@ember/object/computed';`                           |
 | `Ember.computed.and`                     | `import { and } from '@ember/object/computed';`                             |
@@ -132,23 +66,48 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.computed.union`                   | `import { union } from '@ember/object/computed';`                           |
 | `Ember.computed.uniq`                    | `import { uniq } from '@ember/object/computed';`                            |
 | `Ember.computed.uniqBy`                  | `import { uniqBy } from '@ember/object/computed';`                          |
+| `Ember.ComputedProperty`                 | `import ComputedProperty from '@ember/object/computed';`                    |
+| `Ember.ContainerDebugAdapter`            | `import ContainerDebugAdapter from '@ember/debug/container-debug-adapter';` |
+| `Ember.Controller`                       | `import Controller from '@ember/controller';`                               |
 | `Ember.copy`                             | `import { copy } from '@ember/object/internals';`                           |
+| `Ember.CoreObject`                       | `import CoreObject from '@ember/object/core';`                              |
 | `Ember.create`                           | `import { create } from '@ember/polyfills';`                                |
+| `Ember.DataAdapter`                      | `import DataAdapter from '@ember/debug/data-adapter';`                      |
 | `Ember.debug`                            | `import { debug } from '@ember/debug';`                                     |
+| `Ember.Debug.registerDeprecationHandler` | `import { registerDeprecationHandler } from '@ember/debug';`                |
+| `Ember.Debug.registerWarnHandler`        | `import { registerWarnHandler } from '@ember/debug';`                       |
+| `Ember.DefaultResolver`                  | `import GlobalsResolver from '@ember/application/globals-resolver';`        |
 | `Ember.defineProperty`                   | `import { defineProperty } from '@ember/object';`                           |
 | `Ember.deprecate`                        | `import { deprecate } from '@ember/application/deprecations';`              |
 | `Ember.deprecateFunc`                    | `import { deprecateFunc } from '@ember/application/deprecations';`          |
+| `Ember.Engine`                           | `import Engine from '@ember/engine';`                                       |
+| `Ember.EngineInstance`                   | `import EngineInstance from '@ember/engine/instance';`                      |
+| `Ember.Enumerable`                       | `import Enumerable from '@ember/enumerable';`                               |
+| `Ember.Error`                            | `import EmberError from '@ember/error';`                                    |
+| `Ember.Evented`                          | `import Evented from '@ember/object/evented';`                              |
 | `Ember.expandProperties`                 | `import { expandProperties } from '@ember/object/computed';`                |
+| `Ember.FEATURES`                         | `import { FEATURES } from '@ember/canary-features';`                        |
+| `Ember.FEATURES.isEnabled`               | `import { isEnabled } from '@ember/canary-features';`                       |
 | `Ember.get`                              | `import { get } from '@ember/object';`                                      |
 | `Ember.getEngineParent`                  | `import { getEngineParent } from '@ember/engine';`                          |
 | `Ember.getOwner`                         | `import { getOwner } from '@ember/application';`                            |
 | `Ember.getProperties`                    | `import { getProperties } from '@ember/object';`                            |
 | `Ember.getWithDefault`                   | `import { getWithDefault } from '@ember/object';`                           |
 | `Ember.guidFor`                          | `import { guidFor } from '@ember/object/internals';`                        |
+| `Ember.HashLocation`                     | `import HashLocation from '@ember/routing/hash-location';`                  |
+| `Ember.Helper`                           | `import Helper from '@ember/component/helper';`                             |
+| `Ember.Helper.helper`                    | `import { helper as buildHelper } from '@ember/component/helper';`          |
+| `Ember.HistoryLocation`                  | `import HistoryLocation from '@ember/routing/history-location';`            |
+| `Ember.HTMLBars.compile`                 | `import { compileTemplate } from '@ember/template-compilation';`            |
+| `Ember.HTMLBars.precompile`              | `import { precompileTemplate } from '@ember/template-compilation';`         |
+| `Ember.HTMLBars.template`                | `import { wrapTemplate } from '@ember/template-compilation';`               |
 | `Ember.inject.controller`                | `import { inject } from '@ember/controller';`                               |
 | `Ember.inject.service`                   | `import { inject } from '@ember/service';`                                  |
 | `Ember.inspect`                          | `import { inspect } from '@ember/debug';`                                   |
 | `Ember.Instrumentation.instrument`       | `import { instrument } from '@ember/instrumentation';`                      |
+| `Ember.Instrumentation.reset`            | `import { reset } from '@ember/instrumentation';`                           |
+| `Ember.Instrumentation.subscribe`        | `import { subscribe } from '@ember/instrumentation';`                       |
+| `Ember.Instrumentation.unsubscribe`      | `import { unsubscribe } from '@ember/instrumentation';`                     |
 | `Ember.isArray`                          | `import { isArray } from '@ember/array';`                                   |
 | `Ember.isBlank`                          | `import { isBlank } from '@ember/utils';`                                   |
 | `Ember.isEmpty`                          | `import { isEmpty } from '@ember/utils';`                                   |
@@ -156,15 +115,44 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.isNone`                           | `import { isNone } from '@ember/utils';`                                    |
 | `Ember.isPresent`                        | `import { isPresent } from '@ember/utils';`                                 |
 | `Ember.keys`                             | `import { keys } from '@ember/polyfills';`                                  |
+| `Ember.LinkComponent`                    | `import LinkComponent from '@ember/routing/link-component';`                |
+| `Ember.Location`                         | `import Location from '@ember/routing/location';`                           |
 | `Ember.makeArray`                        | `import { makeArray } from '@ember/array';`                                 |
+| `Ember.Map`                              | `import EmberMap from '@ember/map';`                                        |
+| `Ember.MapWithDefault`                   | `import MapWithDefault from '@ember/map/with-default';`                     |
 | `Ember.merge`                            | `import { merge } from '@ember/polyfills';`                                 |
+| `Ember.Mixin`                            | `import Mixin from '@ember/object/mixin';`                                  |
+| `Ember.MutableArray`                     | `import MutableArray from '@ember/array/mutable';`                          |
+| `Ember.Namespace`                        | `import Namespace from '@ember/application/namespace';`                     |
+| `Ember.NoneLocation`                     | `import NoneLocation from '@ember/routing/none-location';`                  |
+| `Ember.Object`                           | `import EmberObject from '@ember/object';`                                  |
+| `Ember.ObjectProxy`                      | `import ObjectProxy from '@ember/object/proxy';`                            |
+| `Ember.Observable`                       | `import Observable from '@ember/object/observable';`                        |
 | `Ember.observer`                         | `import { observer } from '@ember/object';`                                 |
 | `Ember.on`                               | `import { on } from '@ember/object/evented';`                               |
 | `Ember.onLoad`                           | `import { onLoad } from '@ember/application';`                              |
 | `Ember.platform.hasPropertyAccessors`    | `import { hasPropertyAccessors } from '@ember/polyfills';`                  |
+| `Ember.PromiseProxyMixin`                | `import PromiseProxyMixin from '@ember/object/promise-proxy-mixin';`        |
 | `Ember.removeListener`                   | `import { removeListener } from '@ember/object/events';`                    |
 | `Ember.removeObserver`                   | `import { removeObserver } from '@ember/object/observers';`                 |
-| `Ember.Instrumentation.reset`            | `import { reset } from '@ember/instrumentation';`                           |
+| `Ember.Resolver`                         | `import Resolver from '@ember/application/resolver';`                       |
+| `Ember.Route`                            | `import Route from '@ember/routing/route';`                                 |
+| `Ember.Router`                           | `import EmberRouter from '@ember/routing/router';`                          |
+| `Ember.RSVP`                             | `import RSVP from 'rsvp';`                                                  |
+| `Ember.RSVP.all`                         | `import { all } from 'rsvp';`                                               |
+| `Ember.RSVP.allSettled`                  | `import { allSettled } from 'rsvp';`                                        |
+| `Ember.RSVP.defer`                       | `import { defer } from 'rsvp';`                                             |
+| `Ember.RSVP.denodeify`                   | `import { denodeify } from 'rsvp';`                                         |
+| `Ember.RSVP.filter`                      | `import { filter } from 'rsvp';`                                            |
+| `Ember.RSVP.hash`                        | `import { hash } from 'rsvp';`                                              |
+| `Ember.RSVP.hashSettled`                 | `import { hashSettled } from 'rsvp';`                                       |
+| `Ember.RSVP.map`                         | `import { map } from 'rsvp';`                                               |
+| `Ember.RSVP.off`                         | `import { off } from 'rsvp';`                                               |
+| `Ember.RSVP.on`                          | `import { on } from 'rsvp';`                                                |
+| `Ember.RSVP.Promise`                     | `import { Promise as EmberPromise } from 'rsvp';`                           |
+| `Ember.RSVP.race`                        | `import { race } from 'rsvp';`                                              |
+| `Ember.RSVP.reject`                      | `import { reject } from 'rsvp';`                                            |
+| `Ember.RSVP.resolve`                     | `import { resolve } from 'rsvp';`                                           |
 | `Ember.run`                              | `import { run } from '@ember/runloop';`                                     |
 | `Ember.run.begin`                        | `import { begin } from '@ember/runloop';`                                   |
 | `Ember.run.bind`                         | `import { bind } from '@ember/runloop';`                                    |
@@ -181,14 +169,33 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.runInDebug`                       | `import { runInDebug } from '@ember/debug';`                                |
 | `Ember.runLoadHooks`                     | `import { runLoadHooks } from '@ember/application';`                        |
 | `Ember.sendEvent`                        | `import { sendEvent } from '@ember/object/events';`                         |
+| `Ember.Service`                          | `import Service from '@ember/service';`                                     |
 | `Ember.set`                              | `import { set } from '@ember/object';`                                      |
 | `Ember.setOwner`                         | `import { setOwner } from '@ember/application';`                            |
 | `Ember.setProperties`                    | `import { setProperties } from '@ember/object';`                            |
-| `Ember.Instrumentation.subscribe`        | `import { subscribe } from '@ember/instrumentation';`                       |
+| `Ember.String.camelize`                  | `import { camelize } from '@ember/string';`                                 |
+| `Ember.String.capitalize`                | `import { capitalize } from '@ember/string';`                               |
+| `Ember.String.classify`                  | `import { classify } from '@ember/string';`                                 |
+| `Ember.String.dasherize`                 | `import { dasherize } from '@ember/string';`                                |
+| `Ember.String.decamelize`                | `import { decamelize } from '@ember/string';`                               |
+| `Ember.String.fmt`                       | `import { fmt } from '@ember/string';`                                      |
+| `Ember.String.htmlSafe`                  | `import { htmlSafe } from '@ember/template';`                               |
+| `Ember.String.isHTMLSafe`                | `import { isHTMLSafe } from '@ember/template';`                             |
+| `Ember.String.loc`                       | `import { loc } from '@ember/string';`                                      |
+| `Ember.String.underscore`                | `import { underscore } from '@ember/string';`                               |
+| `Ember.String.w`                         | `import { w } from '@ember/string';`                                        |
+| `Ember.Test.Adapter`                     | `import TestAdapter from '@ember/test/adapter';`                            |
+| `Ember.Test.registerAsyncHelper`         | `import { registerAsyncHelper } from '@ember/test';`                        |
+| `Ember.Test.registerHelper`              | `import { registerHelper } from '@ember/test';`                             |
+| `Ember.Test.registerWaiter`              | `import { registerWaiter } from '@ember/test';`                             |
+| `Ember.Test.unregisterHelper`            | `import { unregisterHelper } from '@ember/test';`                           |
+| `Ember.Test.unregisterWaiter`            | `import { unregisterWaiter } from '@ember/test';`                           |
+| `Ember.TextArea`                         | `import TextArea from '@ember/component/text-area';`                        |
+| `Ember.TextField`                        | `import TextField from '@ember/component/text-field';`                      |
 | `Ember.tryInvoke`                        | `import { tryInvoke } from '@ember/utils';`                                 |
 | `Ember.trySet`                           | `import { trySet } from '@ember/object';`                                   |
 | `Ember.typeOf`                           | `import { typeOf } from '@ember/utils';`                                    |
-| `Ember.Instrumentation.unsubscribe`      | `import { unsubscribe } from '@ember/instrumentation';`                     |
+| `Ember.VERSION`                          | `import { VERSION } from '@ember/version';`                                 |
 | `Ember.warn`                             | `import { warn } from '@ember/debug';`                                      |
 
 ### New Modules to Globals
@@ -205,6 +212,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { deprecateFunc } from '@ember/application/deprecations';`   | `Ember.deprecateFunc`       |
 | `import GlobalsResolver from '@ember/application/globals-resolver';` | `Ember.DefaultResolver`     |
 | `import ApplicationInstance from '@ember/application/instance';`     | `Ember.ApplicationInstance` |
+| `import Namespace from '@ember/application/namespace';`              | `Ember.Namespace`           |
 | `import Resolver from '@ember/application/resolver';`                | `Ember.Resolver`            |
 
 #### `@ember/array`
@@ -216,6 +224,12 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { makeArray } from '@ember/array';`        | `Ember.makeArray`    |
 | `import MutableArray from '@ember/array/mutable';` | `Ember.MutableArray` |
 | `import ArrayProxy from '@ember/array/proxy';`     | `Ember.ArrayProxy`   |
+
+#### `@ember/canary-features`
+| Module                                                | Global                     |
+| ---                                                   | ---                        |
+| `import { FEATURES } from '@ember/canary-features';`  | `Ember.FEATURES`           |
+| `import { isEnabled } from '@ember/canary-features';` | `Ember.FEATURES.isEnabled` |
 
 #### `@ember/component`
 | Module                                                 | Global                |
@@ -396,11 +410,22 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { dasherize } from '@ember/string';`  | `Ember.String.dasherize`  |
 | `import { decamelize } from '@ember/string';` | `Ember.String.decamelize` |
 | `import { fmt } from '@ember/string';`        | `Ember.String.fmt`        |
-| `import { htmlSafe } from '@ember/string';`   | `Ember.String.htmlSafe`   |
-| `import { isHTMLSafe } from '@ember/string';` | `Ember.String.isHTMLSafe` |
 | `import { loc } from '@ember/string';`        | `Ember.String.loc`        |
 | `import { underscore } from '@ember/string';` | `Ember.String.underscore` |
 | `import { w } from '@ember/string';`          | `Ember.String.w`          |
+
+#### `@ember/template`
+| Module                                          | Global                    |
+| ---                                             | ---                       |
+| `import { htmlSafe } from '@ember/template';`   | `Ember.String.htmlSafe`   |
+| `import { isHTMLSafe } from '@ember/template';` | `Ember.String.isHTMLSafe` |
+
+#### `@ember/template-compilation`
+| Module                                                              | Global                      |
+| ---                                                                 | ---                         |
+| `import { compileTemplate } from '@ember/template-compilation';`    | `Ember.HTMLBars.compile`    |
+| `import { precompileTemplate } from '@ember/template-compilation';` | `Ember.HTMLBars.precompile` |
+| `import { wrapTemplate } from '@ember/template-compilation';`       | `Ember.HTMLBars.template`   |
 
 #### `@ember/test`
 | Module                                               | Global                           |
@@ -423,6 +448,11 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { isPresent } from '@ember/utils';` | `Ember.isPresent` |
 | `import { tryInvoke } from '@ember/utils';` | `Ember.tryInvoke` |
 | `import { typeOf } from '@ember/utils';`    | `Ember.typeOf`    |
+
+#### `@ember/version`
+| Module                                      | Global          |
+| ---                                         | ---             |
+| `import { VERSION } from '@ember/version';` | `Ember.VERSION` |
 
 #### `jquery`
 | Module                    | Global    |
