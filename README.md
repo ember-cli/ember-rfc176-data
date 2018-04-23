@@ -205,6 +205,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { deprecateFunc } from '@ember/application/deprecations';`   | `Ember.deprecateFunc`       |
 | `import GlobalsResolver from '@ember/application/globals-resolver';` | `Ember.DefaultResolver`     |
 | `import ApplicationInstance from '@ember/application/instance';`     | `Ember.ApplicationInstance` |
+| `import Namespace from '@ember/application/namespace';`              | `Ember.Namespace`           |
 | `import Resolver from '@ember/application/resolver';`                | `Ember.Resolver`            |
 
 #### `@ember/array`
@@ -216,6 +217,12 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { makeArray } from '@ember/array';`        | `Ember.makeArray`    |
 | `import MutableArray from '@ember/array/mutable';` | `Ember.MutableArray` |
 | `import ArrayProxy from '@ember/array/proxy';`     | `Ember.ArrayProxy`   |
+
+#### `@ember/canary-features`
+| Module                                                | Global                     |
+| ---                                                   | ---                        |
+| `import { FEATURES } from '@ember/canary-features';`  | `Ember.FEATURES`           |
+| `import { isEnabled } from '@ember/canary-features';` | `Ember.FEATURES.isEnabled` |
 
 #### `@ember/component`
 | Module                                                 | Global                |
@@ -396,11 +403,22 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { dasherize } from '@ember/string';`  | `Ember.String.dasherize`  |
 | `import { decamelize } from '@ember/string';` | `Ember.String.decamelize` |
 | `import { fmt } from '@ember/string';`        | `Ember.String.fmt`        |
-| `import { htmlSafe } from '@ember/string';`   | `Ember.String.htmlSafe`   |
-| `import { isHTMLSafe } from '@ember/string';` | `Ember.String.isHTMLSafe` |
 | `import { loc } from '@ember/string';`        | `Ember.String.loc`        |
 | `import { underscore } from '@ember/string';` | `Ember.String.underscore` |
 | `import { w } from '@ember/string';`          | `Ember.String.w`          |
+
+#### `@ember/template`
+| Module                                          | Global                    |
+| ---                                             | ---                       |
+| `import { htmlSafe } from '@ember/template';`   | `Ember.String.htmlSafe`   |
+| `import { isHTMLSafe } from '@ember/template';` | `Ember.String.isHTMLSafe` |
+
+#### `@ember/template-compilation`
+| Module                                                              | Global                      |
+| ---                                                                 | ---                         |
+| `import { compileTemplate } from '@ember/template-compilation';`    | `Ember.HTMLBars.compile`    |
+| `import { precompileTemplate } from '@ember/template-compilation';` | `Ember.HTMLBars.precompile` |
+| `import { wrapTemplate } from '@ember/template-compilation';`       | `Ember.HTMLBars.template`   |
 
 #### `@ember/test`
 | Module                                               | Global                           |
@@ -423,6 +441,11 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { isPresent } from '@ember/utils';` | `Ember.isPresent` |
 | `import { tryInvoke } from '@ember/utils';` | `Ember.tryInvoke` |
 | `import { typeOf } from '@ember/utils';`    | `Ember.typeOf`    |
+
+#### `@ember/version`
+| Module                                      | Global          |
+| ---                                         | ---             |
+| `import { VERSION } from '@ember/version';` | `Ember.VERSION` |
 
 #### `jquery`
 | Module                    | Global    |
