@@ -11,9 +11,11 @@ function normalize(mapping) {
 }
 
 function sortByGroup(a, b) {
-  return (a.group < b.group) ? -1 :
-         ((a.group > b.group) ? 1 :
-         0);
+  return cmp(a.group, b.group);
+}
+
+function sortByModule(a, b) {
+  return cmp(a.module, b.module);
 }
 
 function tableRow(mapping) {
