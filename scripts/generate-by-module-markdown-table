@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const mappings = require("../mappings");
-const reserved = require("../reserved");
+const { compare, generateImportForMapping } = require('./shared');
 
 function normalize(mapping) {
   return {
@@ -11,30 +11,12 @@ function normalize(mapping) {
 }
 
 function sortByGroup(a, b) {
-  return cmp(a.group, b.group);
-}
-
-function sortByModule(a, b) {
-  return cmp(a.module, b.module);
+  return compare(a.group, b.group);
 }
 
 function tableRow(mapping) {
   let before = mapping.global;
-  let afterPackage = mapping.module;
-  let afterExportName = mapping.export;
-  let afterIdentifier = mapping.localName;
-
-  // Object, Array, etc.
-  if (reserved.includes(afterIdentifier)) {
-    afterIdentifier = "Ember" + afterIdentifier;
-  }
-
-  let after;
-  if (afterExportName === 'default') {
-    after = `import ${afterIdentifier} from '${afterPackage}';`;
-  } else {
-    after = `import { ${afterExportName} } from '${afterPackage}';`;
-  }
+  let after = generateImportForMapping(mapping);
 
   before = code(before);
   after = code(after);
@@ -59,19 +41,15 @@ function buildTable(result, row) {
   return result;
 }
 
-function cmp(a, b) {
-  return (a > b) ? 1 : (a < b) ? -1 : 0;
-}
-
 function sortByPackageAndExport([,,mappingA], [,,mappingB]) {
   if (mappingA.module === mappingB.module) {
     // ensure default exports sort higher within a package
     let aExport = mappingA.export === 'default' ? '' : mappingA.export;
     let bExport = mappingB.export === 'default' ? '' : mappingB.export;
-    return cmp(aExport || "", bExport || "");
+    return compare(aExport || "", bExport || "");
   }
 
-  return cmp(mappingA.module, mappingB.module);
+  return compare(mappingA.module, mappingB.module);
 }
 
 function printTable(table) {
