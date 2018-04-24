@@ -2404,7 +2404,6 @@
     "global": "Ember.RSVP.Promise",
     "module": "rsvp",
     "export": "Promise",
-    "localName": "EmberPromise",
     "deprecated": false
   },
   {

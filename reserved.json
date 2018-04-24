@@ -36,7 +36,6 @@
   "Atomics",
   "DataView",
   "JSON",
-  "Promise",
   "Generator",
   "GeneratorFunction",
   "Reflect",
