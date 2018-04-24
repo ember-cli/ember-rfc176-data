@@ -7,6 +7,16 @@ for (let mapping of mappings) {
       expect(mapping.module).toMatch(/.+/);
       expect(mapping.export).toMatch(/.+/);
       expect([true, false]).toContain(mapping.deprecated);
+
+      if ('localName' in mapping) {
+        // when present ensure it is a valid string
+        expect(mapping.localName).toMatch(/.+/);
+      }
+
+      if ('replacement' in mapping) {
+        expect(mapping.replacement.module).toMatch(/.+/);
+        expect(mapping.replacement.export).toMatch(/.+/);
+      }
     });
   });
 }
