@@ -41,6 +41,6 @@ let updated = mappings.sort(sortByModuleAndExport).map(mapping => {
   return ret;
 });
 
-fs.writeFileSync('mappings.json', JSON.stringify(updated, null, 2), {
+fs.writeFileSync('mappings.json', JSON.stringify(updated, null, 2) + '\n', {
   encoding: 'utf-8',
 });
