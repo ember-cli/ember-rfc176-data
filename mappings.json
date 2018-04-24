@@ -74,7 +74,7 @@
     "global": "Ember.Array",
     "module": "@ember/array",
     "export": "default",
-    "localName": "Array",
+    "localName": "EmberArray",
     "deprecated": false
   },
   {
@@ -263,7 +263,7 @@
     "global": "Ember.Error",
     "module": "@ember/error",
     "export": "default",
-    "localName": "Error",
+    "localName": "EmberError",
     "deprecated": false
   },
   {
@@ -294,7 +294,7 @@
     "global": "Ember.Map",
     "module": "@ember/map",
     "export": "default",
-    "localName": "Map",
+    "localName": "EmberMap",
     "deprecated": false
   },
   {
@@ -308,7 +308,7 @@
     "global": "Ember.Object",
     "module": "@ember/object",
     "export": "default",
-    "localName": "Object",
+    "localName": "EmberObject",
     "deprecated": false
   },
   {
