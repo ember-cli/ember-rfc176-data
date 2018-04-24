@@ -517,12 +517,13 @@ interface Mapping {
   deprecated: boolean;
 
   /**
-    The recommended `localName` to use for a given module/export.
+    The recommended `localName` to use for a given module/export. Only present
+    when a name other than the value for `export` should be used.
 
     This is useful for things like ember-modules-codemod or eslint-plugin-ember
     so that they can provide a nice suggested import for a given global path usage.
    */
-  localName: string;
+  localName?: string;
 
   /**
     When this mapping is deprecated it may include a replacement module/export which

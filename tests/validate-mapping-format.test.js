@@ -6,7 +6,6 @@ for (let mapping of mappings) {
       expect(mapping.global).toMatch(/.+/);
       expect(mapping.module).toMatch(/.+/);
       expect(mapping.export).toMatch(/.+/);
-      expect(mapping.localName).toMatch(/.+/);
       expect([true, false]).toContain(mapping.deprecated);
     });
   });

@@ -15,16 +15,16 @@ function sortByModuleAndExport(mappingA, mappingB) {
 }
 
 let updated = mappings.sort(sortByModuleAndExport).map(mapping => {
-  if (!mapping.localName) {
-    mapping.localName = mapping.export;
+  let localName = mapping.localName || mapping.export;
+
+  // ensure localName is set when a reserved word collides
+  if (reserved.includes(localName)) {
+    localName = 'Ember' + localName;
   }
 
-  if (reserved.includes(mapping.localName)) {
-    mapping.localName = 'Ember' + mapping.localName;
-  }
-
-  if (!('deprecated' in mapping)) {
-    mapping.deprecated = false;
+  // remove localName when it matches export
+  if (localName === mapping.export) {
+    localName = undefined;
   }
 
   // return a new object so that all of the properties in the JSON
@@ -33,8 +33,8 @@ let updated = mappings.sort(sortByModuleAndExport).map(mapping => {
     global: mapping.global,
     module: mapping.module,
     export: mapping.export,
-    localName: mapping.localName,
-    deprecated: mapping.deprecated,
+    localName,
+    deprecated: !!mapping.deprecated,
     replacement: mapping.replacement,
   };
 

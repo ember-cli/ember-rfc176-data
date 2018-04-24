@@ -10,42 +10,36 @@
     "global": "Ember.getOwner",
     "module": "@ember/application",
     "export": "getOwner",
-    "localName": "getOwner",
     "deprecated": false
   },
   {
     "global": "Ember.onLoad",
     "module": "@ember/application",
     "export": "onLoad",
-    "localName": "onLoad",
     "deprecated": false
   },
   {
     "global": "Ember.runLoadHooks",
     "module": "@ember/application",
     "export": "runLoadHooks",
-    "localName": "runLoadHooks",
     "deprecated": false
   },
   {
     "global": "Ember.setOwner",
     "module": "@ember/application",
     "export": "setOwner",
-    "localName": "setOwner",
     "deprecated": false
   },
   {
     "global": "Ember.deprecate",
     "module": "@ember/application/deprecations",
     "export": "deprecate",
-    "localName": "deprecate",
     "deprecated": false
   },
   {
     "global": "Ember.deprecateFunc",
     "module": "@ember/application/deprecations",
     "export": "deprecateFunc",
-    "localName": "deprecateFunc",
     "deprecated": false
   },
   {
@@ -87,21 +81,18 @@
     "global": "Ember.A",
     "module": "@ember/array",
     "export": "A",
-    "localName": "A",
     "deprecated": false
   },
   {
     "global": "Ember.isArray",
     "module": "@ember/array",
     "export": "isArray",
-    "localName": "isArray",
     "deprecated": false
   },
   {
     "global": "Ember.makeArray",
     "module": "@ember/array",
     "export": "makeArray",
-    "localName": "makeArray",
     "deprecated": false
   },
   {
@@ -122,14 +113,12 @@
     "global": "Ember.FEATURES",
     "module": "@ember/canary-features",
     "export": "FEATURES",
-    "localName": "FEATURES",
     "deprecated": false
   },
   {
     "global": "Ember.FEATURES.isEnabled",
     "module": "@ember/canary-features",
     "export": "isEnabled",
-    "localName": "isEnabled",
     "deprecated": false
   },
   {
@@ -185,56 +174,48 @@
     "global": "Ember.inject.controller",
     "module": "@ember/controller",
     "export": "inject",
-    "localName": "inject",
     "deprecated": false
   },
   {
     "global": "Ember.assert",
     "module": "@ember/debug",
     "export": "assert",
-    "localName": "assert",
     "deprecated": false
   },
   {
     "global": "Ember.debug",
     "module": "@ember/debug",
     "export": "debug",
-    "localName": "debug",
     "deprecated": false
   },
   {
     "global": "Ember.inspect",
     "module": "@ember/debug",
     "export": "inspect",
-    "localName": "inspect",
     "deprecated": false
   },
   {
     "global": "Ember.Debug.registerDeprecationHandler",
     "module": "@ember/debug",
     "export": "registerDeprecationHandler",
-    "localName": "registerDeprecationHandler",
     "deprecated": false
   },
   {
     "global": "Ember.Debug.registerWarnHandler",
     "module": "@ember/debug",
     "export": "registerWarnHandler",
-    "localName": "registerWarnHandler",
     "deprecated": false
   },
   {
     "global": "Ember.runInDebug",
     "module": "@ember/debug",
     "export": "runInDebug",
-    "localName": "runInDebug",
     "deprecated": false
   },
   {
     "global": "Ember.warn",
     "module": "@ember/debug",
     "export": "warn",
-    "localName": "warn",
     "deprecated": false
   },
   {
@@ -262,7 +243,6 @@
     "global": "Ember.getEngineParent",
     "module": "@ember/engine",
     "export": "getEngineParent",
-    "localName": "getEngineParent",
     "deprecated": false
   },
   {
@@ -290,28 +270,24 @@
     "global": "Ember.Instrumentation.instrument",
     "module": "@ember/instrumentation",
     "export": "instrument",
-    "localName": "instrument",
     "deprecated": false
   },
   {
     "global": "Ember.Instrumentation.reset",
     "module": "@ember/instrumentation",
     "export": "reset",
-    "localName": "reset",
     "deprecated": false
   },
   {
     "global": "Ember.Instrumentation.subscribe",
     "module": "@ember/instrumentation",
     "export": "subscribe",
-    "localName": "subscribe",
     "deprecated": false
   },
   {
     "global": "Ember.Instrumentation.unsubscribe",
     "module": "@ember/instrumentation",
     "export": "unsubscribe",
-    "localName": "unsubscribe",
     "deprecated": false
   },
   {
@@ -339,70 +315,60 @@
     "global": "Ember.aliasMethod",
     "module": "@ember/object",
     "export": "aliasMethod",
-    "localName": "aliasMethod",
     "deprecated": false
   },
   {
     "global": "Ember.computed",
     "module": "@ember/object",
     "export": "computed",
-    "localName": "computed",
     "deprecated": false
   },
   {
     "global": "Ember.defineProperty",
     "module": "@ember/object",
     "export": "defineProperty",
-    "localName": "defineProperty",
     "deprecated": false
   },
   {
     "global": "Ember.get",
     "module": "@ember/object",
     "export": "get",
-    "localName": "get",
     "deprecated": false
   },
   {
     "global": "Ember.getProperties",
     "module": "@ember/object",
     "export": "getProperties",
-    "localName": "getProperties",
     "deprecated": false
   },
   {
     "global": "Ember.getWithDefault",
     "module": "@ember/object",
     "export": "getWithDefault",
-    "localName": "getWithDefault",
     "deprecated": false
   },
   {
     "global": "Ember.observer",
     "module": "@ember/object",
     "export": "observer",
-    "localName": "observer",
     "deprecated": false
   },
   {
     "global": "Ember.set",
     "module": "@ember/object",
     "export": "set",
-    "localName": "set",
     "deprecated": false
   },
   {
     "global": "Ember.setProperties",
     "module": "@ember/object",
     "export": "setProperties",
-    "localName": "setProperties",
     "deprecated": false
   },
   {
     "global": "Ember.trySet",
     "module": "@ember/object",
     "export": "trySet",
-    "localName": "trySet",
     "deprecated": false
   },
   {
@@ -416,245 +382,210 @@
     "global": "Ember.computed.alias",
     "module": "@ember/object/computed",
     "export": "alias",
-    "localName": "alias",
     "deprecated": false
   },
   {
     "global": "Ember.computed.and",
     "module": "@ember/object/computed",
     "export": "and",
-    "localName": "and",
     "deprecated": false
   },
   {
     "global": "Ember.computed.bool",
     "module": "@ember/object/computed",
     "export": "bool",
-    "localName": "bool",
     "deprecated": false
   },
   {
     "global": "Ember.computed.collect",
     "module": "@ember/object/computed",
     "export": "collect",
-    "localName": "collect",
     "deprecated": false
   },
   {
     "global": "Ember.computed.deprecatingAlias",
     "module": "@ember/object/computed",
     "export": "deprecatingAlias",
-    "localName": "deprecatingAlias",
     "deprecated": false
   },
   {
     "global": "Ember.computed.empty",
     "module": "@ember/object/computed",
     "export": "empty",
-    "localName": "empty",
     "deprecated": false
   },
   {
     "global": "Ember.computed.equal",
     "module": "@ember/object/computed",
     "export": "equal",
-    "localName": "equal",
     "deprecated": false
   },
   {
     "global": "Ember.expandProperties",
     "module": "@ember/object/computed",
     "export": "expandProperties",
-    "localName": "expandProperties",
     "deprecated": false
   },
   {
     "global": "Ember.computed.filter",
     "module": "@ember/object/computed",
     "export": "filter",
-    "localName": "filter",
     "deprecated": false
   },
   {
     "global": "Ember.computed.filterBy",
     "module": "@ember/object/computed",
     "export": "filterBy",
-    "localName": "filterBy",
     "deprecated": false
   },
   {
     "global": "Ember.computed.filterProperty",
     "module": "@ember/object/computed",
     "export": "filterProperty",
-    "localName": "filterProperty",
     "deprecated": false
   },
   {
     "global": "Ember.computed.gt",
     "module": "@ember/object/computed",
     "export": "gt",
-    "localName": "gt",
     "deprecated": false
   },
   {
     "global": "Ember.computed.gte",
     "module": "@ember/object/computed",
     "export": "gte",
-    "localName": "gte",
     "deprecated": false
   },
   {
     "global": "Ember.computed.intersect",
     "module": "@ember/object/computed",
     "export": "intersect",
-    "localName": "intersect",
     "deprecated": false
   },
   {
     "global": "Ember.computed.lt",
     "module": "@ember/object/computed",
     "export": "lt",
-    "localName": "lt",
     "deprecated": false
   },
   {
     "global": "Ember.computed.lte",
     "module": "@ember/object/computed",
     "export": "lte",
-    "localName": "lte",
     "deprecated": false
   },
   {
     "global": "Ember.computed.map",
     "module": "@ember/object/computed",
     "export": "map",
-    "localName": "map",
     "deprecated": false
   },
   {
     "global": "Ember.computed.mapBy",
     "module": "@ember/object/computed",
     "export": "mapBy",
-    "localName": "mapBy",
     "deprecated": false
   },
   {
     "global": "Ember.computed.mapProperty",
     "module": "@ember/object/computed",
     "export": "mapProperty",
-    "localName": "mapProperty",
     "deprecated": false
   },
   {
     "global": "Ember.computed.match",
     "module": "@ember/object/computed",
     "export": "match",
-    "localName": "match",
     "deprecated": false
   },
   {
     "global": "Ember.computed.max",
     "module": "@ember/object/computed",
     "export": "max",
-    "localName": "max",
     "deprecated": false
   },
   {
     "global": "Ember.computed.min",
     "module": "@ember/object/computed",
     "export": "min",
-    "localName": "min",
     "deprecated": false
   },
   {
     "global": "Ember.computed.none",
     "module": "@ember/object/computed",
     "export": "none",
-    "localName": "none",
     "deprecated": false
   },
   {
     "global": "Ember.computed.not",
     "module": "@ember/object/computed",
     "export": "not",
-    "localName": "not",
     "deprecated": false
   },
   {
     "global": "Ember.computed.notEmpty",
     "module": "@ember/object/computed",
     "export": "notEmpty",
-    "localName": "notEmpty",
     "deprecated": false
   },
   {
     "global": "Ember.computed.oneWay",
     "module": "@ember/object/computed",
     "export": "oneWay",
-    "localName": "oneWay",
     "deprecated": false
   },
   {
     "global": "Ember.computed.or",
     "module": "@ember/object/computed",
     "export": "or",
-    "localName": "or",
     "deprecated": false
   },
   {
     "global": "Ember.computed.readOnly",
     "module": "@ember/object/computed",
     "export": "readOnly",
-    "localName": "readOnly",
     "deprecated": false
   },
   {
     "global": "Ember.computed.reads",
     "module": "@ember/object/computed",
     "export": "reads",
-    "localName": "reads",
     "deprecated": false
   },
   {
     "global": "Ember.computed.setDiff",
     "module": "@ember/object/computed",
     "export": "setDiff",
-    "localName": "setDiff",
     "deprecated": false
   },
   {
     "global": "Ember.computed.sort",
     "module": "@ember/object/computed",
     "export": "sort",
-    "localName": "sort",
     "deprecated": false
   },
   {
     "global": "Ember.computed.sum",
     "module": "@ember/object/computed",
     "export": "sum",
-    "localName": "sum",
     "deprecated": false
   },
   {
     "global": "Ember.computed.union",
     "module": "@ember/object/computed",
     "export": "union",
-    "localName": "union",
     "deprecated": false
   },
   {
     "global": "Ember.computed.uniq",
     "module": "@ember/object/computed",
     "export": "uniq",
-    "localName": "uniq",
     "deprecated": false
   },
   {
     "global": "Ember.computed.uniqBy",
     "module": "@ember/object/computed",
     "export": "uniqBy",
-    "localName": "uniqBy",
     "deprecated": false
   },
   {
@@ -675,49 +606,42 @@
     "global": "Ember.on",
     "module": "@ember/object/evented",
     "export": "on",
-    "localName": "on",
     "deprecated": false
   },
   {
     "global": "Ember.addListener",
     "module": "@ember/object/events",
     "export": "addListener",
-    "localName": "addListener",
     "deprecated": false
   },
   {
     "global": "Ember.removeListener",
     "module": "@ember/object/events",
     "export": "removeListener",
-    "localName": "removeListener",
     "deprecated": false
   },
   {
     "global": "Ember.sendEvent",
     "module": "@ember/object/events",
     "export": "sendEvent",
-    "localName": "sendEvent",
     "deprecated": false
   },
   {
     "global": "Ember.cacheFor",
     "module": "@ember/object/internals",
     "export": "cacheFor",
-    "localName": "cacheFor",
     "deprecated": false
   },
   {
     "global": "Ember.copy",
     "module": "@ember/object/internals",
     "export": "copy",
-    "localName": "copy",
     "deprecated": false
   },
   {
     "global": "Ember.guidFor",
     "module": "@ember/object/internals",
     "export": "guidFor",
-    "localName": "guidFor",
     "deprecated": false
   },
   {
@@ -738,14 +662,12 @@
     "global": "Ember.addObserver",
     "module": "@ember/object/observers",
     "export": "addObserver",
-    "localName": "addObserver",
     "deprecated": false
   },
   {
     "global": "Ember.removeObserver",
     "module": "@ember/object/observers",
     "export": "removeObserver",
-    "localName": "removeObserver",
     "deprecated": false
   },
   {
@@ -766,35 +688,30 @@
     "global": "Ember.assign",
     "module": "@ember/polyfills",
     "export": "assign",
-    "localName": "assign",
     "deprecated": false
   },
   {
     "global": "Ember.create",
     "module": "@ember/polyfills",
     "export": "create",
-    "localName": "create",
     "deprecated": false
   },
   {
     "global": "Ember.platform.hasPropertyAccessors",
     "module": "@ember/polyfills",
     "export": "hasPropertyAccessors",
-    "localName": "hasPropertyAccessors",
     "deprecated": false
   },
   {
     "global": "Ember.keys",
     "module": "@ember/polyfills",
     "export": "keys",
-    "localName": "keys",
     "deprecated": false
   },
   {
     "global": "Ember.merge",
     "module": "@ember/polyfills",
     "export": "merge",
-    "localName": "merge",
     "deprecated": false
   },
   {
@@ -857,91 +774,78 @@
     "global": "Ember.run.begin",
     "module": "@ember/runloop",
     "export": "begin",
-    "localName": "begin",
     "deprecated": false
   },
   {
     "global": "Ember.run.bind",
     "module": "@ember/runloop",
     "export": "bind",
-    "localName": "bind",
     "deprecated": false
   },
   {
     "global": "Ember.run.cancel",
     "module": "@ember/runloop",
     "export": "cancel",
-    "localName": "cancel",
     "deprecated": false
   },
   {
     "global": "Ember.run.debounce",
     "module": "@ember/runloop",
     "export": "debounce",
-    "localName": "debounce",
     "deprecated": false
   },
   {
     "global": "Ember.run.end",
     "module": "@ember/runloop",
     "export": "end",
-    "localName": "end",
     "deprecated": false
   },
   {
     "global": "Ember.run.join",
     "module": "@ember/runloop",
     "export": "join",
-    "localName": "join",
     "deprecated": false
   },
   {
     "global": "Ember.run.later",
     "module": "@ember/runloop",
     "export": "later",
-    "localName": "later",
     "deprecated": false
   },
   {
     "global": "Ember.run.next",
     "module": "@ember/runloop",
     "export": "next",
-    "localName": "next",
     "deprecated": false
   },
   {
     "global": "Ember.run.once",
     "module": "@ember/runloop",
     "export": "once",
-    "localName": "once",
     "deprecated": false
   },
   {
     "global": "Ember.run",
     "module": "@ember/runloop",
     "export": "run",
-    "localName": "run",
     "deprecated": false
   },
   {
     "global": "Ember.run.schedule",
     "module": "@ember/runloop",
     "export": "schedule",
-    "localName": "schedule",
     "deprecated": false
   },
   {
     "global": "Ember.run.scheduleOnce",
     "module": "@ember/runloop",
     "export": "scheduleOnce",
-    "localName": "scheduleOnce",
     "deprecated": false
   },
   {
     "global": "Ember.run.throttle",
     "module": "@ember/runloop",
     "export": "throttle",
-    "localName": "throttle",
     "deprecated": false
   },
   {
@@ -955,56 +859,48 @@
     "global": "Ember.inject.service",
     "module": "@ember/service",
     "export": "inject",
-    "localName": "inject",
     "deprecated": false
   },
   {
     "global": "Ember.String.camelize",
     "module": "@ember/string",
     "export": "camelize",
-    "localName": "camelize",
     "deprecated": false
   },
   {
     "global": "Ember.String.capitalize",
     "module": "@ember/string",
     "export": "capitalize",
-    "localName": "capitalize",
     "deprecated": false
   },
   {
     "global": "Ember.String.classify",
     "module": "@ember/string",
     "export": "classify",
-    "localName": "classify",
     "deprecated": false
   },
   {
     "global": "Ember.String.dasherize",
     "module": "@ember/string",
     "export": "dasherize",
-    "localName": "dasherize",
     "deprecated": false
   },
   {
     "global": "Ember.String.decamelize",
     "module": "@ember/string",
     "export": "decamelize",
-    "localName": "decamelize",
     "deprecated": false
   },
   {
     "global": "Ember.String.fmt",
     "module": "@ember/string",
     "export": "fmt",
-    "localName": "fmt",
     "deprecated": false
   },
   {
     "global": "Ember.String.htmlSafe",
     "module": "@ember/string",
     "export": "htmlSafe",
-    "localName": "htmlSafe",
     "deprecated": true,
     "replacement": {
       "module": "@ember/template",
@@ -1015,7 +911,6 @@
     "global": "Ember.String.isHTMLSafe",
     "module": "@ember/string",
     "export": "isHTMLSafe",
-    "localName": "isHTMLSafe",
     "deprecated": true,
     "replacement": {
       "module": "@ember/template",
@@ -1026,91 +921,78 @@
     "global": "Ember.String.loc",
     "module": "@ember/string",
     "export": "loc",
-    "localName": "loc",
     "deprecated": false
   },
   {
     "global": "Ember.String.underscore",
     "module": "@ember/string",
     "export": "underscore",
-    "localName": "underscore",
     "deprecated": false
   },
   {
     "global": "Ember.String.w",
     "module": "@ember/string",
     "export": "w",
-    "localName": "w",
     "deprecated": false
   },
   {
     "global": "Ember.String.htmlSafe",
     "module": "@ember/template",
     "export": "htmlSafe",
-    "localName": "htmlSafe",
     "deprecated": false
   },
   {
     "global": "Ember.String.isHTMLSafe",
     "module": "@ember/template",
     "export": "isHTMLSafe",
-    "localName": "isHTMLSafe",
     "deprecated": false
   },
   {
     "global": "Ember.HTMLBars.compile",
     "module": "@ember/template-compilation",
     "export": "compileTemplate",
-    "localName": "compileTemplate",
     "deprecated": false
   },
   {
     "global": "Ember.HTMLBars.precompile",
     "module": "@ember/template-compilation",
     "export": "precompileTemplate",
-    "localName": "precompileTemplate",
     "deprecated": false
   },
   {
     "global": "Ember.HTMLBars.template",
     "module": "@ember/template-compilation",
     "export": "wrapTemplate",
-    "localName": "wrapTemplate",
     "deprecated": false
   },
   {
     "global": "Ember.Test.registerAsyncHelper",
     "module": "@ember/test",
     "export": "registerAsyncHelper",
-    "localName": "registerAsyncHelper",
     "deprecated": false
   },
   {
     "global": "Ember.Test.registerHelper",
     "module": "@ember/test",
     "export": "registerHelper",
-    "localName": "registerHelper",
     "deprecated": false
   },
   {
     "global": "Ember.Test.registerWaiter",
     "module": "@ember/test",
     "export": "registerWaiter",
-    "localName": "registerWaiter",
     "deprecated": false
   },
   {
     "global": "Ember.Test.unregisterHelper",
     "module": "@ember/test",
     "export": "unregisterHelper",
-    "localName": "unregisterHelper",
     "deprecated": false
   },
   {
     "global": "Ember.Test.unregisterWaiter",
     "module": "@ember/test",
     "export": "unregisterWaiter",
-    "localName": "unregisterWaiter",
     "deprecated": false
   },
   {
@@ -1124,70 +1006,60 @@
     "global": "Ember.compare",
     "module": "@ember/utils",
     "export": "compare",
-    "localName": "compare",
     "deprecated": false
   },
   {
     "global": "Ember.isBlank",
     "module": "@ember/utils",
     "export": "isBlank",
-    "localName": "isBlank",
     "deprecated": false
   },
   {
     "global": "Ember.isEmpty",
     "module": "@ember/utils",
     "export": "isEmpty",
-    "localName": "isEmpty",
     "deprecated": false
   },
   {
     "global": "Ember.isEqual",
     "module": "@ember/utils",
     "export": "isEqual",
-    "localName": "isEqual",
     "deprecated": false
   },
   {
     "global": "Ember.isNone",
     "module": "@ember/utils",
     "export": "isNone",
-    "localName": "isNone",
     "deprecated": false
   },
   {
     "global": "Ember.isPresent",
     "module": "@ember/utils",
     "export": "isPresent",
-    "localName": "isPresent",
     "deprecated": false
   },
   {
     "global": "Ember.tryInvoke",
     "module": "@ember/utils",
     "export": "tryInvoke",
-    "localName": "tryInvoke",
     "deprecated": false
   },
   {
     "global": "Ember.typeOf",
     "module": "@ember/utils",
     "export": "typeOf",
-    "localName": "typeOf",
     "deprecated": false
   },
   {
     "global": "Ember.VERSION",
     "module": "@ember/version",
     "export": "VERSION",
-    "localName": "VERSION",
     "deprecated": false
   },
   {
     "global": "Ember.Application",
     "module": "ember-application",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/application",
@@ -1198,7 +1070,6 @@
     "global": "Ember.Array",
     "module": "ember-array",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/array",
@@ -1209,7 +1080,6 @@
     "global": "Ember.MutableArray",
     "module": "ember-array/mutable",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/array/mutable",
@@ -1220,7 +1090,6 @@
     "global": "Ember.A",
     "module": "ember-array/utils",
     "export": "A",
-    "localName": "A",
     "deprecated": true,
     "replacement": {
       "module": "@ember/array",
@@ -1231,7 +1100,6 @@
     "global": "Ember.isArray",
     "module": "ember-array/utils",
     "export": "isEmberArray",
-    "localName": "isEmberArray",
     "deprecated": true,
     "replacement": {
       "module": "@ember/array",
@@ -1242,7 +1110,6 @@
     "global": "Ember.makeArray",
     "module": "ember-array/utils",
     "export": "wrap",
-    "localName": "wrap",
     "deprecated": true,
     "replacement": {
       "module": "@ember/array",
@@ -1253,7 +1120,6 @@
     "global": "Ember.Component",
     "module": "ember-component",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/component",
@@ -1264,7 +1130,6 @@
     "global": "Ember.Checkbox",
     "module": "ember-components/checkbox",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/component/checkbox",
@@ -1275,7 +1140,6 @@
     "global": "Ember.TextArea",
     "module": "ember-components/text-area",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/component/text-area",
@@ -1286,7 +1150,6 @@
     "global": "Ember.TextField",
     "module": "ember-components/text-field",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/component/text-field",
@@ -1297,7 +1160,6 @@
     "global": "Ember.computed",
     "module": "ember-computed",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object",
@@ -1308,7 +1170,6 @@
     "global": "Ember.computed.alias",
     "module": "ember-computed",
     "export": "alias",
-    "localName": "alias",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1319,7 +1180,6 @@
     "global": "Ember.computed.and",
     "module": "ember-computed",
     "export": "and",
-    "localName": "and",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1330,7 +1190,6 @@
     "global": "Ember.computed.bool",
     "module": "ember-computed",
     "export": "bool",
-    "localName": "bool",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1341,7 +1200,6 @@
     "global": "Ember.computed.collect",
     "module": "ember-computed",
     "export": "collect",
-    "localName": "collect",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1352,7 +1210,6 @@
     "global": "Ember.computed.deprecatingAlias",
     "module": "ember-computed",
     "export": "deprecatingAlias",
-    "localName": "deprecatingAlias",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1363,7 +1220,6 @@
     "global": "Ember.computed.empty",
     "module": "ember-computed",
     "export": "empty",
-    "localName": "empty",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1374,7 +1230,6 @@
     "global": "Ember.computed.equal",
     "module": "ember-computed",
     "export": "equal",
-    "localName": "equal",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1385,7 +1240,6 @@
     "global": "Ember.computed.filter",
     "module": "ember-computed",
     "export": "filter",
-    "localName": "filter",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1396,7 +1250,6 @@
     "global": "Ember.computed.filterBy",
     "module": "ember-computed",
     "export": "filterBy",
-    "localName": "filterBy",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1407,7 +1260,6 @@
     "global": "Ember.computed.filterProperty",
     "module": "ember-computed",
     "export": "filterProperty",
-    "localName": "filterProperty",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1418,7 +1270,6 @@
     "global": "Ember.computed.gt",
     "module": "ember-computed",
     "export": "gt",
-    "localName": "gt",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1429,7 +1280,6 @@
     "global": "Ember.computed.gte",
     "module": "ember-computed",
     "export": "gte",
-    "localName": "gte",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1440,7 +1290,6 @@
     "global": "Ember.computed.intersect",
     "module": "ember-computed",
     "export": "intersect",
-    "localName": "intersect",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1451,7 +1300,6 @@
     "global": "Ember.computed.lt",
     "module": "ember-computed",
     "export": "lt",
-    "localName": "lt",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1462,7 +1310,6 @@
     "global": "Ember.computed.lte",
     "module": "ember-computed",
     "export": "lte",
-    "localName": "lte",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1473,7 +1320,6 @@
     "global": "Ember.computed.map",
     "module": "ember-computed",
     "export": "map",
-    "localName": "map",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1484,7 +1330,6 @@
     "global": "Ember.computed.mapBy",
     "module": "ember-computed",
     "export": "mapBy",
-    "localName": "mapBy",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1495,7 +1340,6 @@
     "global": "Ember.computed.mapProperty",
     "module": "ember-computed",
     "export": "mapProperty",
-    "localName": "mapProperty",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1506,7 +1350,6 @@
     "global": "Ember.computed.match",
     "module": "ember-computed",
     "export": "match",
-    "localName": "match",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1517,7 +1360,6 @@
     "global": "Ember.computed.max",
     "module": "ember-computed",
     "export": "max",
-    "localName": "max",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1528,7 +1370,6 @@
     "global": "Ember.computed.min",
     "module": "ember-computed",
     "export": "min",
-    "localName": "min",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1539,7 +1380,6 @@
     "global": "Ember.computed.none",
     "module": "ember-computed",
     "export": "none",
-    "localName": "none",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1550,7 +1390,6 @@
     "global": "Ember.computed.not",
     "module": "ember-computed",
     "export": "not",
-    "localName": "not",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1561,7 +1400,6 @@
     "global": "Ember.computed.notEmpty",
     "module": "ember-computed",
     "export": "notEmpty",
-    "localName": "notEmpty",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1572,7 +1410,6 @@
     "global": "Ember.computed.oneWay",
     "module": "ember-computed",
     "export": "oneWay",
-    "localName": "oneWay",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1583,7 +1420,6 @@
     "global": "Ember.computed.or",
     "module": "ember-computed",
     "export": "or",
-    "localName": "or",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1594,7 +1430,6 @@
     "global": "Ember.computed.readOnly",
     "module": "ember-computed",
     "export": "readOnly",
-    "localName": "readOnly",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1605,7 +1440,6 @@
     "global": "Ember.computed.reads",
     "module": "ember-computed",
     "export": "reads",
-    "localName": "reads",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1616,7 +1450,6 @@
     "global": "Ember.computed.setDiff",
     "module": "ember-computed",
     "export": "setDiff",
-    "localName": "setDiff",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1627,7 +1460,6 @@
     "global": "Ember.computed.sort",
     "module": "ember-computed",
     "export": "sort",
-    "localName": "sort",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1638,7 +1470,6 @@
     "global": "Ember.computed.sum",
     "module": "ember-computed",
     "export": "sum",
-    "localName": "sum",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1649,7 +1480,6 @@
     "global": "Ember.computed.union",
     "module": "ember-computed",
     "export": "union",
-    "localName": "union",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1660,7 +1490,6 @@
     "global": "Ember.computed.uniq",
     "module": "ember-computed",
     "export": "uniq",
-    "localName": "uniq",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/computed",
@@ -1671,7 +1500,6 @@
     "global": "Ember.Controller",
     "module": "ember-controller",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/controller",
@@ -1682,7 +1510,6 @@
     "global": "Ember.inject.controller",
     "module": "ember-controller/inject",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/controller",
@@ -1693,7 +1520,6 @@
     "global": "Ember.ArrayProxy",
     "module": "ember-controller/proxy",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/array/proxy",
@@ -1704,14 +1530,12 @@
     "global": "Ember.SortableMixin",
     "module": "ember-controllers/sortable",
     "export": "default",
-    "localName": "default",
     "deprecated": true
   },
   {
     "global": "Ember.inspect",
     "module": "ember-debug",
     "export": "inspect",
-    "localName": "inspect",
     "deprecated": true,
     "replacement": {
       "module": "@ember/debug",
@@ -1722,7 +1546,6 @@
     "global": "Ember.debug",
     "module": "ember-debug",
     "export": "log",
-    "localName": "log",
     "deprecated": true,
     "replacement": {
       "module": "@ember/debug",
@@ -1733,7 +1556,6 @@
     "global": "Ember.runInDebug",
     "module": "ember-debug",
     "export": "run",
-    "localName": "run",
     "deprecated": true,
     "replacement": {
       "module": "@ember/debug",
@@ -1744,7 +1566,6 @@
     "global": "Ember.warn",
     "module": "ember-debug",
     "export": "warn",
-    "localName": "warn",
     "deprecated": true,
     "replacement": {
       "module": "@ember/debug",
@@ -1755,7 +1576,6 @@
     "global": "Ember.ContainerDebugAdapter",
     "module": "ember-debug/container-debug-adapter",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/debug/container-debug-adapter",
@@ -1766,7 +1586,6 @@
     "global": "Ember.DataAdapter",
     "module": "ember-debug/data-adapter",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/debug/data-adapter",
@@ -1777,7 +1596,6 @@
     "global": "Ember.deprecate",
     "module": "ember-deprecations",
     "export": "deprecate",
-    "localName": "deprecate",
     "deprecated": true,
     "replacement": {
       "module": "@ember/application/deprecations",
@@ -1788,7 +1606,6 @@
     "global": "Ember.deprecateFunc",
     "module": "ember-deprecations",
     "export": "deprecateFunc",
-    "localName": "deprecateFunc",
     "deprecated": true,
     "replacement": {
       "module": "@ember/application/deprecations",
@@ -1799,7 +1616,6 @@
     "global": "Ember.Enumerable",
     "module": "ember-enumerable",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/enumerable",
@@ -1810,7 +1626,6 @@
     "global": "Ember.Evented",
     "module": "ember-evented",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/evented",
@@ -1821,7 +1636,6 @@
     "global": "Ember.on",
     "module": "ember-evented/on",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/evented",
@@ -1832,7 +1646,6 @@
     "global": "Ember.DefaultResolver",
     "module": "ember-globals-resolver",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/application/globals-resolver",
@@ -1843,7 +1656,6 @@
     "global": "Ember.Helper",
     "module": "ember-helper",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/component/helper",
@@ -1854,7 +1666,6 @@
     "global": "Ember.Helper.helper",
     "module": "ember-helper",
     "export": "helper",
-    "localName": "helper",
     "deprecated": true,
     "replacement": {
       "module": "@ember/component/helper",
@@ -1865,7 +1676,6 @@
     "global": "Ember.instrument",
     "module": "ember-instrumentation",
     "export": "instrument",
-    "localName": "instrument",
     "deprecated": true,
     "replacement": {
       "module": "@ember/instrumentation",
@@ -1876,7 +1686,6 @@
     "global": "Ember.reset",
     "module": "ember-instrumentation",
     "export": "reset",
-    "localName": "reset",
     "deprecated": true,
     "replacement": {
       "module": "@ember/instrumentation",
@@ -1887,7 +1696,6 @@
     "global": "Ember.subscribe",
     "module": "ember-instrumentation",
     "export": "subscribe",
-    "localName": "subscribe",
     "deprecated": true,
     "replacement": {
       "module": "@ember/instrumentation",
@@ -1898,7 +1706,6 @@
     "global": "Ember.unsubscribe",
     "module": "ember-instrumentation",
     "export": "unsubscribe",
-    "localName": "unsubscribe",
     "deprecated": true,
     "replacement": {
       "module": "@ember/instrumentation",
@@ -1909,7 +1716,6 @@
     "global": "Ember.HashLocation",
     "module": "ember-locations/hash",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/routing/hash-location",
@@ -1920,7 +1726,6 @@
     "global": "Ember.HistoryLocation",
     "module": "ember-locations/history",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/routing/history-location",
@@ -1931,7 +1736,6 @@
     "global": "Ember.NoneLocation",
     "module": "ember-locations/none",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/routing/none-location",
@@ -1942,7 +1746,6 @@
     "global": "Ember.Map",
     "module": "ember-map",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/map",
@@ -1953,7 +1756,6 @@
     "global": "Ember.MapWithDefault",
     "module": "ember-map",
     "export": "withDefault",
-    "localName": "withDefault",
     "deprecated": true,
     "replacement": {
       "module": "@ember/map/with-default",
@@ -1964,14 +1766,12 @@
     "global": "Ember.destroy",
     "module": "ember-metal/destroy",
     "export": "default",
-    "localName": "default",
     "deprecated": true
   },
   {
     "global": "Ember.addListener",
     "module": "ember-metal/events",
     "export": "addListener",
-    "localName": "addListener",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/events",
@@ -1982,7 +1782,6 @@
     "global": "Ember.removeListener",
     "module": "ember-metal/events",
     "export": "removeListener",
-    "localName": "removeListener",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/events",
@@ -1993,7 +1792,6 @@
     "global": "Ember.sendEvent",
     "module": "ember-metal/events",
     "export": "send",
-    "localName": "send",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/events",
@@ -2004,7 +1802,6 @@
     "global": "Ember.get",
     "module": "ember-metal/get",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object",
@@ -2015,7 +1812,6 @@
     "global": "Ember.getProperties",
     "module": "ember-metal/get",
     "export": "getProperties",
-    "localName": "getProperties",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object",
@@ -2026,7 +1822,6 @@
     "global": "Ember.Mixin",
     "module": "ember-metal/mixin",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/mixin",
@@ -2037,7 +1832,6 @@
     "global": "Ember.observer",
     "module": "ember-metal/observer",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object",
@@ -2048,7 +1842,6 @@
     "global": "Ember.addObserver",
     "module": "ember-metal/observer",
     "export": "addObserver",
-    "localName": "addObserver",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/observers",
@@ -2059,7 +1852,6 @@
     "global": "Ember.removeObserver",
     "module": "ember-metal/observer",
     "export": "removeObserver",
-    "localName": "removeObserver",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/observers",
@@ -2070,7 +1862,6 @@
     "global": "Ember.onLoad",
     "module": "ember-metal/on-load",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/application",
@@ -2081,7 +1872,6 @@
     "global": "Ember.runLoadHooks",
     "module": "ember-metal/on-load",
     "export": "run",
-    "localName": "run",
     "deprecated": true,
     "replacement": {
       "module": "@ember/application",
@@ -2092,7 +1882,6 @@
     "global": "Ember.set",
     "module": "ember-metal/set",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object",
@@ -2103,7 +1892,6 @@
     "global": "Ember.setProperties",
     "module": "ember-metal/set",
     "export": "setProperties",
-    "localName": "setProperties",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object",
@@ -2114,7 +1902,6 @@
     "global": "Ember.trySet",
     "module": "ember-metal/set",
     "export": "trySet",
-    "localName": "trySet",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object",
@@ -2125,7 +1912,6 @@
     "global": "Ember.aliasMethod",
     "module": "ember-metal/utils",
     "export": "aliasMethod",
-    "localName": "aliasMethod",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object",
@@ -2136,7 +1922,6 @@
     "global": "Ember.assert",
     "module": "ember-metal/utils",
     "export": "assert",
-    "localName": "assert",
     "deprecated": true,
     "replacement": {
       "module": "@ember/debug",
@@ -2147,7 +1932,6 @@
     "global": "Ember.cacheFor",
     "module": "ember-metal/utils",
     "export": "cacheFor",
-    "localName": "cacheFor",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/internals",
@@ -2158,7 +1942,6 @@
     "global": "Ember.copy",
     "module": "ember-metal/utils",
     "export": "copy",
-    "localName": "copy",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/internals",
@@ -2169,7 +1952,6 @@
     "global": "Ember.guidFor",
     "module": "ember-metal/utils",
     "export": "guidFor",
-    "localName": "guidFor",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object/internals",
@@ -2180,7 +1962,6 @@
     "global": "Ember.Object",
     "module": "ember-object",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/object",
@@ -2191,7 +1972,6 @@
     "global": "Ember.getOwner",
     "module": "ember-owner/get",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/application",
@@ -2202,7 +1982,6 @@
     "global": "Ember.setOwner",
     "module": "ember-owner/set",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/application",
@@ -2213,7 +1992,6 @@
     "global": "Ember.assign",
     "module": "ember-platform",
     "export": "assign",
-    "localName": "assign",
     "deprecated": true,
     "replacement": {
       "module": "@ember/polyfills",
@@ -2224,7 +2002,6 @@
     "global": "Ember.create",
     "module": "ember-platform",
     "export": "create",
-    "localName": "create",
     "deprecated": true,
     "replacement": {
       "module": "@ember/polyfills",
@@ -2235,7 +2012,6 @@
     "global": "Ember.platform.hasPropertyAccessors",
     "module": "ember-platform",
     "export": "hasAccessors",
-    "localName": "hasAccessors",
     "deprecated": true,
     "replacement": {
       "module": "@ember/polyfills",
@@ -2246,7 +2022,6 @@
     "global": "Ember.keys",
     "module": "ember-platform",
     "export": "keys",
-    "localName": "keys",
     "deprecated": true,
     "replacement": {
       "module": "@ember/polyfills",
@@ -2257,7 +2032,6 @@
     "global": "Ember.Route",
     "module": "ember-route",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/routing/route",
@@ -2268,7 +2042,6 @@
     "global": "Ember.Router",
     "module": "ember-router",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/routing/router",
@@ -2279,7 +2052,6 @@
     "global": "Ember.run",
     "module": "ember-runloop",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/runloop",
@@ -2290,7 +2062,6 @@
     "global": "Ember.run.begin",
     "module": "ember-runloop",
     "export": "begin",
-    "localName": "begin",
     "deprecated": true,
     "replacement": {
       "module": "@ember/runloop",
@@ -2301,7 +2072,6 @@
     "global": "Ember.run.bind",
     "module": "ember-runloop",
     "export": "bind",
-    "localName": "bind",
     "deprecated": true,
     "replacement": {
       "module": "@ember/runloop",
@@ -2312,7 +2082,6 @@
     "global": "Ember.run.cancel",
     "module": "ember-runloop",
     "export": "cancel",
-    "localName": "cancel",
     "deprecated": true,
     "replacement": {
       "module": "@ember/runloop",
@@ -2323,7 +2092,6 @@
     "global": "Ember.run.debounce",
     "module": "ember-runloop",
     "export": "debounce",
-    "localName": "debounce",
     "deprecated": true,
     "replacement": {
       "module": "@ember/runloop",
@@ -2334,7 +2102,6 @@
     "global": "Ember.run.end",
     "module": "ember-runloop",
     "export": "end",
-    "localName": "end",
     "deprecated": true,
     "replacement": {
       "module": "@ember/runloop",
@@ -2345,7 +2112,6 @@
     "global": "Ember.run.join",
     "module": "ember-runloop",
     "export": "join",
-    "localName": "join",
     "deprecated": true,
     "replacement": {
       "module": "@ember/runloop",
@@ -2356,7 +2122,6 @@
     "global": "Ember.run.later",
     "module": "ember-runloop",
     "export": "later",
-    "localName": "later",
     "deprecated": true,
     "replacement": {
       "module": "@ember/runloop",
@@ -2367,7 +2132,6 @@
     "global": "Ember.run.next",
     "module": "ember-runloop",
     "export": "next",
-    "localName": "next",
     "deprecated": true,
     "replacement": {
       "module": "@ember/runloop",
@@ -2378,7 +2142,6 @@
     "global": "Ember.run.once",
     "module": "ember-runloop",
     "export": "once",
-    "localName": "once",
     "deprecated": true,
     "replacement": {
       "module": "@ember/runloop",
@@ -2389,7 +2152,6 @@
     "global": "Ember.run.schedule",
     "module": "ember-runloop",
     "export": "schedule",
-    "localName": "schedule",
     "deprecated": true,
     "replacement": {
       "module": "@ember/runloop",
@@ -2400,7 +2162,6 @@
     "global": "Ember.run.scheduleOnce",
     "module": "ember-runloop",
     "export": "scheduleOnce",
-    "localName": "scheduleOnce",
     "deprecated": true,
     "replacement": {
       "module": "@ember/runloop",
@@ -2411,7 +2172,6 @@
     "global": "Ember.run.throttle",
     "module": "ember-runloop",
     "export": "throttle",
-    "localName": "throttle",
     "deprecated": true,
     "replacement": {
       "module": "@ember/runloop",
@@ -2422,7 +2182,6 @@
     "global": "Ember.Service",
     "module": "ember-service",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/service",
@@ -2433,7 +2192,6 @@
     "global": "Ember.inject.service",
     "module": "ember-service/inject",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/service",
@@ -2444,14 +2202,12 @@
     "global": "Ember.OrderedSet/",
     "module": "ember-set/ordered",
     "export": "default",
-    "localName": "default",
     "deprecated": true
   },
   {
     "global": "Ember.String.camelize",
     "module": "ember-string",
     "export": "camelize",
-    "localName": "camelize",
     "deprecated": true,
     "replacement": {
       "module": "@ember/string",
@@ -2462,7 +2218,6 @@
     "global": "Ember.String.capitalize",
     "module": "ember-string",
     "export": "capitalize",
-    "localName": "capitalize",
     "deprecated": true,
     "replacement": {
       "module": "@ember/string",
@@ -2473,7 +2228,6 @@
     "global": "Ember.String.classify",
     "module": "ember-string",
     "export": "classify",
-    "localName": "classify",
     "deprecated": true,
     "replacement": {
       "module": "@ember/string",
@@ -2484,7 +2238,6 @@
     "global": "Ember.String.dasherize",
     "module": "ember-string",
     "export": "dasherize",
-    "localName": "dasherize",
     "deprecated": true,
     "replacement": {
       "module": "@ember/string",
@@ -2495,7 +2248,6 @@
     "global": "Ember.String.decamelize",
     "module": "ember-string",
     "export": "decamelize",
-    "localName": "decamelize",
     "deprecated": true,
     "replacement": {
       "module": "@ember/string",
@@ -2506,7 +2258,6 @@
     "global": "Ember.String.fmt",
     "module": "ember-string",
     "export": "fmt",
-    "localName": "fmt",
     "deprecated": true,
     "replacement": {
       "module": "@ember/string",
@@ -2517,7 +2268,6 @@
     "global": "Ember.String.htmlSafe",
     "module": "ember-string",
     "export": "htmlSafe",
-    "localName": "htmlSafe",
     "deprecated": true,
     "replacement": {
       "module": "@ember/string",
@@ -2528,7 +2278,6 @@
     "global": "Ember.String.loc",
     "module": "ember-string",
     "export": "loc",
-    "localName": "loc",
     "deprecated": true,
     "replacement": {
       "module": "@ember/string",
@@ -2539,7 +2288,6 @@
     "global": "Ember.String.underscore",
     "module": "ember-string",
     "export": "underscore",
-    "localName": "underscore",
     "deprecated": true,
     "replacement": {
       "module": "@ember/string",
@@ -2550,7 +2298,6 @@
     "global": "Ember.String.w",
     "module": "ember-string",
     "export": "w",
-    "localName": "w",
     "deprecated": true,
     "replacement": {
       "module": "@ember/string",
@@ -2561,14 +2308,12 @@
     "global": "Ember.Test",
     "module": "ember-test",
     "export": "default",
-    "localName": "default",
     "deprecated": true
   },
   {
     "global": "Ember.Test.Adapter",
     "module": "ember-test/adapter",
     "export": "default",
-    "localName": "default",
     "deprecated": true,
     "replacement": {
       "module": "@ember/test/adapter",
@@ -2579,14 +2324,12 @@
     "global": "Ember.Test.QUnitAdapter",
     "module": "ember-test/qunit-adapter",
     "export": "default",
-    "localName": "default",
     "deprecated": true
   },
   {
     "global": "Ember.isBlank",
     "module": "ember-utils",
     "export": "isBlank",
-    "localName": "isBlank",
     "deprecated": true,
     "replacement": {
       "module": "@ember/utils",
@@ -2597,7 +2340,6 @@
     "global": "Ember.isEmpty",
     "module": "ember-utils",
     "export": "isEmpty",
-    "localName": "isEmpty",
     "deprecated": true,
     "replacement": {
       "module": "@ember/utils",
@@ -2608,7 +2350,6 @@
     "global": "Ember.isNone",
     "module": "ember-utils",
     "export": "isNone",
-    "localName": "isNone",
     "deprecated": true,
     "replacement": {
       "module": "@ember/utils",
@@ -2619,7 +2360,6 @@
     "global": "Ember.isPresent",
     "module": "ember-utils",
     "export": "isPresent",
-    "localName": "isPresent",
     "deprecated": true,
     "replacement": {
       "module": "@ember/utils",
@@ -2630,7 +2370,6 @@
     "global": "Ember.tryInvoke",
     "module": "ember-utils",
     "export": "tryInvoke",
-    "localName": "tryInvoke",
     "deprecated": true,
     "replacement": {
       "module": "@ember/utils",
@@ -2641,7 +2380,6 @@
     "global": "Ember.typeOf",
     "module": "ember-utils",
     "export": "typeOf",
-    "localName": "typeOf",
     "deprecated": true,
     "replacement": {
       "module": "@ember/utils",
@@ -2673,91 +2411,78 @@
     "global": "Ember.RSVP.all",
     "module": "rsvp",
     "export": "all",
-    "localName": "all",
     "deprecated": false
   },
   {
     "global": "Ember.RSVP.allSettled",
     "module": "rsvp",
     "export": "allSettled",
-    "localName": "allSettled",
     "deprecated": false
   },
   {
     "global": "Ember.RSVP.defer",
     "module": "rsvp",
     "export": "defer",
-    "localName": "defer",
     "deprecated": false
   },
   {
     "global": "Ember.RSVP.denodeify",
     "module": "rsvp",
     "export": "denodeify",
-    "localName": "denodeify",
     "deprecated": false
   },
   {
     "global": "Ember.RSVP.filter",
     "module": "rsvp",
     "export": "filter",
-    "localName": "filter",
     "deprecated": false
   },
   {
     "global": "Ember.RSVP.hash",
     "module": "rsvp",
     "export": "hash",
-    "localName": "hash",
     "deprecated": false
   },
   {
     "global": "Ember.RSVP.hashSettled",
     "module": "rsvp",
     "export": "hashSettled",
-    "localName": "hashSettled",
     "deprecated": false
   },
   {
     "global": "Ember.RSVP.map",
     "module": "rsvp",
     "export": "map",
-    "localName": "map",
     "deprecated": false
   },
   {
     "global": "Ember.RSVP.off",
     "module": "rsvp",
     "export": "off",
-    "localName": "off",
     "deprecated": false
   },
   {
     "global": "Ember.RSVP.on",
     "module": "rsvp",
     "export": "on",
-    "localName": "on",
     "deprecated": false
   },
   {
     "global": "Ember.RSVP.race",
     "module": "rsvp",
     "export": "race",
-    "localName": "race",
     "deprecated": false
   },
   {
     "global": "Ember.RSVP.reject",
     "module": "rsvp",
     "export": "reject",
-    "localName": "reject",
     "deprecated": false
   },
   {
     "global": "Ember.RSVP.resolve",
     "module": "rsvp",
     "export": "resolve",
-    "localName": "resolve",
     "deprecated": false
   }
 ]
