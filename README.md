@@ -536,29 +536,6 @@ interface Mapping {
 }
 ```
 
-### Module Changes
-
-If you want to change how globals are mapped into modules, you will find
-the data structure that controls that in `globals.json`. The structure
-is:
-
-```js
-{
-  "globalPath": ["moduleName", "namedExport"?, "localName"?]
-}
-```
-
-Only the first item in the array is mandatory. The second item is only needed
-for named exports. The third item is only necessary if the local identifier the
-import is bound to should be different than named export (or the previous global
-version, in the case of default exports).
-
-A few examples:
-
-1. `Ember.Application` ⟹ `"Application": ["@ember/application"]` ⟹ `import Application from "@ember/application"`
-1. `Ember.computed.or` ⟹ `"computed.or": ["@ember/object/computed", "or"]` ⟹ `import { or } from "@ember/object/computed"`
-1. `Ember.DefaultResolver` ⟹ `"DefaultResolver": ["@ember/application/globals-resolver", null, "GlobalsResolver"]` ⟹ `import GlobalsResolver from "@ember/application/globals-resolver"`
-
 ### Reserved Words
 
 In some cases, Ember's names may conflict with names built in to the language.
