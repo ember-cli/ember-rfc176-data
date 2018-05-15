@@ -1,17 +1,5 @@
 # Changelog
 
-## v0.3.3 (2018-04-23)
-
-#### :rocket: Enhancement
-* [#48](https://github.com/ember-cli/ember-rfc176-data/pull/48) Add more missing public APIs. ([@rwjblue](https://github.com/rwjblue))
-
-#### :memo: Documentation
-* [#46](https://github.com/ember-cli/ember-rfc176-data/pull/46) Update README to show `helper`->`buildHelper`. ([@bantic](https://github.com/bantic))
-
-#### Committers: 2
-- Cory Forsyth ([bantic](https://github.com/bantic))
-- Robert Jackson ([rwjblue](https://github.com/rwjblue))
-
 ## v0.3.2 (2018-04-02)
 
 #### :rocket: Enhancement
