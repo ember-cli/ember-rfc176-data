@@ -961,8 +961,8 @@
   },
   {
     "global": "Ember.HTMLBars.template",
-    "module": "@ember/template-compilation",
-    "export": "wrapTemplate",
+    "module": "@ember/template-factory",
+    "export": "createTemplateFactory",
     "deprecated": false
   },
   {
