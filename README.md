@@ -100,7 +100,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.HistoryLocation`                  | `import HistoryLocation from '@ember/routing/history-location';`            |
 | `Ember.HTMLBars.compile`                 | `import { compileTemplate } from '@ember/template-compilation';`            |
 | `Ember.HTMLBars.precompile`              | `import { precompileTemplate } from '@ember/template-compilation';`         |
-| `Ember.HTMLBars.template`                | `import { wrapTemplate } from '@ember/template-compilation';`               |
+| `Ember.HTMLBars.template`                | `import { createTemplateFactory } from '@ember/template-factory';`          |
 | `Ember.inject.controller`                | `import { inject } from '@ember/controller';`                               |
 | `Ember.inject.service`                   | `import { inject } from '@ember/service';`                                  |
 | `Ember.inspect`                          | `import { inspect } from '@ember/debug';`                                   |
@@ -149,7 +149,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.RSVP.map`                         | `import { map } from 'rsvp';`                                               |
 | `Ember.RSVP.off`                         | `import { off } from 'rsvp';`                                               |
 | `Ember.RSVP.on`                          | `import { on } from 'rsvp';`                                                |
-| `Ember.RSVP.Promise`                     | `import { Promise as EmberPromise } from 'rsvp';`                           |
+| `Ember.RSVP.Promise`                     | `import { Promise } from 'rsvp';`                                           |
 | `Ember.RSVP.race`                        | `import { race } from 'rsvp';`                                              |
 | `Ember.RSVP.reject`                      | `import { reject } from 'rsvp';`                                            |
 | `Ember.RSVP.resolve`                     | `import { resolve } from 'rsvp';`                                           |
@@ -232,14 +232,14 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { isEnabled } from '@ember/canary-features';` | `Ember.FEATURES.isEnabled` |
 
 #### `@ember/component`
-| Module                                                 | Global                |
-| ---                                                    | ---                   |
-| `import Component from '@ember/component';`            | `Ember.Component`     |
-| `import Checkbox from '@ember/component/checkbox';`    | `Ember.Checkbox`      |
-| `import Helper from '@ember/component/helper';`        | `Ember.Helper`        |
-| `import { helper } from '@ember/component/helper';`    | `Ember.Helper.helper` |
-| `import TextArea from '@ember/component/text-area';`   | `Ember.TextArea`      |
-| `import TextField from '@ember/component/text-field';` | `Ember.TextField`     |
+| Module                                                             | Global                |
+| ---                                                                | ---                   |
+| `import Component from '@ember/component';`                        | `Ember.Component`     |
+| `import Checkbox from '@ember/component/checkbox';`                | `Ember.Checkbox`      |
+| `import Helper from '@ember/component/helper';`                    | `Ember.Helper`        |
+| `import { helper as buildHelper } from '@ember/component/helper';` | `Ember.Helper.helper` |
+| `import TextArea from '@ember/component/text-area';`               | `Ember.TextArea`      |
+| `import TextField from '@ember/component/text-field';`             | `Ember.TextField`     |
 
 #### `@ember/controller`
 | Module                                        | Global                    |
@@ -425,7 +425,11 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | ---                                                                 | ---                         |
 | `import { compileTemplate } from '@ember/template-compilation';`    | `Ember.HTMLBars.compile`    |
 | `import { precompileTemplate } from '@ember/template-compilation';` | `Ember.HTMLBars.precompile` |
-| `import { wrapTemplate } from '@ember/template-compilation';`       | `Ember.HTMLBars.template`   |
+
+#### `@ember/template-factory`
+| Module                                                             | Global                    |
+| ---                                                                | ---                       |
+| `import { createTemplateFactory } from '@ember/template-factory';` | `Ember.HTMLBars.template` |
 
 #### `@ember/test`
 | Module                                               | Global                           |
