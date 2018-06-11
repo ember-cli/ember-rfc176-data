@@ -179,8 +179,8 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.String.dasherize`                 | `import { dasherize } from '@ember/string';`                                |
 | `Ember.String.decamelize`                | `import { decamelize } from '@ember/string';`                               |
 | `Ember.String.fmt`                       | `import { fmt } from '@ember/string';`                                      |
-| `Ember.String.htmlSafe`                  | `import { htmlSafe } from '@ember/template';`                               |
-| `Ember.String.isHTMLSafe`                | `import { isHTMLSafe } from '@ember/template';`                             |
+| `Ember.String.htmlSafe`                  | `import { htmlSafe } from '@ember/string';`                               |
+| `Ember.String.isHTMLSafe`                | `import { isHTMLSafe } from '@ember/string';`                             |
 | `Ember.String.loc`                       | `import { loc } from '@ember/string';`                                      |
 | `Ember.String.underscore`                | `import { underscore } from '@ember/string';`                               |
 | `Ember.String.w`                         | `import { w } from '@ember/string';`                                        |
