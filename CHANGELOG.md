@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.3.4 (2018-09-12)
+
+#### :rocket: Enhancement
+* [#43](https://github.com/ember-cli/ember-rfc176-data/pull/43) Add setComponentManager export from @ember/component. ([@smfoote](https://github.com/smfoote))
+
+#### Committers: 1
+- Steven ([smfoote](https://github.com/smfoote))
+
 ## v0.3.3 (2018-05-15)
 
 #### :rocket: Enhancement
