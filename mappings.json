@@ -129,6 +129,12 @@
     "deprecated": false
   },
   {
+    "global": "Ember._setComponentManager",
+    "module": "@ember/component",
+    "export": "setComponentManager",
+    "deprecated": false
+  },
+  {
     "global": "Ember.Checkbox",
     "module": "@ember/component/checkbox",
     "export": "default",
@@ -685,6 +691,7 @@
     "deprecated": false
   },
   {
+
     "global": "Ember.assign",
     "module": "@ember/polyfills",
     "export": "assign",
