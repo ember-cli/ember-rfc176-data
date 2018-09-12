@@ -1,5 +1,42 @@
 # Changelog
 
+## v0.3.3 (2018-05-15)
+
+#### :rocket: Enhancement
+* [#48](https://github.com/ember-cli/ember-rfc176-data/pull/48) Add more missing public APIs. ([@rwjblue](https://github.com/rwjblue))
+
+#### :bug: Bug Fix
+* [#55](https://github.com/ember-cli/ember-rfc176-data/pull/55) Update Ember.HTMLBars.template import location. ([@rwjblue](https://github.com/rwjblue))
+
+#### :memo: Documentation
+* [#54](https://github.com/ember-cli/ember-rfc176-data/pull/54) Removed unneeded 'Module Changes' section of the README. ([@nlfurniss](https://github.com/nlfurniss))
+* [#53](https://github.com/ember-cli/ember-rfc176-data/pull/53) Document mappings.json format. ([@rwjblue](https://github.com/rwjblue))
+* [#50](https://github.com/ember-cli/ember-rfc176-data/pull/50) Update per-module markdown table in README. ([@rwjblue](https://github.com/rwjblue))
+* [#46](https://github.com/ember-cli/ember-rfc176-data/pull/46) Update README to show helper->buildHelper. ([@bantic](https://github.com/bantic))
+
+#### :house: Internal
+* [#52](https://github.com/ember-cli/ember-rfc176-data/pull/52) Sort mappings.json by module then export... ([@rwjblue](https://github.com/rwjblue))
+* [#51](https://github.com/ember-cli/ember-rfc176-data/pull/51) Add linting... ([@rwjblue](https://github.com/rwjblue))
+* [#50](https://github.com/ember-cli/ember-rfc176-data/pull/50) Update per-module markdown table in README. ([@rwjblue](https://github.com/rwjblue))
+* [#49](https://github.com/ember-cli/ember-rfc176-data/pull/49) Update lerna-changelog to 0.7.0. ([@rwjblue](https://github.com/rwjblue))
+
+#### Committers: 3
+- Cory Forsyth ([bantic](https://github.com/bantic))
+- Nathaniel Furniss ([nlfurniss](https://github.com/nlfurniss))
+- Robert Jackson ([rwjblue](https://github.com/rwjblue))
+
+## v0.3.2 (2018-04-02)
+
+#### :rocket: Enhancement
+* [#38](https://github.com/ember-cli/ember-rfc176-data/pull/38) Change htmlSafe and isHTMLSafe import path. ([@Serabe](https://github.com/Serabe))
+
+#### :bug: Bug Fix
+* [#45](https://github.com/ember-cli/ember-rfc176-data/pull/45) Use buildHelper as localName for Ember.Helper.helper. ([@bantic](https://github.com/bantic))
+
+#### Committers: 2
+- Cory Forsyth ([bantic](https://github.com/bantic))
+- Sergio Arbeo ([Serabe](https://github.com/Serabe))
+
 ## v0.3.1 (2017-10-27)
 
 #### :bug: Bug Fix
