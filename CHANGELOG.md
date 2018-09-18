@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.3.5 (2018-09-18)
+
+#### :rocket: Enhancement
+* [#60](https://github.com/ember-cli/ember-rfc176-data/pull/60) Add `capabilities` export from `@ember/component`.. ([@rwjblue](https://github.com/rwjblue))
+
+#### Committers: 1
+- Robert Jackson ([rwjblue](https://github.com/rwjblue))
+
 ## v0.3.4 (2018-09-12)
 
 #### :rocket: Enhancement
