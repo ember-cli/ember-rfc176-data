@@ -697,7 +697,6 @@
     "deprecated": false
   },
   {
-
     "global": "Ember.assign",
     "module": "@ember/polyfills",
     "export": "assign",
