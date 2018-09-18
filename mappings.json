@@ -129,6 +129,12 @@
     "deprecated": false
   },
   {
+    "global": "Ember._componentManagerCapabilities",
+    "module": "@ember/component",
+    "export": "capabilities",
+    "deprecated": false
+  },
+  {
     "global": "Ember._setComponentManager",
     "module": "@ember/component",
     "export": "setComponentManager",
