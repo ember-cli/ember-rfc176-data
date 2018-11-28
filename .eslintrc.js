@@ -26,7 +26,7 @@ module.exports = {
       rules: require('eslint-plugin-jest').configs.recommended.rules,
 
       env: {
-        'jest/globals': true
+        'jest': true
       }
     },
     {
