@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.3.6 (2018-12-12)
+
+#### :rocket: Enhancement
+* [#84](https://github.com/ember-cli/ember-rfc176-data/pull/84) Add notifyPropertyChange re-export from @ember/object ([@mike-north](https://github.com/mike-north))
+
+#### Committers: 1
+- Mike North ([@mike-north](https://github.com/mike-north))
+
 ## v0.3.5 (2018-09-18)
 
 #### :rocket: Enhancement
