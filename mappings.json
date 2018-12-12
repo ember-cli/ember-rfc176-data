@@ -1811,6 +1811,12 @@
     }
   },
   {
+    "global": "Ember.notifyPropertyChange",
+    "module": "@ember/object",
+    "export": "notifyPropertyChange",
+    "deprecated": false
+  },
+  {
     "global": "Ember.get",
     "module": "ember-metal/get",
     "export": "default",
