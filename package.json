@@ -21,7 +21,7 @@
   "devDependencies": {
     "chalk": "^2.4.1",
     "eslint": "^5.9.0",
-    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-prettier": "^3.4.0",
     "eslint-plugin-jest": "^22.1.0",
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-prettier": "^3.0.0",
