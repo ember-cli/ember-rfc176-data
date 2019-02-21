@@ -482,6 +482,11 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { reject } from 'rsvp';`      | `Ember.RSVP.reject`      |
 | `import { resolve } from 'rsvp';`     | `Ember.RSVP.resolve`     |
 
+#### `@glimmer/tracking`
+| Module                                                    | Global                   |
+| ---                                                       | ---                      |
+| `import { tracked } from '@glimmer/tracking';`            | `Ember._tracked`             |
+
 ### Scripts
 
 The tables above can be generated using the scripts in the `scripts` folder, e.g.:

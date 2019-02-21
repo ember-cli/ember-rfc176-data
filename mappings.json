@@ -141,6 +141,12 @@
     "deprecated": false
   },
   {
+    "global": "Ember._tracked",
+    "module": "@glimmer/tracking",
+    "export": "tracked",
+    "deprecated": false
+  },
+  {
     "global": "Ember.Checkbox",
     "module": "@ember/component/checkbox",
     "export": "default",
