@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.3.7 (2019-02-22)
+
+#### :rocket: Enhancement
+* [#113](https://github.com/ember-cli/ember-rfc176-data/pull/113) Add `tracked` from `@glimmer/tracking`, re-export from `Ember._tracked` ([@ppcano](https://github.com/ppcano))
+
+#### Committers: 1
+- Pepe Cano ([@ppcano](https://github.com/ppcano))
+
 ## v0.3.6 (2018-12-12)
 
 #### :rocket: Enhancement
