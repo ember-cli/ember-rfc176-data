@@ -26,7 +26,7 @@
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-prettier": "^3.0.0",
     "got": "^9.6.0",
-    "jest": "^24.1.0",
+    "jest": "^24.3.1",
     "lerna-changelog": "^0.8.2",
     "prettier": "^1.16.4"
   },
