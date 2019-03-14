@@ -141,12 +141,6 @@
     "deprecated": false
   },
   {
-    "global": "Ember._tracked",
-    "module": "@glimmer/tracking",
-    "export": "tracked",
-    "deprecated": false
-  },
-  {
     "global": "Ember.Checkbox",
     "module": "@ember/component/checkbox",
     "export": "default",
@@ -330,6 +324,12 @@
     "deprecated": false
   },
   {
+    "global": "Ember._action",
+    "module": "@ember/object",
+    "export": "action",
+    "deprecated": false
+  },
+  {
     "global": "Ember.aliasMethod",
     "module": "@ember/object",
     "export": "aliasMethod",
@@ -363,6 +363,12 @@
     "global": "Ember.getWithDefault",
     "module": "@ember/object",
     "export": "getWithDefault",
+    "deprecated": false
+  },
+  {
+    "global": "Ember.notifyPropertyChange",
+    "module": "@ember/object",
+    "export": "notifyPropertyChange",
     "deprecated": false
   },
   {
@@ -1072,6 +1078,12 @@
     "global": "Ember.VERSION",
     "module": "@ember/version",
     "export": "VERSION",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._tracked",
+    "module": "@glimmer/tracking",
+    "export": "tracked",
     "deprecated": false
   },
   {
@@ -1815,12 +1827,6 @@
       "module": "@ember/object/events",
       "export": "sendEvent"
     }
-  },
-  {
-    "global": "Ember.notifyPropertyChange",
-    "module": "@ember/object",
-    "export": "notifyPropertyChange",
-    "deprecated": false
   },
   {
     "global": "Ember.get",
