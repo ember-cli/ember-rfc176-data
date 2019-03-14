@@ -330,6 +330,12 @@
     "deprecated": false
   },
   {
+    "global": "Ember._action",
+    "module": "@ember/object",
+    "export": "action",
+    "deprecated": false
+  },
+  {
     "global": "Ember.aliasMethod",
     "module": "@ember/object",
     "export": "aliasMethod",
