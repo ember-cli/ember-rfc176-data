@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.3.8 (2019-03-14)
+
+#### :rocket: Enhancement
+* [#121](https://github.com/ember-cli/ember-rfc176-data/pull/121) Add `@action` decorator mapping. ([@rwjblue](https://github.com/rwjblue))
+
+#### Committers: 1
+- Robert Jackson ([@rwjblue](https://github.com/rwjblue))
+
+
 ## v0.3.7 (2019-02-22)
 
 #### :rocket: Enhancement
