@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.3.9 (2019-04-12)
+
+#### :rocket: Enhancement
+* [#129](https://github.com/ember-cli/ember-rfc176-data/pull/129) Add `setModifierManager` method export off of modifier ([@jordpo](https://github.com/jordpo))
+
+#### Committers: 1
+- Jordan Morano ([@jordpo](https://github.com/jordpo))
+
 ## v0.3.8 (2019-03-14)
 
 #### :rocket: Enhancement
