@@ -317,6 +317,12 @@
     "deprecated": false
   },
   {
+    "global": "Ember._setModifierManager",
+    "module": "@ember/modifier",
+    "export": "setModifierManager",
+    "deprecated": false
+  },
+  {
     "global": "Ember.Object",
     "module": "@ember/object",
     "export": "default",
