@@ -34,13 +34,21 @@
     "global": "Ember.deprecate",
     "module": "@ember/application/deprecations",
     "export": "deprecate",
-    "deprecated": false
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember/debug",
+      "export": "deprecate"
+    }
   },
   {
     "global": "Ember.deprecateFunc",
     "module": "@ember/application/deprecations",
     "export": "deprecateFunc",
-    "deprecated": false
+    "deprecated": true,
+    "replacement": {
+      "module": "@ember/debug",
+      "export": "deprecate"
+    }
   },
   {
     "global": "Ember.DefaultResolver",
@@ -1634,7 +1642,7 @@
     "export": "deprecate",
     "deprecated": true,
     "replacement": {
-      "module": "@ember/application/deprecations",
+      "module": "@ember/debug",
       "export": "deprecate"
     }
   },
@@ -1644,7 +1652,7 @@
     "export": "deprecateFunc",
     "deprecated": true,
     "replacement": {
-      "module": "@ember/application/deprecations",
+      "module": "@ember/debug",
       "export": "deprecateFunc"
     }
   },
