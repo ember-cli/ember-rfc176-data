@@ -28,7 +28,7 @@
     "got": "^9.6.0",
     "jest": "^24.8.0",
     "lerna-changelog": "^0.8.2",
-    "prettier": "^1.17.1"
+    "prettier": "^1.18.0"
   },
   "changelog": {
     "repo": "ember-cli/ember-rfc176-data",
