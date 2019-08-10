@@ -149,6 +149,25 @@
     "deprecated": false
   },
   {
+    "global": "Ember._getComponentTemplate",
+    "module": "@ember/component",
+    "export": "getComponentTemplate",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._setComponentTemplate",
+    "module": "@ember/component",
+    "export": "setComponentTemplate",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._templateOnlyComponent",
+    "module": "@ember/component/template-only",
+    "export": "default",
+    "localName": "templateOnlyComponent",
+    "deprecated": false
+  },
+  {
     "global": "Ember._setModifierManager",
     "module": "@ember/modifier",
     "export": "setModifierManager",
