@@ -1,3 +1,14 @@
+## v0.3.10 (2019-08-12)
+
+#### :rocket: Enhancement
+* [#164](https://github.com/ember-cli/ember-rfc176-data/pull/164) Co-location support (emberjs/rfcs#481) ([@chancancode](https://github.com/chancancode))
+* [#140](https://github.com/ember-cli/ember-rfc176-data/pull/140) deprecate `ember/application/deprecations` ([@bekzod](https://github.com/bekzod))
+
+#### Committers: 3
+- Godfrey Chan ([@chancancode](https://github.com/chancancode))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+- bek ([@bekzod](https://github.com/bekzod))
+
 ## v0.3.9 (2019-04-12)
 
 #### :rocket: Enhancement
