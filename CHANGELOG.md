@@ -1,5 +1,3 @@
-# Changelog
-
 ## v0.3.9 (2019-04-12)
 
 #### :rocket: Enhancement

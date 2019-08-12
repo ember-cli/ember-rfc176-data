@@ -28,7 +28,12 @@
     "got": "^9.6.0",
     "jest": "^24.8.0",
     "lerna-changelog": "^0.8.2",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "release-it": "^12.2.1",
+    "release-it-lerna-changelog": "^1.0.3"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "changelog": {
     "repo": "ember-cli/ember-rfc176-data",
@@ -38,6 +43,19 @@
       "bug": ":bug: Bug Fix",
       "documentation": ":memo: Documentation",
       "internal": ":house: Internal"
+    }
+  },
+  "release-it": {
+    "plugins": {
+      "release-it-lerna-changelog": {
+        "infile": "CHANGELOG.md"
+      }
+    },
+    "git": {
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true
     }
   }
 }
