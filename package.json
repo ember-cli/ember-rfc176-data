@@ -6,16 +6,16 @@
   "bugs": {
     "url": "https://github.com/ember-cli/ember-rfc176-data/issues"
   },
-  "license": "MIT",
-  "author": "Tom Dale <tom@tomdale.net>",
-  "main": "mappings.json",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ember-cli/ember-rfc176-data.git"
   },
+  "license": "MIT",
+  "author": "Tom Dale <tom@tomdale.net>",
+  "main": "mappings.json",
   "scripts": {
-    "lint": "eslint .",
     "changelog": "lerna-changelog",
+    "lint": "eslint .",
     "test": "jest"
   },
   "devDependencies": {
