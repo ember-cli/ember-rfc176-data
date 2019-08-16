@@ -1,3 +1,11 @@
+## v0.3.11 (2019-08-16)
+
+#### :rocket: Enhancement
+* [#166](https://github.com/ember-cli/ember-rfc176-data/pull/166) Add modifier manager capabilities ([@pzuraq](https://github.com/pzuraq))
+
+#### Committers: 1
+- Chris Garrett ([@pzuraq](https://github.com/pzuraq))
+
 ## v0.3.10 (2019-08-12)
 
 #### :rocket: Enhancement
