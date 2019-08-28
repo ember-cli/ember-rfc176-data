@@ -19,6 +19,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | ---                                      | ---                                                                         |
 | `Ember._action`                          | `import { action } from '@ember/object';`                                   |
 | `Ember._componentManagerCapabilities`    | `import { capabilities } from '@ember/component';`                          |
+| `Ember._dependentKeyCompat`              | `import { dependentKeyCompat } from '@ember/object/compat';`                |
 | `Ember._getComponentTemplate`            | `import { getComponentTemplate } from '@ember/component';`                  |
 | `Ember._modifierManagerCapabilities`     | `import { capabilities } from '@ember/modifier';`                           |
 | `Ember._setComponentManager`             | `import { setComponentManager } from '@ember/component';`                   |
@@ -330,6 +331,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { set } from '@ember/object';`                               | `Ember.set`                       |
 | `import { setProperties } from '@ember/object';`                     | `Ember.setProperties`             |
 | `import { trySet } from '@ember/object';`                            | `Ember.trySet`                    |
+| `import { dependentKeyCompat } from '@ember/object/compat';`         | `Ember._dependentKeyCompat`       |
 | `import ComputedProperty from '@ember/object/computed';`             | `Ember.ComputedProperty`          |
 | `import { alias } from '@ember/object/computed';`                    | `Ember.computed.alias`            |
 | `import { and } from '@ember/object/computed';`                      | `Ember.computed.and`              |

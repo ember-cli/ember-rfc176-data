@@ -1,3 +1,14 @@
+## v0.3.12 (2019-08-28)
+
+#### :rocket: Enhancement
+* [#175](https://github.com/ember-cli/ember-rfc176-data/pull/175) Add support for dependentKeyCompat. ([@rwjblue](https://github.com/rwjblue))
+
+#### :memo: Documentation
+* [#176](https://github.com/ember-cli/ember-rfc176-data/pull/176) Update README cross reference tables as part of release process. ([@rwjblue](https://github.com/rwjblue))
+
+#### Committers: 1
+- Robert Jackson ([@rwjblue](https://github.com/rwjblue))
+
 ## v0.3.11 (2019-08-16)
 
 #### :rocket: Enhancement

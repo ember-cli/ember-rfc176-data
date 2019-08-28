@@ -1,6 +1,6 @@
 {
   "name": "ember-rfc176-data",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "JSON data for Ember.js RFC #176",
   "homepage": "https://github.com/ember-cli/ember-rfc176-data#readme",
   "bugs": {
