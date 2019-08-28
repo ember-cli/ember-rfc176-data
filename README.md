@@ -13,6 +13,8 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 
 ### New Modules to Globals
 
+<!-- MODULE_TO_GLOBAL_CROSS_REFERENCE_START -->
+
 | Before                                   | After                                                                       |
 | ---                                      | ---                                                                         |
 | `Ember._action`                          | `import { action } from '@ember/object';`                                   |
@@ -203,7 +205,11 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.VERSION`                          | `import { VERSION } from '@ember/version';`                                 |
 | `Ember.warn`                             | `import { warn } from '@ember/debug';`                                      |
 
+<!-- MODULE_TO_GLOBAL_CROSS_REFERENCE_END -->
+
 ### New Modules to Globals
+
+<!-- MODULE_BY_MODULE_LISTING_START -->
 
 #### `@ember/application`
 | Module                                                               | Global                      |
@@ -496,6 +502,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { reject } from 'rsvp';`      | `Ember.RSVP.reject`      |
 | `import { resolve } from 'rsvp';`     | `Ember.RSVP.resolve`     |
 
+<!-- MODULE_BY_MODULE_LISTING_END -->
 
 ### Scripts
 

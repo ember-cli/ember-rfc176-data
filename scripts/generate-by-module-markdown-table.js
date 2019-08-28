@@ -52,25 +52,6 @@ function sortByPackageAndExport([, , mappingA], [, , mappingB]) {
   return compare(mappingA.module, mappingB.module);
 }
 
-function printTable(table) {
-  Object.keys(table).map(name => {
-    print('#### ' + code(name));
-
-    let group = table[name];
-    let rows = group.rows;
-
-    rows = rows.sort(sortByPackageAndExport);
-
-    rows.unshift(['---', '---']);
-    rows.unshift(['Global', 'Module']);
-    rows.map(([before, after]) => {
-      print(`|${pad(after, group.maxAfter)}|${pad(before, group.maxBefore)}|`);
-    });
-
-    print();
-  });
-}
-
 function code(str) {
   return '`' + str + '`';
 }
@@ -80,14 +61,38 @@ function pad(str, max) {
   return ` ${str}${extra} `;
 }
 
-function print() {
-  console.log.apply(console, arguments);
+function main() {
+  let table = mappings
+    .filter(mapping => !mapping.deprecated)
+    .map(normalize)
+    .sort(sortByGroup)
+    .reduce(buildTable, {});
+  let output = [];
+
+  Object.keys(table).map(name => {
+    output.push('#### ' + code(name));
+
+    let group = table[name];
+    let rows = group.rows;
+
+    rows = rows.sort(sortByPackageAndExport);
+
+    rows.unshift(['---', '---']);
+    rows.unshift(['Global', 'Module']);
+    rows.map(([before, after]) => {
+      output.push(
+        `|${pad(after, group.maxAfter)}|${pad(before, group.maxBefore)}|`
+      );
+    });
+
+    output.push('');
+  });
+
+  return output.join('\n');
 }
 
-let table = mappings
-  .filter(mapping => !mapping.deprecated)
-  .map(normalize)
-  .sort(sortByGroup)
-  .reduce(buildTable, {});
-
-printTable(table);
+if (require.main === module) {
+  console.log(main());
+} else {
+  module.exports = main;
+}
