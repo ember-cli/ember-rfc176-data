@@ -13,11 +13,18 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 
 ### New Modules to Globals
 
+<!-- MODULE_TO_GLOBAL_CROSS_REFERENCE_START -->
+
 | Before                                   | After                                                                       |
 | ---                                      | ---                                                                         |
 | `Ember._action`                          | `import { action } from '@ember/object';`                                   |
 | `Ember._componentManagerCapabilities`    | `import { capabilities } from '@ember/component';`                          |
+| `Ember._getComponentTemplate`            | `import { getComponentTemplate } from '@ember/component';`                  |
+| `Ember._modifierManagerCapabilities`     | `import { capabilities } from '@ember/modifier';`                           |
 | `Ember._setComponentManager`             | `import { setComponentManager } from '@ember/component';`                   |
+| `Ember._setComponentTemplate`            | `import { setComponentTemplate } from '@ember/component';`                  |
+| `Ember._setModifierManager`              | `import { setModifierManager } from '@ember/modifier';`                     |
+| `Ember._templateOnlyComponent`           | `import templateOnlyComponent from '@ember/component/template-only';`       |
 | `Ember._tracked`                         | `import { tracked } from '@glimmer/tracking';`                              |
 | `Ember.$`                                | `import $ from 'jquery';`                                                   |
 | `Ember.A`                                | `import { A } from '@ember/array';`                                         |
@@ -82,8 +89,6 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.Debug.registerWarnHandler`        | `import { registerWarnHandler } from '@ember/debug';`                       |
 | `Ember.DefaultResolver`                  | `import GlobalsResolver from '@ember/application/globals-resolver';`        |
 | `Ember.defineProperty`                   | `import { defineProperty } from '@ember/object';`                           |
-| `Ember.deprecate`                        | `import { deprecate } from '@ember/application/deprecations';`              |
-| `Ember.deprecateFunc`                    | `import { deprecateFunc } from '@ember/application/deprecations';`          |
 | `Ember.Engine`                           | `import Engine from '@ember/engine';`                                       |
 | `Ember.EngineInstance`                   | `import EngineInstance from '@ember/engine/instance';`                      |
 | `Ember.Enumerable`                       | `import Enumerable from '@ember/enumerable';`                               |
@@ -203,7 +208,11 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.VERSION`                          | `import { VERSION } from '@ember/version';`                                 |
 | `Ember.warn`                             | `import { warn } from '@ember/debug';`                                      |
 
+<!-- MODULE_TO_GLOBAL_CROSS_REFERENCE_END -->
+
 ### New Modules to Globals
+
+<!-- MODULE_BY_MODULE_LISTING_START -->
 
 #### `@ember/application`
 | Module                                                               | Global                      |
@@ -213,8 +222,6 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { onLoad } from '@ember/application';`                       | `Ember.onLoad`              |
 | `import { runLoadHooks } from '@ember/application';`                 | `Ember.runLoadHooks`        |
 | `import { setOwner } from '@ember/application';`                     | `Ember.setOwner`            |
-| `import { deprecate } from '@ember/application/deprecations';`       | `Ember.deprecate`           |
-| `import { deprecateFunc } from '@ember/application/deprecations';`   | `Ember.deprecateFunc`       |
 | `import GlobalsResolver from '@ember/application/globals-resolver';` | `Ember.DefaultResolver`     |
 | `import ApplicationInstance from '@ember/application/instance';`     | `Ember.ApplicationInstance` |
 | `import Namespace from '@ember/application/namespace';`              | `Ember.Namespace`           |
@@ -237,16 +244,19 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { isEnabled } from '@ember/canary-features';` | `Ember.FEATURES.isEnabled` |
 
 #### `@ember/component`
-| Module                                                             | Global                                |
-| ---                                                                | ---                                   |
-| `import Component from '@ember/component';`                        | `Ember.Component`                     |
-| `import { capabilities } from '@ember/component';`                 | `Ember._componentManagerCapabilities` |
-| `import { setComponentManager } from '@ember/component';`          | `Ember._setComponentManager`          |
-| `import Checkbox from '@ember/component/checkbox';`                | `Ember.Checkbox`                      |
-| `import Helper from '@ember/component/helper';`                    | `Ember.Helper`                        |
-| `import { helper as buildHelper } from '@ember/component/helper';` | `Ember.Helper.helper`                 |
-| `import TextArea from '@ember/component/text-area';`               | `Ember.TextArea`                      |
-| `import TextField from '@ember/component/text-field';`             | `Ember.TextField`                     |
+| Module                                                                | Global                                |
+| ---                                                                   | ---                                   |
+| `import Component from '@ember/component';`                           | `Ember.Component`                     |
+| `import { capabilities } from '@ember/component';`                    | `Ember._componentManagerCapabilities` |
+| `import { getComponentTemplate } from '@ember/component';`            | `Ember._getComponentTemplate`         |
+| `import { setComponentManager } from '@ember/component';`             | `Ember._setComponentManager`          |
+| `import { setComponentTemplate } from '@ember/component';`            | `Ember._setComponentTemplate`         |
+| `import Checkbox from '@ember/component/checkbox';`                   | `Ember.Checkbox`                      |
+| `import Helper from '@ember/component/helper';`                       | `Ember.Helper`                        |
+| `import { helper as buildHelper } from '@ember/component/helper';`    | `Ember.Helper.helper`                 |
+| `import templateOnlyComponent from '@ember/component/template-only';` | `Ember._templateOnlyComponent`        |
+| `import TextArea from '@ember/component/text-area';`                  | `Ember.TextArea`                      |
+| `import TextField from '@ember/component/text-field';`                | `Ember.TextField`                     |
 
 #### `@ember/controller`
 | Module                                        | Global                    |
@@ -297,6 +307,12 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | ---                                                     | ---                    |
 | `import EmberMap from '@ember/map';`                    | `Ember.Map`            |
 | `import MapWithDefault from '@ember/map/with-default';` | `Ember.MapWithDefault` |
+
+#### `@ember/modifier`
+| Module                                                  | Global                               |
+| ---                                                     | ---                                  |
+| `import { capabilities } from '@ember/modifier';`       | `Ember._modifierManagerCapabilities` |
+| `import { setModifierManager } from '@ember/modifier';` | `Ember._setModifierManager`          |
 
 #### `@ember/object`
 | Module                                                               | Global                            |
@@ -496,6 +512,8 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { reject } from 'rsvp';`      | `Ember.RSVP.reject`      |
 | `import { resolve } from 'rsvp';`     | `Ember.RSVP.resolve`     |
 
+
+<!-- MODULE_BY_MODULE_LISTING_END -->
 
 ### Scripts
 
