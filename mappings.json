@@ -435,6 +435,12 @@
     "deprecated": false
   },
   {
+    "global": "Ember._dependentKeyCompat",
+    "module": "@ember/object/compat",
+    "export": "dependentKeyCompat",
+    "deprecated": false
+  },
+  {
     "global": "Ember.ComputedProperty",
     "module": "@ember/object/computed",
     "export": "default",
