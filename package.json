@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "chalk": "^2.4.1",
-    "eslint": "^6.3.0",
+    "eslint": "^6.4.0",
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-jest": "^22.17.0",
     "eslint-plugin-node": "^10.0.0",
