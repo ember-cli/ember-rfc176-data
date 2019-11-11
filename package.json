@@ -22,7 +22,7 @@
     "chalk": "^2.4.1",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.5.0",
-    "eslint-plugin-jest": "^22.20.0",
+    "eslint-plugin-jest": "^23.0.3",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-prettier": "^3.1.1",
     "got": "^9.6.0",
