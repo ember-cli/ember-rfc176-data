@@ -1132,6 +1132,24 @@
     "deprecated": false
   },
   {
+    "global": "Ember._createCache",
+    "module": "@glimmer/tracking/primitives/cache",
+    "export": "createCache",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._cacheGetValue",
+    "module": "@glimmer/tracking/primitives/cache",
+    "export": "getValue",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._cacheIsConst",
+    "module": "@glimmer/tracking/primitives/cache",
+    "export": "isConst",
+    "deprecated": false
+  },
+  {
     "global": "Ember.Application",
     "module": "ember-application",
     "export": "default",
