@@ -1,3 +1,17 @@
+## v0.3.13 (2020-05-11)
+
+#### :rocket: Enhancement
+* [#296](https://github.com/ember-cli/ember-rfc176-data/pull/296) Adds autotracking cache primitives APIs ([emberjs/rfcs#615](https://github.com/emberjs/rfcs/blob/master/text/0615-autotracking-memoization.md)) ([@pzuraq](https://github.com/pzuraq))
+
+#### :house: Internal
+* [#280](https://github.com/ember-cli/ember-rfc176-data/pull/280) Update CI to run on Node 10 ([@locks](https://github.com/locks))
+
+#### Committers: 3
+- Chris Garrett ([@pzuraq](https://github.com/pzuraq))
+- Ricardo Mendes ([@locks](https://github.com/locks))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
+
 ## v0.3.12 (2019-08-28)
 
 #### :rocket: Enhancement

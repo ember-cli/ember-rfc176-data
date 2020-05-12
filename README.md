@@ -18,7 +18,10 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | Before                                   | After                                                                       |
 | ---                                      | ---                                                                         |
 | `Ember._action`                          | `import { action } from '@ember/object';`                                   |
+| `Ember._cacheGetValue`                   | `import { getValue } from '@glimmer/tracking/primitives/cache';`            |
+| `Ember._cacheIsConst`                    | `import { isConst } from '@glimmer/tracking/primitives/cache';`             |
 | `Ember._componentManagerCapabilities`    | `import { capabilities } from '@ember/component';`                          |
+| `Ember._createCache`                     | `import { createCache } from '@glimmer/tracking/primitives/cache';`         |
 | `Ember._dependentKeyCompat`              | `import { dependentKeyCompat } from '@ember/object/compat';`                |
 | `Ember._getComponentTemplate`            | `import { getComponentTemplate } from '@ember/component';`                  |
 | `Ember._modifierManagerCapabilities`     | `import { capabilities } from '@ember/modifier';`                           |
@@ -486,9 +489,12 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { VERSION } from '@ember/version';` | `Ember.VERSION` |
 
 #### `@glimmer/tracking`
-| Module                                         | Global           |
-| ---                                            | ---              |
-| `import { tracked } from '@glimmer/tracking';` | `Ember._tracked` |
+| Module                                                              | Global                 |
+| ---                                                                 | ---                    |
+| `import { tracked } from '@glimmer/tracking';`                      | `Ember._tracked`       |
+| `import { createCache } from '@glimmer/tracking/primitives/cache';` | `Ember._createCache`   |
+| `import { getValue } from '@glimmer/tracking/primitives/cache';`    | `Ember._cacheGetValue` |
+| `import { isConst } from '@glimmer/tracking/primitives/cache';`     | `Ember._cacheIsConst`  |
 
 #### `jquery`
 | Module                    | Global    |
