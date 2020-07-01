@@ -29,7 +29,7 @@
     "jest": "^26.0.1",
     "lerna-changelog": "^0.8.3",
     "prettier": "^1.19.1",
-    "release-it": "^13.6.1",
+    "release-it": "^13.6.4",
     "release-it-lerna-changelog": "^2.3.0"
   },
   "publishConfig": {
