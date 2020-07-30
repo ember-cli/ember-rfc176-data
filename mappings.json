@@ -143,40 +143,21 @@
     "deprecated": false
   },
   {
-    "global": "Ember._setComponentManager",
-    "module": "@ember/component",
-    "export": "setComponentManager",
-    "deprecated": false
-  },
-  {
     "global": "Ember._getComponentTemplate",
     "module": "@ember/component",
     "export": "getComponentTemplate",
     "deprecated": false
   },
   {
+    "global": "Ember._setComponentManager",
+    "module": "@ember/component",
+    "export": "setComponentManager",
+    "deprecated": false
+  },
+  {
     "global": "Ember._setComponentTemplate",
     "module": "@ember/component",
     "export": "setComponentTemplate",
-    "deprecated": false
-  },
-  {
-    "global": "Ember._templateOnlyComponent",
-    "module": "@ember/component/template-only",
-    "export": "default",
-    "localName": "templateOnlyComponent",
-    "deprecated": false
-  },
-  {
-    "global": "Ember._setModifierManager",
-    "module": "@ember/modifier",
-    "export": "setModifierManager",
-    "deprecated": false
-  },
-  {
-    "global": "Ember._modifierManagerCapabilities",
-    "module": "@ember/modifier",
-    "export": "capabilities",
     "deprecated": false
   },
   {
@@ -198,6 +179,13 @@
     "module": "@ember/component/helper",
     "export": "helper",
     "localName": "buildHelper",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._templateOnlyComponent",
+    "module": "@ember/component/template-only",
+    "export": "default",
+    "localName": "templateOnlyComponent",
     "deprecated": false
   },
   {
@@ -284,6 +272,48 @@
     "deprecated": false
   },
   {
+    "global": "Ember._assertDestroyablesDestroyed",
+    "module": "@ember/destroyable",
+    "export": "assertDestroyablesDestroyed",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._associateDestroyableChild",
+    "module": "@ember/destroyable",
+    "export": "associateDestroyableChild",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._enableDestroyableTracking",
+    "module": "@ember/destroyable",
+    "export": "enableDestroyableTracking",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._isDestroyed",
+    "module": "@ember/destroyable",
+    "export": "isDestroyed",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._isDestroying",
+    "module": "@ember/destroyable",
+    "export": "isDestroying",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._registerDestructor",
+    "module": "@ember/destroyable",
+    "export": "registerDestructor",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._unregisterDestructor",
+    "module": "@ember/destroyable",
+    "export": "unregisterDestructor",
+    "deprecated": false
+  },
+  {
     "global": "Ember.Engine",
     "module": "@ember/engine",
     "export": "default",
@@ -353,6 +383,18 @@
     "module": "@ember/map/with-default",
     "export": "default",
     "localName": "MapWithDefault",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._modifierManagerCapabilities",
+    "module": "@ember/modifier",
+    "export": "capabilities",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._setModifierManager",
+    "module": "@ember/modifier",
+    "export": "setModifierManager",
     "deprecated": false
   },
   {
