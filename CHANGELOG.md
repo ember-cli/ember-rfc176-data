@@ -1,3 +1,12 @@
+## v0.3.14 (2020-07-30)
+
+#### :rocket: Enhancement
+* [#314](https://github.com/ember-cli/ember-rfc176-data/pull/314) Add `@ember/destroyable` APIs to mappings. ([@rwjblue](https://github.com/rwjblue))
+
+#### Committers: 1
+- Robert Jackson ([@rwjblue](https://github.com/rwjblue))
+
+
 ## v0.3.13 (2020-05-11)
 
 #### :rocket: Enhancement

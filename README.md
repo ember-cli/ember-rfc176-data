@@ -18,18 +18,25 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | Before                                   | After                                                                       |
 | ---                                      | ---                                                                         |
 | `Ember._action`                          | `import { action } from '@ember/object';`                                   |
+| `Ember._assertDestroyablesDestroyed`     | `import { assertDestroyablesDestroyed } from '@ember/destroyable';`         |
+| `Ember._associateDestroyableChild`       | `import { associateDestroyableChild } from '@ember/destroyable';`           |
 | `Ember._cacheGetValue`                   | `import { getValue } from '@glimmer/tracking/primitives/cache';`            |
 | `Ember._cacheIsConst`                    | `import { isConst } from '@glimmer/tracking/primitives/cache';`             |
 | `Ember._componentManagerCapabilities`    | `import { capabilities } from '@ember/component';`                          |
 | `Ember._createCache`                     | `import { createCache } from '@glimmer/tracking/primitives/cache';`         |
 | `Ember._dependentKeyCompat`              | `import { dependentKeyCompat } from '@ember/object/compat';`                |
+| `Ember._enableDestroyableTracking`       | `import { enableDestroyableTracking } from '@ember/destroyable';`           |
 | `Ember._getComponentTemplate`            | `import { getComponentTemplate } from '@ember/component';`                  |
+| `Ember._isDestroyed`                     | `import { isDestroyed } from '@ember/destroyable';`                         |
+| `Ember._isDestroying`                    | `import { isDestroying } from '@ember/destroyable';`                        |
 | `Ember._modifierManagerCapabilities`     | `import { capabilities } from '@ember/modifier';`                           |
+| `Ember._registerDestructor`              | `import { registerDestructor } from '@ember/destroyable';`                  |
 | `Ember._setComponentManager`             | `import { setComponentManager } from '@ember/component';`                   |
 | `Ember._setComponentTemplate`            | `import { setComponentTemplate } from '@ember/component';`                  |
 | `Ember._setModifierManager`              | `import { setModifierManager } from '@ember/modifier';`                     |
 | `Ember._templateOnlyComponent`           | `import templateOnlyComponent from '@ember/component/template-only';`       |
 | `Ember._tracked`                         | `import { tracked } from '@glimmer/tracking';`                              |
+| `Ember._unregisterDestructor`            | `import { unregisterDestructor } from '@ember/destroyable';`                |
 | `Ember.$`                                | `import $ from 'jquery';`                                                   |
 | `Ember.A`                                | `import { A } from '@ember/array';`                                         |
 | `Ember.addListener`                      | `import { addListener } from '@ember/object/events';`                       |
@@ -280,6 +287,17 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import { warn } from '@ember/debug';`                                      | `Ember.warn`                             |
 | `import ContainerDebugAdapter from '@ember/debug/container-debug-adapter';` | `Ember.ContainerDebugAdapter`            |
 | `import DataAdapter from '@ember/debug/data-adapter';`                      | `Ember.DataAdapter`                      |
+
+#### `@ember/destroyable`
+| Module                                                              | Global                               |
+| ---                                                                 | ---                                  |
+| `import { assertDestroyablesDestroyed } from '@ember/destroyable';` | `Ember._assertDestroyablesDestroyed` |
+| `import { associateDestroyableChild } from '@ember/destroyable';`   | `Ember._associateDestroyableChild`   |
+| `import { enableDestroyableTracking } from '@ember/destroyable';`   | `Ember._enableDestroyableTracking`   |
+| `import { isDestroyed } from '@ember/destroyable';`                 | `Ember._isDestroyed`                 |
+| `import { isDestroying } from '@ember/destroyable';`                | `Ember._isDestroying`                |
+| `import { registerDestructor } from '@ember/destroyable';`          | `Ember._registerDestructor`          |
+| `import { unregisterDestructor } from '@ember/destroyable';`        | `Ember._unregisterDestructor`        |
 
 #### `@ember/engine`
 | Module                                                 | Global                  |
