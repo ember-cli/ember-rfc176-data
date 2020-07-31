@@ -284,6 +284,12 @@
     "deprecated": false
   },
   {
+    "global": "Ember.destroy",
+    "module": "@ember/destroyable",
+    "export": "destroy",
+    "deprecated": false
+  },
+  {
     "global": "Ember._enableDestroyableTracking",
     "module": "@ember/destroyable",
     "export": "enableDestroyableTracking",
