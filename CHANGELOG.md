@@ -1,3 +1,12 @@
+## v0.3.15 (2020-07-31)
+
+#### :bug: Bug Fix
+* [#315](https://github.com/ember-cli/ember-rfc176-data/pull/315) Add `destroy` to `@ember/destroyable`. ([@rwjblue](https://github.com/rwjblue))
+
+#### Committers: 1
+- Robert Jackson ([@rwjblue](https://github.com/rwjblue))
+
+
 ## v0.3.14 (2020-07-30)
 
 #### :rocket: Enhancement

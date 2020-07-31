@@ -100,6 +100,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.Debug.registerWarnHandler`        | `import { registerWarnHandler } from '@ember/debug';`                       |
 | `Ember.DefaultResolver`                  | `import GlobalsResolver from '@ember/application/globals-resolver';`        |
 | `Ember.defineProperty`                   | `import { defineProperty } from '@ember/object';`                           |
+| `Ember.destroy`                          | `import { destroy } from '@ember/destroyable';`                             |
 | `Ember.Engine`                           | `import Engine from '@ember/engine';`                                       |
 | `Ember.EngineInstance`                   | `import EngineInstance from '@ember/engine/instance';`                      |
 | `Ember.Enumerable`                       | `import Enumerable from '@ember/enumerable';`                               |
@@ -293,6 +294,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | ---                                                                 | ---                                  |
 | `import { assertDestroyablesDestroyed } from '@ember/destroyable';` | `Ember._assertDestroyablesDestroyed` |
 | `import { associateDestroyableChild } from '@ember/destroyable';`   | `Ember._associateDestroyableChild`   |
+| `import { destroy } from '@ember/destroyable';`                     | `Ember.destroy`                      |
 | `import { enableDestroyableTracking } from '@ember/destroyable';`   | `Ember._enableDestroyableTracking`   |
 | `import { isDestroyed } from '@ember/destroyable';`                 | `Ember._isDestroyed`                 |
 | `import { isDestroying } from '@ember/destroyable';`                | `Ember._isDestroying`                |
