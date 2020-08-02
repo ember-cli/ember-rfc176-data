@@ -14,7 +14,7 @@ function sortByModuleAndExport(mappingA, mappingB) {
   return compare(mappingA.module, mappingB.module);
 }
 
-let updated = mappings.sort(sortByModuleAndExport).map(mapping => {
+let updated = mappings.sort(sortByModuleAndExport).map((mapping) => {
   let localName = mapping.localName || mapping.export;
 
   // ensure localName is set when a reserved word collides

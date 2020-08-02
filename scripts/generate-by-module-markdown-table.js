@@ -63,13 +63,13 @@ function pad(str, max) {
 
 function main() {
   let table = mappings
-    .filter(mapping => !mapping.deprecated)
+    .filter((mapping) => !mapping.deprecated)
     .map(normalize)
     .sort(sortByGroup)
     .reduce(buildTable, {});
   let output = [];
 
-  Object.keys(table).map(name => {
+  Object.keys(table).map((name) => {
     output.push('#### ' + code(name));
 
     let group = table[name];

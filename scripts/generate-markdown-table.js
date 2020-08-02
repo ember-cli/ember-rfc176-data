@@ -22,9 +22,9 @@ function main() {
   let maxAfter = 0;
 
   let rows = mappings
-    .filter(it => !it.deprecated)
+    .filter((it) => !it.deprecated)
     .sort(byGlobal)
-    .map(mapping => {
+    .map((mapping) => {
       let before = mapping.global;
       let after = helpers.generateImportForMapping(mapping);
 
