@@ -20,8 +20,8 @@ function indent(value) {
 }
 
 mappings
-  .filter(mapping => !mapping.deprecated)
-  .map(mapping => mapping.module)
+  .filter((mapping) => !mapping.deprecated)
+  .map((mapping) => mapping.module)
   .filter(unique)
-  .map(key => indent(key))
+  .map((key) => indent(key))
   .forEach(print);
