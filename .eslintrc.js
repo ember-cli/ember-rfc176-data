@@ -16,18 +16,17 @@ module.exports = {
       files: ['scripts/*.js'],
       rules: {
         'no-console': 'off',
-      }
+      },
     },
     {
       files: ['tests/*.test.js'],
       plugins: ['jest'],
 
-      // can't use `extends` in nested config :sob:
-      rules: require('eslint-plugin-jest').configs.recommended.rules,
+      extends: ['plugin:jest/recommended'],
 
       env: {
-        'jest': true
-      }
+        jest: true,
+      },
     },
     {
       files: ['scripts/**/*.js', 'tests/**/*.js'],
@@ -35,7 +34,7 @@ module.exports = {
         // prevent fallback to node 4 only support, this package only distributes *.json
         // node version isn't super important...
         'node/no-unsupported-features': 'off',
-      }
-    }
-  ]
+      },
+    },
+  ],
 };
