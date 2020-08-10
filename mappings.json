@@ -1178,6 +1178,11 @@
     "module": "@glimmer/tracking",
     "export": "tracked",
     "deprecated": false
+  },  {
+    "global": "Ember._memo",
+    "module": "@glimmer/tracking",
+    "export": "memo",
+    "deprecated": false
   },
   {
     "global": "Ember._createCache",
