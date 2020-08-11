@@ -1180,9 +1180,9 @@
     "deprecated": false
   },
   {
-    "global": "Ember._memo",
+    "global": "Ember._cached",
     "module": "@glimmer/tracking",
-    "export": "memo",
+    "export": "cached",
     "deprecated": false
   },
   {
