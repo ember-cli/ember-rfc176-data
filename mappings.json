@@ -404,6 +404,24 @@
     "deprecated": false
   },
   {
+    "global": "Ember._helperManagerCapabilities",
+    "module": "@ember/helper",
+    "export": "capabilities",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._setHelperManager",
+    "module": "@ember/helper",
+    "export": "setHelperManager",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._invokeHelper",
+    "module": "@ember/helper",
+    "export": "invokeHelper",
+    "deprecated": false
+  },
+  {
     "global": "Ember.Object",
     "module": "@ember/object",
     "export": "default",
