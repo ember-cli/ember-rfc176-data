@@ -1,3 +1,16 @@
+## v0.3.16 (2020-09-29)
+
+#### :rocket: Enhancement
+* [#329](https://github.com/ember-cli/ember-rfc176-data/pull/329) [FEAT] Add new helper APIs ([@pzuraq](https://github.com/pzuraq))
+
+#### :house: Internal
+* [#321](https://github.com/ember-cli/ember-rfc176-data/pull/321) Migrate to GitHub Actions ([@rwjblue](https://github.com/rwjblue))
+
+#### Committers: 2
+- Chris Garrett ([@pzuraq](https://github.com/pzuraq))
+- Robert Jackson ([@rwjblue](https://github.com/rwjblue))
+
+
 ## v0.3.15 (2020-07-31)
 
 #### :bug: Bug Fix

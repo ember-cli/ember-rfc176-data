@@ -27,12 +27,15 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember._dependentKeyCompat`              | `import { dependentKeyCompat } from '@ember/object/compat';`                |
 | `Ember._enableDestroyableTracking`       | `import { enableDestroyableTracking } from '@ember/destroyable';`           |
 | `Ember._getComponentTemplate`            | `import { getComponentTemplate } from '@ember/component';`                  |
+| `Ember._helperManagerCapabilities`       | `import { capabilities } from '@ember/helper';`                             |
+| `Ember._invokeHelper`                    | `import { invokeHelper } from '@ember/helper';`                             |
 | `Ember._isDestroyed`                     | `import { isDestroyed } from '@ember/destroyable';`                         |
 | `Ember._isDestroying`                    | `import { isDestroying } from '@ember/destroyable';`                        |
 | `Ember._modifierManagerCapabilities`     | `import { capabilities } from '@ember/modifier';`                           |
 | `Ember._registerDestructor`              | `import { registerDestructor } from '@ember/destroyable';`                  |
 | `Ember._setComponentManager`             | `import { setComponentManager } from '@ember/component';`                   |
 | `Ember._setComponentTemplate`            | `import { setComponentTemplate } from '@ember/component';`                  |
+| `Ember._setHelperManager`                | `import { setHelperManager } from '@ember/helper';`                         |
 | `Ember._setModifierManager`              | `import { setModifierManager } from '@ember/modifier';`                     |
 | `Ember._templateOnlyComponent`           | `import templateOnlyComponent from '@ember/component/template-only';`       |
 | `Ember._tracked`                         | `import { tracked } from '@glimmer/tracking';`                              |
@@ -317,6 +320,13 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | Module                                   | Global        |
 | ---                                      | ---           |
 | `import EmberError from '@ember/error';` | `Ember.Error` |
+
+#### `@ember/helper`
+| Module                                              | Global                             |
+| ---                                                 | ---                                |
+| `import { capabilities } from '@ember/helper';`     | `Ember._helperManagerCapabilities` |
+| `import { invokeHelper } from '@ember/helper';`     | `Ember._invokeHelper`              |
+| `import { setHelperManager } from '@ember/helper';` | `Ember._setHelperManager`          |
 
 #### `@ember/instrumentation`
 | Module                                                  | Global                              |
