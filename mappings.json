@@ -151,7 +151,7 @@
   {
     "global": "Ember._TextArea",
     "module": "@ember/component",
-    "export": "TextArea",
+    "export": "Textarea",
     "deprecated": false
   },
   {
