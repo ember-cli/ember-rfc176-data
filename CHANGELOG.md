@@ -1,3 +1,19 @@
+## v0.3.17 (2021-03-17)
+
+#### :rocket: Enhancement
+* [#322](https://github.com/ember-cli/ember-rfc176-data/pull/322) Add `import { cached } from '@glimmer/tracking'` ([@buschtoens](https://github.com/buschtoens))
+* [#364](https://github.com/ember-cli/ember-rfc176-data/pull/364) Add import paths for usage of template helpers and components within strict mode ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### :house: Internal
+* [#365](https://github.com/ember-cli/ember-rfc176-data/pull/365) Add mappings for private runloop functions ([@pzuraq](https://github.com/pzuraq))
+
+#### Committers: 4
+- Chris Garrett ([@pzuraq](https://github.com/pzuraq))
+- Jan Buschtöns ([@buschtoens](https://github.com/buschtoens))
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
+
 ## v0.3.16 (2020-09-29)
 
 #### :rocket: Enhancement

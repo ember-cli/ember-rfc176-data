@@ -18,26 +18,35 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | Before                                   | After                                                                       |
 | ---                                      | ---                                                                         |
 | `Ember._action`                          | `import { action } from '@ember/object';`                                   |
+| `Ember._array`                           | `import { array } from '@ember/helper';`                                    |
 | `Ember._assertDestroyablesDestroyed`     | `import { assertDestroyablesDestroyed } from '@ember/destroyable';`         |
 | `Ember._associateDestroyableChild`       | `import { associateDestroyableChild } from '@ember/destroyable';`           |
+| `Ember._cached`                          | `import { cached } from '@glimmer/tracking';`                               |
 | `Ember._cacheGetValue`                   | `import { getValue } from '@glimmer/tracking/primitives/cache';`            |
 | `Ember._cacheIsConst`                    | `import { isConst } from '@glimmer/tracking/primitives/cache';`             |
 | `Ember._componentManagerCapabilities`    | `import { capabilities } from '@ember/component';`                          |
+| `Ember._concat`                          | `import { concat } from '@ember/helper';`                                   |
 | `Ember._createCache`                     | `import { createCache } from '@glimmer/tracking/primitives/cache';`         |
 | `Ember._dependentKeyCompat`              | `import { dependentKeyCompat } from '@ember/object/compat';`                |
 | `Ember._enableDestroyableTracking`       | `import { enableDestroyableTracking } from '@ember/destroyable';`           |
+| `Ember._fn`                              | `import { fn } from '@ember/helper';`                                       |
+| `Ember._get`                             | `import { get } from '@ember/helper';`                                      |
 | `Ember._getComponentTemplate`            | `import { getComponentTemplate } from '@ember/component';`                  |
+| `Ember._hash`                            | `import { hash } from '@ember/helper';`                                     |
 | `Ember._helperManagerCapabilities`       | `import { capabilities } from '@ember/helper';`                             |
+| `Ember._Input`                           | `import { Input } from '@ember/component';`                                 |
 | `Ember._invokeHelper`                    | `import { invokeHelper } from '@ember/helper';`                             |
 | `Ember._isDestroyed`                     | `import { isDestroyed } from '@ember/destroyable';`                         |
 | `Ember._isDestroying`                    | `import { isDestroying } from '@ember/destroyable';`                        |
 | `Ember._modifierManagerCapabilities`     | `import { capabilities } from '@ember/modifier';`                           |
+| `Ember._on`                              | `import { on } from '@ember/modifier';`                                     |
 | `Ember._registerDestructor`              | `import { registerDestructor } from '@ember/destroyable';`                  |
 | `Ember._setComponentManager`             | `import { setComponentManager } from '@ember/component';`                   |
 | `Ember._setComponentTemplate`            | `import { setComponentTemplate } from '@ember/component';`                  |
 | `Ember._setHelperManager`                | `import { setHelperManager } from '@ember/helper';`                         |
 | `Ember._setModifierManager`              | `import { setModifierManager } from '@ember/modifier';`                     |
 | `Ember._templateOnlyComponent`           | `import templateOnlyComponent from '@ember/component/template-only';`       |
+| `Ember._TextArea`                        | `import { Textarea } from '@ember/component';`                              |
 | `Ember._tracked`                         | `import { tracked } from '@glimmer/tracking';`                              |
 | `Ember._unregisterDestructor`            | `import { unregisterDestructor } from '@ember/destroyable';`                |
 | `Ember.$`                                | `import $ from 'jquery';`                                                   |
@@ -140,6 +149,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.isPresent`                        | `import { isPresent } from '@ember/utils';`                                 |
 | `Ember.keys`                             | `import { keys } from '@ember/polyfills';`                                  |
 | `Ember.LinkComponent`                    | `import LinkComponent from '@ember/routing/link-component';`                |
+| `Ember.LinkComponent`                    | `import { LinkTo } from '@ember/routing';`                                  |
 | `Ember.Location`                         | `import Location from '@ember/routing/location';`                           |
 | `Ember.makeArray`                        | `import { makeArray } from '@ember/array';`                                 |
 | `Ember.Map`                              | `import EmberMap from '@ember/map';`                                        |
@@ -179,11 +189,15 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.RSVP.reject`                      | `import { reject } from 'rsvp';`                                            |
 | `Ember.RSVP.resolve`                     | `import { resolve } from 'rsvp';`                                           |
 | `Ember.run`                              | `import { run } from '@ember/runloop';`                                     |
+| `Ember.run._getCurrentRunLoop`           | `import { _getCurrentRunLoop } from '@ember/runloop';`                      |
+| `Ember.run.backburner`                   | `import { _backburner } from '@ember/runloop';`                             |
 | `Ember.run.begin`                        | `import { begin } from '@ember/runloop';`                                   |
 | `Ember.run.bind`                         | `import { bind } from '@ember/runloop';`                                    |
 | `Ember.run.cancel`                       | `import { cancel } from '@ember/runloop';`                                  |
+| `Ember.run.cancelTimers`                 | `import { _cancelTimers } from '@ember/runloop';`                           |
 | `Ember.run.debounce`                     | `import { debounce } from '@ember/runloop';`                                |
 | `Ember.run.end`                          | `import { end } from '@ember/runloop';`                                     |
+| `Ember.run.hasScheduledTimers`           | `import { _hasScheduledTimers } from '@ember/runloop';`                     |
 | `Ember.run.join`                         | `import { join } from '@ember/runloop';`                                    |
 | `Ember.run.later`                        | `import { later } from '@ember/runloop';`                                   |
 | `Ember.run.next`                         | `import { next } from '@ember/runloop';`                                    |
@@ -262,6 +276,8 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | Module                                                                | Global                                |
 | ---                                                                   | ---                                   |
 | `import Component from '@ember/component';`                           | `Ember.Component`                     |
+| `import { Input } from '@ember/component';`                           | `Ember._Input`                        |
+| `import { Textarea } from '@ember/component';`                        | `Ember._TextArea`                     |
 | `import { capabilities } from '@ember/component';`                    | `Ember._componentManagerCapabilities` |
 | `import { getComponentTemplate } from '@ember/component';`            | `Ember._getComponentTemplate`         |
 | `import { setComponentManager } from '@ember/component';`             | `Ember._setComponentManager`          |
@@ -324,7 +340,12 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 #### `@ember/helper`
 | Module                                              | Global                             |
 | ---                                                 | ---                                |
+| `import { array } from '@ember/helper';`            | `Ember._array`                     |
 | `import { capabilities } from '@ember/helper';`     | `Ember._helperManagerCapabilities` |
+| `import { concat } from '@ember/helper';`           | `Ember._concat`                    |
+| `import { fn } from '@ember/helper';`               | `Ember._fn`                        |
+| `import { get } from '@ember/helper';`              | `Ember._get`                       |
+| `import { hash } from '@ember/helper';`             | `Ember._hash`                      |
 | `import { invokeHelper } from '@ember/helper';`     | `Ember._invokeHelper`              |
 | `import { setHelperManager } from '@ember/helper';` | `Ember._setHelperManager`          |
 
@@ -346,6 +367,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | Module                                                  | Global                               |
 | ---                                                     | ---                                  |
 | `import { capabilities } from '@ember/modifier';`       | `Ember._modifierManagerCapabilities` |
+| `import { on } from '@ember/modifier';`                 | `Ember._on`                          |
 | `import { setModifierManager } from '@ember/modifier';` | `Ember._setModifierManager`          |
 
 #### `@ember/object`
@@ -429,6 +451,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 #### `@ember/routing`
 | Module                                                           | Global                  |
 | ---                                                              | ---                     |
+| `import { LinkTo } from '@ember/routing';`                       | `Ember.LinkComponent`   |
 | `import AutoLocation from '@ember/routing/auto-location';`       | `Ember.AutoLocation`    |
 | `import HashLocation from '@ember/routing/hash-location';`       | `Ember.HashLocation`    |
 | `import HistoryLocation from '@ember/routing/history-location';` | `Ember.HistoryLocation` |
@@ -439,21 +462,25 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `import EmberRouter from '@ember/routing/router';`               | `Ember.Router`          |
 
 #### `@ember/runloop`
-| Module                                           | Global                   |
-| ---                                              | ---                      |
-| `import { begin } from '@ember/runloop';`        | `Ember.run.begin`        |
-| `import { bind } from '@ember/runloop';`         | `Ember.run.bind`         |
-| `import { cancel } from '@ember/runloop';`       | `Ember.run.cancel`       |
-| `import { debounce } from '@ember/runloop';`     | `Ember.run.debounce`     |
-| `import { end } from '@ember/runloop';`          | `Ember.run.end`          |
-| `import { join } from '@ember/runloop';`         | `Ember.run.join`         |
-| `import { later } from '@ember/runloop';`        | `Ember.run.later`        |
-| `import { next } from '@ember/runloop';`         | `Ember.run.next`         |
-| `import { once } from '@ember/runloop';`         | `Ember.run.once`         |
-| `import { run } from '@ember/runloop';`          | `Ember.run`              |
-| `import { schedule } from '@ember/runloop';`     | `Ember.run.schedule`     |
-| `import { scheduleOnce } from '@ember/runloop';` | `Ember.run.scheduleOnce` |
-| `import { throttle } from '@ember/runloop';`     | `Ember.run.throttle`     |
+| Module                                                  | Global                         |
+| ---                                                     | ---                            |
+| `import { _backburner } from '@ember/runloop';`         | `Ember.run.backburner`         |
+| `import { _cancelTimers } from '@ember/runloop';`       | `Ember.run.cancelTimers`       |
+| `import { _getCurrentRunLoop } from '@ember/runloop';`  | `Ember.run._getCurrentRunLoop` |
+| `import { _hasScheduledTimers } from '@ember/runloop';` | `Ember.run.hasScheduledTimers` |
+| `import { begin } from '@ember/runloop';`               | `Ember.run.begin`              |
+| `import { bind } from '@ember/runloop';`                | `Ember.run.bind`               |
+| `import { cancel } from '@ember/runloop';`              | `Ember.run.cancel`             |
+| `import { debounce } from '@ember/runloop';`            | `Ember.run.debounce`           |
+| `import { end } from '@ember/runloop';`                 | `Ember.run.end`                |
+| `import { join } from '@ember/runloop';`                | `Ember.run.join`               |
+| `import { later } from '@ember/runloop';`               | `Ember.run.later`              |
+| `import { next } from '@ember/runloop';`                | `Ember.run.next`               |
+| `import { once } from '@ember/runloop';`                | `Ember.run.once`               |
+| `import { run } from '@ember/runloop';`                 | `Ember.run`                    |
+| `import { schedule } from '@ember/runloop';`            | `Ember.run.schedule`           |
+| `import { scheduleOnce } from '@ember/runloop';`        | `Ember.run.scheduleOnce`       |
+| `import { throttle } from '@ember/runloop';`            | `Ember.run.throttle`           |
 
 #### `@ember/service`
 | Module                                     | Global                 |
@@ -521,6 +548,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 #### `@glimmer/tracking`
 | Module                                                              | Global                 |
 | ---                                                                 | ---                    |
+| `import { cached } from '@glimmer/tracking';`                       | `Ember._cached`        |
 | `import { tracked } from '@glimmer/tracking';`                      | `Ember._tracked`       |
 | `import { createCache } from '@glimmer/tracking/primitives/cache';` | `Ember._createCache`   |
 | `import { getValue } from '@glimmer/tracking/primitives/cache';`    | `Ember._cacheGetValue` |
