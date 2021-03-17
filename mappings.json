@@ -143,6 +143,18 @@
     "deprecated": false
   },
   {
+    "global": "Ember._Input",
+    "module": "@ember/component",
+    "export": "Input",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._TextArea",
+    "module": "@ember/component",
+    "export": "Textarea",
+    "deprecated": false
+  },
+  {
     "global": "Ember._getComponentTemplate",
     "module": "@ember/component",
     "export": "getComponentTemplate",
@@ -404,6 +416,12 @@
     "deprecated": false
   },
   {
+    "global": "Ember._on",
+    "module": "@ember/modifier",
+    "export": "on",
+    "deprecated": false
+  },
+  {
     "global": "Ember._helperManagerCapabilities",
     "module": "@ember/helper",
     "export": "capabilities",
@@ -419,6 +437,36 @@
     "global": "Ember._invokeHelper",
     "module": "@ember/helper",
     "export": "invokeHelper",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._array",
+    "module": "@ember/helper",
+    "export": "array",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._concat",
+    "module": "@ember/helper",
+    "export": "concat",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._fn",
+    "module": "@ember/helper",
+    "export": "fn",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._get",
+    "module": "@ember/helper",
+    "export": "get",
+    "deprecated": false
+  },
+  {
+    "global": "Ember._hash",
+    "module": "@ember/helper",
+    "export": "hash",
     "deprecated": false
   },
   {
@@ -875,6 +923,12 @@
     "module": "@ember/routing/link-component",
     "export": "default",
     "localName": "LinkComponent",
+    "deprecated": false
+  },
+  {
+    "global": "Ember.LinkComponent",
+    "module": "@ember/routing",
+    "export": "LinkTo",
     "deprecated": false
   },
   {
