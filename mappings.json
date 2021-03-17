@@ -1276,6 +1276,12 @@
     "deprecated": false
   },
   {
+    "global": "Ember._cached",
+    "module": "@glimmer/tracking",
+    "export": "cached",
+    "deprecated": false
+  },
+  {
     "global": "Ember._createCache",
     "module": "@glimmer/tracking/primitives/cache",
     "export": "createCache",
