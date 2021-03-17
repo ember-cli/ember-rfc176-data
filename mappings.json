@@ -906,6 +906,30 @@
     "deprecated": false
   },
   {
+    "global": "Ember.run.backburner",
+    "module": "@ember/runloop",
+    "export": "_backburner",
+    "deprecated": false
+  },
+  {
+    "global": "Ember.run.hasScheduledTimers",
+    "module": "@ember/runloop",
+    "export": "_hasScheduledTimers",
+    "deprecated": false
+  },
+  {
+    "global": "Ember.run.cancelTimers",
+    "module": "@ember/runloop",
+    "export": "_cancelTimers",
+    "deprecated": false
+  },
+  {
+    "global": "Ember.run._getCurrentRunLoop",
+    "module": "@ember/runloop",
+    "export": "_getCurrentRunLoop",
+    "deprecated": false
+  },
+  {
     "global": "Ember.run.begin",
     "module": "@ember/runloop",
     "export": "begin",
