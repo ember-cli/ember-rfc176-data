@@ -18,7 +18,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "chalk": "^4.1.0",
+    "chalk": "^4.1.1",
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-jest": "^23.20.0",
