@@ -23,7 +23,7 @@
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-prettier": "^3.4.1",
     "got": "^11.8.2",
     "jest": "^27.0.3",
     "prettier": "^2.3.0",
