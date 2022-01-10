@@ -1075,6 +1075,12 @@
     "deprecated": false
   },
   {
+    "global": "Ember.inject.service",
+    "module": "@ember/service",
+    "export": "service",
+    "deprecated": false
+  },
+  {
     "global": "Ember.String.camelize",
     "module": "@ember/string",
     "export": "camelize",
