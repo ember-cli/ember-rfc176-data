@@ -234,6 +234,12 @@
     "deprecated": false
   },
   {
+    "global": "Ember.deprecate",
+    "module": "@ember/debug",
+    "export": "deprecate",
+    "deprecated": false
+  },
+  {
     "global": "Ember.debug",
     "module": "@ember/debug",
     "export": "debug",
