@@ -112,6 +112,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.Debug.registerWarnHandler`        | `import { registerWarnHandler } from '@ember/debug';`                       |
 | `Ember.DefaultResolver`                  | `import GlobalsResolver from '@ember/application/globals-resolver';`        |
 | `Ember.defineProperty`                   | `import { defineProperty } from '@ember/object';`                           |
+| `Ember.deprecate`                        | `import { deprecate } from '@ember/debug';`                                 |
 | `Ember.destroy`                          | `import { destroy } from '@ember/destroyable';`                             |
 | `Ember.Engine`                           | `import Engine from '@ember/engine';`                                       |
 | `Ember.EngineInstance`                   | `import EngineInstance from '@ember/engine/instance';`                      |
@@ -148,8 +149,8 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | `Ember.isNone`                           | `import { isNone } from '@ember/utils';`                                    |
 | `Ember.isPresent`                        | `import { isPresent } from '@ember/utils';`                                 |
 | `Ember.keys`                             | `import { keys } from '@ember/polyfills';`                                  |
-| `Ember.LinkComponent`                    | `import LinkComponent from '@ember/routing/link-component';`                |
 | `Ember.LinkComponent`                    | `import { LinkTo } from '@ember/routing';`                                  |
+| `Ember.LinkComponent`                    | `import LinkComponent from '@ember/routing/link-component';`                |
 | `Ember.Location`                         | `import Location from '@ember/routing/location';`                           |
 | `Ember.makeArray`                        | `import { makeArray } from '@ember/array';`                                 |
 | `Ember.Map`                              | `import EmberMap from '@ember/map';`                                        |
@@ -300,6 +301,7 @@ JSON data for [RFC #176](https://github.com/emberjs/rfcs/blob/master/text/0176-j
 | ---                                                                         | ---                                      |
 | `import { assert } from '@ember/debug';`                                    | `Ember.assert`                           |
 | `import { debug } from '@ember/debug';`                                     | `Ember.debug`                            |
+| `import { deprecate } from '@ember/debug';`                                 | `Ember.deprecate`                        |
 | `import { inspect } from '@ember/debug';`                                   | `Ember.inspect`                          |
 | `import { registerDeprecationHandler } from '@ember/debug';`                | `Ember.Debug.registerDeprecationHandler` |
 | `import { registerWarnHandler } from '@ember/debug';`                       | `Ember.Debug.registerWarnHandler`        |
