@@ -1,3 +1,11 @@
+## v0.3.18 (2023-01-18)
+
+#### :bug: Bug Fix
+* [#431](https://github.com/ember-cli/ember-rfc176-data/pull/431) Add deprecate to @ember/debug ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## v0.3.17 (2021-03-17)
 
 #### :rocket: Enhancement
