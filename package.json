@@ -27,7 +27,7 @@
     "got": "^11.8.2",
     "jest": "^27.0.3",
     "prettier": "^2.3.0",
-    "release-it": "^14.7.0",
+    "release-it": "^15.10.3",
     "release-it-lerna-changelog": "^2.4.0"
   },
   "publishConfig": {
